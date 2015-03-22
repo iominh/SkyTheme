@@ -17,8 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    "typeplate-starter-kit": "~2.1.0",
-    "bourbon": "~4.2.1",
-    "neat": "~1.7.2"
+    "typeplate-starter-kit": "~2.1.0"
   }
 }

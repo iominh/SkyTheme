@@ -1,0 +1,145 @@
+@import 'variables';
+
+.stripes {
+  width: 100%;
+  height: 5px;
+  overflow: hidden;
+//  background: #FA9300;
+//  background: #333;
+
+  @include linear-gradient(#1e528e, darken(#333973, 0%));
+}
+
+.stripe {
+  width: 30px;
+  height: 5px;
+  float: left;
+}
+
+.item1, .item12, .item23, .item36, .item47 {
+  background: #1B2F3E;
+}
+.item2, .item13, .item24, .item37, .item48 {
+  background: #385A72;
+  width: 18px;
+}
+.item3, .item14, .item25, .item38, .item49 {
+  background: #193640;
+}
+.item4, .item15, .item26, .item39, .item50 {
+  background: #688988;
+  width: 24px;
+}
+.item5, .item16, .item27, .item40 {
+  background: #D2DBC7;
+}
+
+
+.item6, .item17, .item28, .item41 {
+  background: #485AEC;
+  width: 28px;
+}
+.item7, .item18, .item29, .item42 {
+  background: #122D42;
+}
+
+.item8, .item19, .item30, .item43 {
+  background: #416673;
+  width: 14px;
+}
+.item10, .item21, .item32, .item45 {
+  background: #7295A8;
+  width: 28px;
+}
+.item11, .item22, .item33, .item46 {
+  background: #B0CCD8;
+}
+
+
+.navbar {
+  background-color: $navigation-color;
+  padding: 0 20 0 20;
+  margin-bottom: 0px;
+}
+
+.navbar .nav {
+  float: right;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navigation {
+  border-top: 4px solid #333333;
+  border-bottom: 1px solid $primary-border-color;
+}
+
+.navigation ul {
+}
+
+.sideBorders a {
+  //	border-left: 1px solid $primary-border-color;
+  //	border-right: 1px solid $primary-border-color;
+}
+
+.navigation li a {
+  font-family: "Bebas Neue";
+  font-size: 1em;
+  color: $navigation-font-color;
+  line-height: 1;
+  padding: 1em;
+  text-decoration: none;
+  float: left;
+
+  @include bp(sm) {
+    font-size: $font-size;
+    padding: $font-size;
+  }
+}
+
+.navright {
+  float: right;
+}
+
+.navigation li a:hover {
+  text-decoration: none;
+  //	color: $primary-link-color;
+  //	background-color: #e5e5e5;
+  //	@include boxshadow(inset 0 0 100px #e5e5e5);
+  @include button-hover();
+}
+
+.right-buttons {
+  float: right;
+}
+
+// iphone / smartphone
+@media (max-width: $small-width) {
+  .navigation {
+
+    ul {
+    }
+
+    ul li {
+      text-align: center;
+    }
+
+    #wrapper {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      height: 50px;
+    }
+    #wrapper div {
+      display: table-cell;
+      height: 50px;
+    }
+  }
+
+  .right-buttons {
+    float: none;
+  }
+
+}

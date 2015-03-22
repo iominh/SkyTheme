@@ -843,6 +843,12 @@ p + .typl8-drop-cap {
  * Extend this object into your markup.
  *
  */
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 /**
  * Make all elements inherit from `html` box-sizing
  */

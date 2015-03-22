@@ -1,0 +1,48 @@
+$white: #fff;
+$gray: #27262b;
+$lightgray: #e6e6e6;
+$green: #67AD7C;
+$blue: #307EA9;
+$blue2: #2b6cc2;
+$black: #2B2B2B;
+
+$inverse-font-color: #65646a;
+$primary-font-color: #333;
+
+$primary-link-color: #307EA9;
+$primary-border-color: $lightgray;
+$background-color: #eee;
+//$background-color: #141414;
+
+$navigation-color: $white;
+$navigation-font-color: $primary-font-color;
+
+$small2-width: 767px;
+$small-width: 584px;
+// 480, 540
+
+$font-size: 1.2em;
+
+$lg: 1200px;
+$md: 992px;
+$sm: 768px;
+$xs: 480px;
+
+// old border color: #1f1f22 #e6e6e6
+
+
+$z-layers: (
+ "imageBackground":  0,
+  "imageText":  10,
+);
+
+@function z($layer) {
+  @if not map-has-key($z-layers, $layer) {
+    @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+  }
+  @return map-get($z-layers, $layer);
+}
+
+//@mixin z($key) {
+//  z-index: map-get($z-index-map, $key);
+//}

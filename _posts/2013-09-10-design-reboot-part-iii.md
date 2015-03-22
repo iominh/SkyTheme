@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [blog, design]
 ---
-{% include JB/setup %}
+
 
 It's been a little over a month since my last redesign and I've decided to
 change things yet again. I'm not sure what I was thinking when I decided

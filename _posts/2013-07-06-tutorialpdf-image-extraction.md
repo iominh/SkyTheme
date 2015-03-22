@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [tutorial,java,iText,PDF,images]
 ---
-{% include JB/setup %}
+
 
 In my effort to give back to open source, I'm going to start writing tutorials
 and sample code on GitHub for snippets of code that I've written or used. 

@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [music, spotify, youtube, work]
 ---
-{% include JB/setup %}
+
 
 In an attempt to branch out and post about something not related to startups or coding, I thought I'll experiment
 with posting some music I like listening to while at work. Usually I think sharing music isn't

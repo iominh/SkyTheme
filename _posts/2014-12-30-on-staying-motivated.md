@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [blog]
 ---
-{% include JB/setup %}
+
 
 It's been a while since I've last posted but part of the problem is that I haven't been motivated to work on
 my personal projects. While work has been interesting (I've been developing a web-based 3d map application with

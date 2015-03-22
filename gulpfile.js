@@ -3,6 +3,7 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var replace = require('gulp-regex-replace');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -57,6 +58,16 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
     gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+});
+
+
+gulp.task('replace', function () {
+  gulp.src('_posts/**/*')
+    .pipe(replace({
+        regex:'{% include JB/setup %}', 
+        replace:''
+    }))
+    .pipe(gulp.dest('_posts'));
 });
 
 /**

@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: []
 ---
-{% include JB/setup %}
+
 
 This post is just a collection of various articles and interesting sites I've bookmarked over some time. I'll keep
 updating as I find more stuff.

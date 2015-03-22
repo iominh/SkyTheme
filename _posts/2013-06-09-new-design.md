@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [medium, typography, design]
 ---
-{% include JB/setup %}
+
 
 Recently I decided to change my design, so I greatly simplified everything
 (removed Isotope, distracting colors) and focused on large, readable fonts.

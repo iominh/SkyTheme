@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [isotope]
 ---
-{% include JB/setup %}
+
 
 In this post, I wanted to describe a new feature that I
 developed to solve a UI problem with my blog: there's way too many posts

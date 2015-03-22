@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [github ssh]
 ---
-{% include JB/setup %}
+
 
 This post is more for myself since I always get SSH authentication errors
 when using SourceTree and GitHub after rebooting since I forget to ssh-add my github ssh key.

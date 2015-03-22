@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [jekyll]
 ---
-{% include JB/setup %}
+
 
 In this post, I want to describe how I plan to rebuild this website. When I initially created this site, I built it
 from Jekyll bootstrap (with Bootstrap 2), so it's starting to show its age. Since then my skills have improved

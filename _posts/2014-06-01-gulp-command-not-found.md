@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [gulp, osx, mac, npm, node, nodejs]
 ---
-{% include JB/setup %}
+
 
 Recently I was trying out Gulp (normally I use Grunt) but after running 'npm install -g gulp' everything seemed
  to install fine except I got a 'gulp command not found' error after trying to run 'gulp'

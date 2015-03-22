@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [jersey2, jboss7]
 ---
-{% include JB/setup %}
+
 
 Recently I got an email asking how I deployed Jersey2 on JBoss 7.x (specifically 7.1.1) while still being able to
 access Jersey resources ([see my Stackoverflow post here](http://stackoverflow.com/questions/21173397/jersey-2-on-jboss-7)).

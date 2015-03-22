@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [javascript, closure]
 ---
-{% include JB/setup %}
+
 
 JavaScript can be tricky to understand. For example,
 look at the following functions:

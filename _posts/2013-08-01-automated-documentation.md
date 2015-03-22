@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [javadoc, documentation, java, maven]
 ---
-{% include JB/setup %}
+
 
 Software documentation is terrible in general. Most of the time it's 
 missing, out of date, or just plain incorrect. Usually it's because

@@ -5,7 +5,7 @@ description: ""
 category: tech 
 tags: [sonar, sonarQube, jacoco, testNG, junit, java, cobertura]
 ---
-{% include JB/setup %}
+
 
 Sonar/SonarQube is a great platform for measuring 
 <a href="http://www.sonarqube.com" target="_blank">code quality</a>.

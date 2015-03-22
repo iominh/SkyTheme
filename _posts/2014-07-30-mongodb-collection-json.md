@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [mongodb]
 ---
-{% include JB/setup %}
+
 
 Hopefully this helps someone out there but here's a command to output syntactically valid JSON from a MongoDB
 collection that's pretty printed and excludes metadata like "_id" and and "__v":

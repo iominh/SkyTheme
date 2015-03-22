@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [SyntaxHighlighter, highlightJS, highlight, octopress, prettify]
 ---
-{% include JB/setup %}
+
 
 I've changed syntax highlighters yet again. This time I've decided to use [Google-Code-Prettify](https://code.google.com/p/google-code-prettify/).
 In a [previous post](/tech/2013/06/23/highlightjs-vs-syntaxhighlighter/) I compared HighlightJS vs Syntax Highlighter

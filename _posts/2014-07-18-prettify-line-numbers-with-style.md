@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [prettify, google, line numbers]
 ---
-{% include JB/setup %}
+
 
 In this post I wanted to share how to enable line numbers using [Google Code Prettify](https://code.google.com/p/google-code-prettify/)
 with a bit of style.

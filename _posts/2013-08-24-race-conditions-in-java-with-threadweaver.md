@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [java, threadweaver, multithreading]
 ---
-{% include JB/setup %}
+
 
 Writing code to test race conditions is tough. Recently I looked at
 [ThreadWeaver](https://code.google.com/p/thread-weaver/), which is a framework 

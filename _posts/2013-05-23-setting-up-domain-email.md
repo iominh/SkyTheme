@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [email, gandi.net, linode, google]
 ---
-{% include JB/setup %}
+
 
 In this post I wanted to share how  I changed my site's email from minhongrails@gmail.com to hello@minh.io. 
 First, why create a domain email? Well, it lets you create any number of handles

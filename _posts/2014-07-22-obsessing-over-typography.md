@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [typography, ems, rems]
 ---
-{% include JB/setup %}
+
 
 Lately I've been obsessing over how I can improve this site and particularly its typography. Ideally I want
 the text to be perfect at all resolutions without requiring a user to zoom in or out and it has to work

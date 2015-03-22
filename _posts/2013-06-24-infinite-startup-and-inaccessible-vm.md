@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [VMWare, Linux]
 ---
-{% include JB/setup %}
+
 
 In this post I wanted to document some issues I recently encountered. 
 

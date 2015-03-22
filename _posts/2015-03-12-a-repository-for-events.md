@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [jekyll]
 ---
-{% include JB/setup %}
+
 
 I've been inspired by many others and have decided to create a repository of upcoming events, initially
  starting with developer conferences and hackathons but eventually I'll try to expand to other areas. This

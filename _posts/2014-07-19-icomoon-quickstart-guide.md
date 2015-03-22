@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [icomoon]
 ---
-{% include JB/setup %}
+
 
 In this post I wanted to provide a quick guide to using Icomoon icons (which I'm using in my navbar). I found the official documentation to
 be terribly lacking in terms of showing code so I can be up and running in less than 5 minutes. That's my goal

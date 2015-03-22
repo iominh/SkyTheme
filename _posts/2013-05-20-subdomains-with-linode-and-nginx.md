@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [subdomains, linode, nginx]
 ---
-{% include JB/setup %}
+
 
 This post will show how I created subdomains on my Linode box with Nginx. Overall it was
 very easy and although I'm using Linode and nginx as a reference, I assume this could be generalized

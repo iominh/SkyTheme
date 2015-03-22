@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [meteor, nodejs]
 ---
-{% include JB/setup %}
+
 
 Recently I've decided to learn [Meteor JS](http://www.meteor.com/), which is an "open-source platform for building top-quality web apps in a fraction of the time."
 It's super fast (i.e. great for hackathons) to get an application up and running. I've only been using Meteor for a couple of days

@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [phone]
 ---
-{% include JB/setup %}
+
 
 I need to upgrade my iPhone 4S and I've narrowed my choices to some of the current best phones: the iPhone6, iPhone6+,
 HTC M8 / HTC Desire Eye, and the Samsung S5. Since I'm currently not on a contract (I decided to wait a generation

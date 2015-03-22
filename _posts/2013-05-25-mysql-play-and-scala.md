@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [scala, mysql, play]
 ---
-{% include JB/setup %}
+
 
 Recently I had a chance to try out the Play Framework's Computer Database sample,
 which shows database access, CRUD forms, and integration with a CSS framework.

@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [blog]
 ---
-{% include JB/setup %}
+
 
 I've decided to update my website design yet again. This time, I'm rebuilding the site from the ground up, using Octopress
 instead of Jekyll Bootstrap. Everything will be open sourced like before, but this time my goal is to make the theme

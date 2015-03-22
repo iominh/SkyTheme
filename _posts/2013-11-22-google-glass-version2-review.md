@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [glass, reviews]
 ---
-{% include JB/setup %}
+
 
 In this post I wanted to describe my experiences with the Google Glass Explorer
 Version2 edition. Please note that I am not a professional reviewer and this post

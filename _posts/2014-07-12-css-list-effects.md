@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [css3, transforms, transitions, animations]
 ---
-{% include JB/setup %}
+
 
 In this post I want to show how to use CSS3 transforms to smoothly transition list elements as they are added and removed.
 The example below has an "Add Item" button that demonstrates how items slide into position while the "delete" button

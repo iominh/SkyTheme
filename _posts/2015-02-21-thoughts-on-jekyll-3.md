@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [jekyll]
 ---
-{% include JB/setup %}
+
 
 Today I upgraded to Jekyll 3.0.0.pre.beta1 from Jekyll 2.5.3 and wanted to share my experience with the process.
 The primary reason I upgraded was because Jekyll 2.5 was slooowww and it was a pain to update the site because

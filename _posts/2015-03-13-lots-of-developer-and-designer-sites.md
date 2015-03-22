@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: []
 ---
-{% include JB/setup %}
+
 
 As a follow-up to my [previous post about creating a repository for events]({% post_url 2015-03-12-a-repository-for-events %}),
 I thought I'll also create an open source list of public personal sites or portfolios of developers and designers, mostly

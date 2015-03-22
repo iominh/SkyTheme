@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [play, java, foodwall]
 ---
-{% include JB/setup %}
+
 
 A while ago I made a claim that I would release my "Foodwall" project
 within 2 months from its initial proof of concept. Well, I dropped the ball

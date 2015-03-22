@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [angularjs, angular, scrollbars]
 ---
-{% include JB/setup %}
+
 
 Recently I needed to style scrollbars within a dark themed web application that looked consistent between
 different web browsers. TLDR; I created a lightweight AngularJS built on top of Malihu's scrollbars.

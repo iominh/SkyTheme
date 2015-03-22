@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [javafx, cocoa, objective c]
 ---
-{% include JB/setup %}
+
 
 It's been a while since I last posted so here's some minor updates on what I've been up to:
 

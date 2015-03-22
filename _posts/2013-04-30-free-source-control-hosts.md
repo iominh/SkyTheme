@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [git, bitbucket, github, scm, svn]
 ---
-{% include JB/setup %}
+
 
 Most developers know the value of source control management (SCM) so I won't 
 emphasize its awesomeness. In this post I  wanted to share my 

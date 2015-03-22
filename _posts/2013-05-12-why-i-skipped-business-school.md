@@ -5,7 +5,7 @@ description: ""
 category: business
 tags: [careers, mba, business school]
 ---
-{% include JB/setup %}
+
 
 Several years ago I had an opportunity to attend business school.
 I prepared for months, wrote essays for applications, took the GMAT, and 

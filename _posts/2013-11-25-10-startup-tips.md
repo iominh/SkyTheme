@@ -5,7 +5,7 @@ description: ""
 category:  tech
 tags: [startup, VC, venture capital]
 ---
-{% include JB/setup %}
+
 
 Recently I've been obsessed with learning as much as I can about startups and business. As such, I came across
 a fantastic video from Google I/O 2011 titled: [How to Get Your Startup Idea Funded by Venture Capitalists](http://www.youtube.com/watch?v=15iWltPLuPY).

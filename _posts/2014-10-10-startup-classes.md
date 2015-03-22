@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [startup]
 ---
-{% include JB/setup %}
+
 
 Recently I've been listening to the lectures from [Sam Altman's (Y Combinator) startup classes](http://startupclass.samaltman.com/).
 Here are some of my favorite parts from each of the lectures:

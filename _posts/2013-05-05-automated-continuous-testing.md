@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [continuous integration, testing, travis CI, github, selenium, tdd, test driven development, jenkins]
 ---
-{% include JB/setup %}
+
 
 Testing across many different platforms and browsers has always been tough.
 With so many different browsers and devices, it actually becomes impossible 

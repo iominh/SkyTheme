@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [hackathon, D&B]
 ---
-{% include JB/setup %}
+
 
 This weekend I attended the DC Tech <a href="http://www.istrategylabs.com/" target="_blank">iStrategyLabs</a> / <a href="https://dnbdctech.eventbrite.com/" target="_blank">D&amp;B Hackathon</a> and won an 
 honorable mention prize for $1,000 out of ~13 teams. Woohoo! I'll admit

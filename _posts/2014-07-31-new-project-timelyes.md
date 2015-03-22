@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [startups, timely, ideas]
 ---
-{% include JB/setup %}
+
 
 In this post I wanted to share a problem I've recently encountered and a new project that I've been working
 on that I hope will solve that problem. Tentatively, I've called the project [Timely.es](http://timely.es).

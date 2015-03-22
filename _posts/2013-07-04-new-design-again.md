@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [design]
 ---
-{% include JB/setup %}
+
 
 It seems that I update this blog's design nearly every month. Well, this
 month is no exception and here's the latest changes:

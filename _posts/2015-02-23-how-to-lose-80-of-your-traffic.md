@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [jekyll]
 ---
-{% include JB/setup %}
+
 
 Over the weekend I noticed a sharp drop in my traffic (albeit I don't really get any traffic) and figured out
 the issue: a whole bunch of my Google links were throwing 404 errors because I didn't update my Google Webmaster

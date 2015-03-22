@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [startup]
 ---
-{% include JB/setup %}
+
 
 In the [first startup school project](http://startupclass.samaltman.com/lists/projects/), we're supposed to
 "keep a log of all the things that seem to be missing and all the problems [we] encounter in life."

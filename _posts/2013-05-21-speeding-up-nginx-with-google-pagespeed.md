@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [nginx, pagespeed, ngx_pagespeed, google]
 ---
-{% include JB/setup %}
+
 
 Today I had a chance to try out <a href="https://developers.google.com/speed/pagespeed/mod" target="_blank">Google's PageSpeed</a> tool for nginx, which
 "rewrites your webpages to make them faster for your users. This includes compressing 

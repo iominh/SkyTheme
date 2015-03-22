@@ -5,7 +5,7 @@ description: ""
 category: tech
 tags: [regex]
 ---
-{% include JB/setup %}
+
 
 It's great being a programmer. Recently I had to modify and replace various matching strings in 26 files. I'm not sure how
 tedious, sucky, and error-prone this would be if I did this manually but luckily I'm a programmer and quickly wrote

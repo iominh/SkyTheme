@@ -5,7 +5,7 @@ description: ""
 category: blog
 tags: [tech]
 ---
-{% include JB/setup %}
+
 
 I've been doing a poor job of updating this site recently and this post is my commitment to make an improvement.
 

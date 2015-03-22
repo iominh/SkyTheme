@@ -3,7 +3,7 @@
 
 def proc_file(fname) 
   text = File.read(fname)
-  newText = text.gsub(/<div class="spotlight">(.*)<\/div>/, '<p class="spotlight">\1</p>')
+  newText = text.gsub(/<div class="mSpotlight">(.*)<\/div>/, '<p class="spotlight">\1</p>')
   #newText = text.gsub(/\<div class="spotlight"\>(.*)\<//div//>/, '<p class=spotlight>$1</p>')
   File.open(fname, "w") {|file| file.puts newText}
   puts "Processed " + fname

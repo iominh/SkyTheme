@@ -7,11 +7,11 @@ tags: [SyntaxHighlighter, highlightJS, highlight, octopress]
 ---
 
 
-<div class="mSpotlight">Update 2/1/14</div>
+<p class="spotlight">Update 2/1/14</p>
 
 I've [changed syntax highlighters](/tech/2014/01/30/prettyprint-syntax-highlighting/), so see [this version](http://design7.minh.io/tech/2013/06/23/highlightjs-vs-syntaxhighlighter/), which uses Highlight.js
 
-<div class="mSpotlight">Summary</div>
+<p class="spotlight">Summary</p>
 
 
 In this post I want to compare two syntax highlighters: <a href="http://softwaremaniacs.org/soft/highlight/en/" target="_blank">Highlight.js</a> and  <a href="http://alexgorbatchev.com/SyntaxHighlighter/" target="_blank">Syntax Highlighter</a>.
@@ -25,13 +25,13 @@ the default highlight.js theme to its Solarized theme.
 
 Nonetheless, I switched from HighlightJS to SyntaxHighlighter <a href="http://design3.minh.io/tech/2013/05/13/maven3-on-ubuntu-1304/" target="_blank">briefly</a> but decided to switch back because:
 
-<div class="mSpotlight">Syntax Highlighter requires more imports</div>
+<p class="spotlight">Syntax Highlighter requires more imports</p>
 
 You need to import lots of different brushes for different languages. Highlight.js only has 2 imports and you can even use a CDN like Yandex so it's really only 
 a couple lines to start using it.
 
 
-<div class="mSpotlight">Syntax Highlighter is noticeably slower</div>
+<p class="spotlight">Syntax Highlighter is noticeably slower</p>
 
 For whatever reason, despite my best efforts, Syntax Highlighter always
 seems to take a moment after loading the page before it applies styling, which
@@ -40,7 +40,7 @@ both in official examples as well as other sites.
 
 Highlight.js, however, worked out of the box and I didn't notice anything similar.
 
-<div class="mSpotlight">Highlight.js' Solarized theme is brilliant</div>
+<p class="spotlight">Highlight.js' Solarized theme is brilliant</p>
    
 <pre class="prettyprint">
 <code class="ruby">class Float

@@ -1,7 +1,7 @@
 /**
  * Vertical rhythm
  */
-h1, h2, h3, h4, p, ul, ol, pre, img {
+h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, iframe, hr, dl, table {
   @include container;
   @include vertical-rhythm;
 }
@@ -57,8 +57,8 @@ h2 {
 
 h3 {
   margin-top: 1.5rem;
-  color: #808c99;
-  text-transform: uppercase;
+//  color: #808c99;
+//  text-transform: uppercase;
 }
 
 /**

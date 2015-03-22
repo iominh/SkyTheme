@@ -83,3 +83,9 @@
     text-shadow: -1px -1px $background-color, -1px 1px $background-color, 1px -1px $background-color, 1px 1px $background-color
   }
 }
+
+// Antialiasing of fonts
+@mixin antialiasing() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

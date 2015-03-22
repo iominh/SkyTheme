@@ -17,7 +17,7 @@ with minimal effort. However, after spending a couple of hours using it I was
 disappointed because it was not simple to install and the performance boost was
 minimal. Granted I can probably tweak some settings so I'm still optimistic.
 
-<div class="mSpotlight">Performance Experiments</div>
+<p class="spotlight">Performance Experiments</p>
 I ran basic tests comparing 5 different pages using Pingdom's tools to measure
 the page load times and PageSpeed scores with mod_pagespeed enabled and disabled.
 Each test was run against the New York location and run at least 2 times with
@@ -116,7 +116,7 @@ in some cases)
     </tr>
 </table>
 
-<div class="mSpotlight">Conclusion</div>
+<p class="spotlight">Conclusion</p>
 
 Overall, there were mixed results. My Google PageSpeed
 scores improved but sometimes latencies actually increased. I
@@ -130,7 +130,7 @@ my head yielded 30-50% latency improvements.
 
 I'll come back later and update this post as I use ngx_pagespeed some more.
 
-<div class="mSpotlight">Install Notes</div>
+<p class="spotlight">Install Notes</p>
 
 In a perfect world it would've nice to run something like
 "apt-get install nginx_pagespeed" but unfortunately it was more involved than

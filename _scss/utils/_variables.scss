@@ -52,15 +52,18 @@ $black: #2B2B2B;
 /// @require $light-pink
 $main-color: $light-blue;
 
+$hover-color: darken($light-blue, 20%);
+
 /// Title color
 /// @type Color
 /// @require light-black
 $title-color: $light-black;
 
+
 /// Secondary color
 /// @type Color
-/// @require $dark-pink
-$secondary-color: $dark-blue;
+/// @require light-black
+$secondary-color: $light-black;
 
 /// Note background
 /// @type Color

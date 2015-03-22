@@ -18,6 +18,8 @@ html {
 body {
   font: 1.125em/1.4 $text-font-stack;
   color: #333;
+  @include prefix(box-sizing, border-box, webkit moz);
+  @include antialiasing();
 }
 
 
@@ -28,12 +30,12 @@ a,
 .link-like {
   text-decoration: none;
   cursor: pointer;
-  color: inherit;
+  color: $main-color;
   transition: .15s;
 
    @include on-event {
-    color: $main-color;
-  }
+    color: $hover-color;
+   }
 }
 
 //@include beautify-links(white);

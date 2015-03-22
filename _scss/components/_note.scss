@@ -1,0 +1,22 @@
+/**
+ * Notes
+ */
+.note {
+  @include vertical-rhythm;
+  background: $note-background;
+  padding: 2rem;
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  > p:first-child::before {
+    font-weight: 700;
+  }
+
+  @include beautify-links($note-background);
+}

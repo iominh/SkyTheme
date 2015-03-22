@@ -1,0 +1,73 @@
+/**
+ * Buttons
+ */
+.button {
+  @include vertical-rhythm;
+  padding: 1rem;
+  border: .25em solid;
+  color: $secondary-color;
+  display: block;
+  border-radius: .3em;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  @include on-event {
+    color: $main-color;
+  }
+
+  @include respond-to("medium") {
+    display: inline-block;
+  }
+
+  /**
+   * Icons within buttons
+   * 1. Make them same color as text
+   * 2. Adjust vertical align
+   */
+  svg {
+    fill: currentcolor; /* 1 */
+    @include prefix(transform, translateY(1px), webkit ms); /* 2 */
+  }
+}
+
+.button-wrapper {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.button-ui {
+  display: block;
+  cursor: pointer;
+  margin: 1rem;
+  padding: .5rem;
+  font-size: .8em;
+  border-radius: .35em;
+  color: #999;
+  border: .25em solid;
+  background: transparent;
+  text-align: center;
+  font-weight: 400;
+
+  svg {
+    fill: currentcolor;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include on-event {
+    color: $secondary-color;
+  }
+}
+
+/**
+ * Button to get back to top of the page
+ */
+.button-ui--back {
+  right: 0;
+  bottom: 0;
+
+  @include respond-to('medium') {
+    position: fixed;
+  }
+}

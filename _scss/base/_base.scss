@@ -1,0 +1,56 @@
+/**
+ * Make all elements inherit from `html` box-sizing
+ */
+* {
+  @include prefix(box-sizing, inherit, webkit moz);
+}
+
+/**
+ * Redefine box-sizing on the root element
+ */
+html {
+  @include prefix(box-sizing, border-box, webkit moz);
+}
+
+/**
+ * Basic typography styles
+ */
+body {
+  font: 1.125em/1.4 $text-font-stack;
+  color: #333;
+}
+
+
+/**
+ * Links
+ */
+a,
+.link-like {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  transition: .15s;
+
+   @include on-event {
+    color: $main-color;
+  }
+}
+
+/**
+ * Custom underlines for links that are neither buttons nor anchor links
+ */
+a:not([class*='button']):not(.anchor-link),
+.link-like {
+  background: -webkit-linear-gradient(currentcolor, currentcolor) no-repeat bottom 2px center;
+  background: linear-gradient(currentcolor, currentcolor) no-repeat bottom 2px center;
+  background-size: 100% 1px;
+}
+
+@include beautify-links(white);
+
+/**
+ * Inline code
+ */
+:not(pre) > code {
+  color: #6b717f;
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*****************************************************************************/
 /*
 /* Common
@@ -104,7 +105,7 @@ a:visited {
 
 .footer .rss {
   margin-top: 1.1em;
-  margin-right: -0.2em;
+  margin-right: -.2em;
   float: right; }
 
 .footer .rss img {
@@ -119,7 +120,7 @@ a:visited {
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
-  padding: 0 0.4em; }
+  padding: 0 .4em; }
 
 .post ul, .post ol {
   margin-left: 1.35em; }
@@ -127,7 +128,7 @@ a:visited {
 .post code {
   border: 1px solid #ddd;
   background-color: #eef;
-  padding: 0 0.2em; }
+  padding: 0 .2em; }
 
 .post pre code {
   border: none; }
@@ -395,5 +396,1203 @@ a:visited {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+/**
+ * Make all elements inherit from `html` box-sizing
+ */
+* {
+  box-sizing: inherit; }
+
+/**
+ * Redefine box-sizing on the root element
+ */
+html {
+  box-sizing: border-box; }
+
+/**
+ * Basic typography styles
+ */
+body {
+  font: 1.125em/1.4 "Droid Sans", "Helvetica", "Arial", sans-serif;
+  color: #333; }
+
+/**
+ * Links
+ */
+a, .link-like {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  -webkit-transition: .15s;
+          transition: .15s; }
+  a:hover, a:active, a:focus, .link-like:hover, .link-like:active, .link-like:focus {
+    color: #c69; }
+
+/**
+ * Custom underlines for links that are neither buttons nor anchor links
+ */
+a:not([class*='button']):not(.anchor-link), .link-like {
+  background: -webkit-linear-gradient(currentcolor, currentcolor) no-repeat bottom 2px center;
+  background: linear-gradient(currentcolor, currentcolor) no-repeat bottom 2px center;
+  background-size: 100% 1px; }
+
+a, .link-like {
+  text-shadow: -1px -1px white, -1px 1px white, 1px -1px white, 1px 1px white; }
+
+/**
+ * Inline code
+ */
+:not(pre) > code {
+  color: #6b717f; }
+
+/**
+ * Vertical rhythm
+ */
+h1, h2, h3, h4, p, ul, ol, pre, img {
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1.5rem; }
+  @media all and (min-width: 801px) {
+    h1, h2, h3, h4, p, ul, ol, pre, img {
+      padding-left: 0;
+      padding-right: 0; } }
+
+/**
+ * Lists
+ */
+ul, ol {
+  list-style-position: inside; }
+
+ul ul, ul ol, ol ul, ol ol {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding-left: 3rem; }
+
+li {
+  margin-bottom: .5rem; }
+
+/**
+ * Quotes
+ */
+blockquote {
+  margin-bottom: 1.5rem; }
+
+/**
+ * Headings
+ */
+h1, h2, h3 {
+  text-transform: capitalize;
+  position: relative; }
+  h1 code, h2 code, h3 code {
+    text-transform: initial; }
+
+h1 {
+  margin-top: 6rem;
+  font-weight: 700; }
+
+h2 {
+  margin-top: 3rem;
+  color: #b37399; }
+
+h3 {
+  margin-top: 1.5rem;
+  color: #808c99;
+  text-transform: uppercase; }
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%; }
+
+/**
+ * Centered container
+ */
+.container {
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media all and (min-width: 801px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+
+/**
+ * Quotes
+ */
+blockquote {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  background: #d2e1dd;
+  padding: 1rem;
+  overflow: hidden;
+  font-style: italic;
+  /**
+   * Make all children containers
+   */
+  /**
+   * On large screens, add a decorative quote
+   */ }
+  blockquote > * {
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    @media all and (min-width: 801px) {
+      blockquote > * {
+        padding-left: 0;
+        padding-right: 0; } }
+  blockquote a, blockquote .link-like {
+    text-shadow: -1px -1px #d2e1dd, -1px 1px #d2e1dd, 1px -1px #d2e1dd, 1px 1px #d2e1dd; }
+  @media all and (min-width: 801px) {
+    blockquote > :first-child {
+      position: relative; }
+      blockquote > :first-child::before {
+        font-style: normal;
+        content: "“";
+        font-family: "Georgia", serif;
+        position: absolute;
+        font-size: 20em;
+        right: 100%;
+        top: -.3875em;
+        color: rgba(0, 0, 0, 0.05); } }
+
+/**
+ * Dual code blocks
+ * SCSS is default, Sass is hidden
+ */
+[data-syntax="sass"] {
+  display: none; }
+  .sass [data-syntax="sass"] {
+    display: block; }
+
+[data-syntax="scss"] {
+  display: block; }
+  .sass [data-syntax="scss"] {
+    display: none; }
+
+/**
+ * Code blocks
+ */
+.highlight {
+  margin-bottom: 1.5rem;
+  background: #444;
+  color: white;
+  font-size: .9em; }
+  .highlight > pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2rem 1rem;
+    font-family: "Source Code Pro", "Courier New", monospace; }
+    @media all and (min-width: 801px) {
+      .highlight > pre {
+        padding-left: 0;
+        padding-right: 0; } }
+
+.highlight code, .highlight pre {
+  color: #fdce93; }
+
+.highlight .hll {
+  background-color: #222; }
+
+.highlight .c {
+  color: #7f9f7f; }
+
+.highlight .err {
+  color: #e37170;
+  background-color: #3d3535; }
+
+.highlight .g {
+  color: #7f9f7f; }
+
+.highlight .k {
+  color: #f0dfaf; }
+
+.highlight .l {
+  color: #ccc; }
+
+.highlight .n {
+  color: #dcdccc; }
+
+.highlight .o {
+  color: #f0efd0; }
+
+.highlight .x {
+  color: #ccc; }
+
+.highlight .p {
+  color: #5da09f; }
+
+.highlight .cm {
+  color: #7f9f7f; }
+
+.highlight .cp {
+  color: #7f9f7f; }
+
+.highlight .c1 {
+  color: #7f9f7f; }
+
+.highlight .cs {
+  color: #cd0000;
+  font-weight: bold; }
+
+.highlight .gd {
+  color: #cd0000; }
+
+.highlight .ge {
+  color: #ccc;
+  font-style: italic; }
+
+.highlight .gr {
+  color: red; }
+
+.highlight .gh {
+  color: #dcdccc;
+  font-weight: bold; }
+
+.highlight .gi {
+  color: #00cd00; }
+
+.highlight .go {
+  color: gray; }
+
+.highlight .gp {
+  color: #dcdccc;
+  font-weight: bold; }
+
+.highlight .gs {
+  color: #ccc;
+  font-weight: bold; }
+
+.highlight .gu {
+  color: purple;
+  font-weight: bold; }
+
+.highlight .gt {
+  color: #0040D0; }
+
+.highlight .kc {
+  color: #dca3a3; }
+
+.highlight .kd {
+  color: #ffff86; }
+
+.highlight .kn {
+  color: #dfaf8f;
+  font-weight: bold; }
+
+.highlight .kp {
+  color: #cdcf99; }
+
+.highlight .kr {
+  color: #cdcd00; }
+
+.highlight .kt {
+  color: #00cd00; }
+
+.highlight .ld {
+  color: #cc9393; }
+
+.highlight .m {
+  color: #8cd0d3; }
+
+.highlight .s {
+  color: #cc9393; }
+
+.highlight .na {
+  color: #9ac39f; }
+
+.highlight .nb {
+  color: #efef8f; }
+
+.highlight .nc {
+  color: #efef8f; }
+
+.highlight .no {
+  color: #ccc; }
+
+.highlight .nd {
+  color: #ccc; }
+
+.highlight .ni {
+  color: #c28182; }
+
+.highlight .ne {
+  color: #c3bf9f;
+  font-weight: bold; }
+
+.highlight .nf {
+  color: #efef8f; }
+
+.highlight .nl {
+  color: #ccc; }
+
+.highlight .nn {
+  color: #8fbede; }
+
+.highlight .nx {
+  color: #ccc; }
+
+.highlight .py {
+  color: #ccc; }
+
+.highlight .nt {
+  color: #9ac39f; }
+
+.highlight .nv {
+  color: #dcdccc; }
+
+.highlight .ow {
+  color: #f0efd0; }
+
+.highlight .w {
+  color: #ccc; }
+
+.highlight .mf {
+  color: #8cd0d3; }
+
+.highlight .mh {
+  color: #8cd0d3; }
+
+.highlight .mi {
+  color: #8cd0d3; }
+
+.highlight .mo {
+  color: #8cd0d3; }
+
+.highlight .sb {
+  color: #cc9393; }
+
+.highlight .sc {
+  color: #cc9393; }
+
+.highlight .sd {
+  color: #cc9393; }
+
+.highlight .s2 {
+  color: #cc9393; }
+
+.highlight .se {
+  color: #cc9393; }
+
+.highlight .sh {
+  color: #cc9393; }
+
+.highlight .si {
+  color: #cc9393; }
+
+.highlight .sx {
+  color: #cc9393; }
+
+.highlight .sr {
+  color: #cc9393; }
+
+.highlight .s1 {
+  color: #cc9393; }
+
+.highlight .ss {
+  color: #cc9393; }
+
+.highlight .bp {
+  color: #efef8f; }
+
+.highlight .vc {
+  color: #efef8f; }
+
+.highlight .vg {
+  color: #dcdccc; }
+
+.highlight .vi {
+  color: #ffffc7; }
+
+.highlight .il {
+  color: #8cd0d3; }
+
+/**
+ * Buttons
+ */
+.button {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: .25em solid;
+  color: #b37399;
+  display: block;
+  border-radius: .3em;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /**
+   * Icons within buttons
+   * 1. Make them same color as text
+   * 2. Adjust vertical align
+   */ }
+  .button:hover, .button:active, .button:focus {
+    color: #c69; }
+  @media all and (min-width: 801px) {
+    .button {
+      display: inline-block; } }
+  .button svg {
+    fill: currentcolor;
+    /* 1 */
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px);
+    /* 2 */ }
+
+.button-wrapper {
+  text-align: center;
+  padding: 1rem 0; }
+
+.button-ui {
+  display: block;
+  cursor: pointer;
+  margin: 1rem;
+  padding: .5rem;
+  font-size: .8em;
+  border-radius: .35em;
+  color: #999;
+  border: .25em solid;
+  background: transparent;
+  text-align: center;
+  font-weight: 400; }
+  .button-ui svg {
+    fill: currentcolor;
+    display: block;
+    margin: 0 auto; }
+  .button-ui:hover, .button-ui:active, .button-ui:focus {
+    color: #b37399; }
+
+/**
+ * Button to get back to top of the page
+ */
+.button-ui--back {
+  right: 0;
+  bottom: 0; }
+  @media all and (min-width: 801px) {
+    .button-ui--back {
+      position: fixed; } }
+
+/**
+ * Notes
+ */
+.note {
+  margin-bottom: 1.5rem;
+  background: #dadbdf;
+  padding: 2rem; }
+  .note > :first-child {
+    margin-top: 0; }
+  .note > :last-child {
+    margin-bottom: 0; }
+  .note > p:first-child::before {
+    font-weight: 700; }
+  .note a, .note .link-like {
+    text-shadow: -1px -1px #dadbdf, -1px 1px #dadbdf, 1px -1px #dadbdf, 1px 1px #dadbdf; }
+
+/**
+ * Images
+ */
+figure {
+  background: #dadbdf;
+  margin: 0;
+  padding: 2rem; }
+
+figure img {
+  display: block;
+  height: auto; }
+
+figcaption {
+  text-align: center;
+  font-size: .8em;
+  font-style: italic; }
+  figcaption a, figcaption .link-like {
+    text-shadow: -1px -1px #dadbdf, -1px 1px #dadbdf, 1px -1px #dadbdf, 1px 1px #dadbdf; }
+
+/**
+ * Donate blocks
+ */
+.donate {
+  margin-bottom: 1.5rem;
+  background: #f2ece4;
+  text-align: center;
+  padding: 1rem 0; }
+  .donate .button {
+    background: white;
+    margin-left: 0;
+    margin-right: 0; }
+  @media all and (min-width: 801px) {
+    .donate {
+      padding: 1rem; } }
+
+.donate__content {
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media all and (min-width: 801px) {
+    .donate__content {
+      padding-left: 0;
+      padding-right: 0; } }
+
+/**
+ * Anchor links
+ */
+.anchor-link {
+  position: absolute;
+  left: -1.5rem;
+  font-size: .8em;
+  top: .2em;
+  color: #dadbdf; }
+
+/**
+ * Icons
+ */
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px; }
+
+.translation-warning {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  background: #d2e1dd;
+  padding: 1rem;
+  font-size: 1.2em; }
+
+.translation-warning > p {
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media all and (min-width: 801px) {
+    .translation-warning > p {
+      padding-left: 0;
+      padding-right: 0; } }
+  .translation-warning > p a, .translation-warning > p .link-like {
+    text-shadow: -1px -1px #d2e1dd, -1px 1px #d2e1dd, 1px -1px #d2e1dd, 1px 1px #d2e1dd; }
+
+/**
+ * Buttons
+ */
+.button {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: .25em solid;
+  color: #b37399;
+  display: block;
+  border-radius: .3em;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /**
+   * Icons within buttons
+   * 1. Make them same color as text
+   * 2. Adjust vertical align
+   */ }
+  .button:hover, .button:active, .button:focus {
+    color: #c69; }
+  @media all and (min-width: 801px) {
+    .button {
+      display: inline-block; } }
+  .button svg {
+    fill: currentcolor;
+    /* 1 */
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px);
+    /* 2 */ }
+
+.button-wrapper {
+  text-align: center;
+  padding: 1rem 0; }
+
+.button-ui {
+  display: block;
+  cursor: pointer;
+  margin: 1rem;
+  padding: .5rem;
+  font-size: .8em;
+  border-radius: .35em;
+  color: #999;
+  border: .25em solid;
+  background: transparent;
+  text-align: center;
+  font-weight: 400; }
+  .button-ui svg {
+    fill: currentcolor;
+    display: block;
+    margin: 0 auto; }
+  .button-ui:hover, .button-ui:active, .button-ui:focus {
+    color: #b37399; }
+
+/**
+ * Button to get back to top of the page
+ */
+.button-ui--back {
+  right: 0;
+  bottom: 0; }
+  @media all and (min-width: 801px) {
+    .button-ui--back {
+      position: fixed; } }
+
+/**
+ * Icons
+ */
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px; }
+
+/* Container used for styling the custom select, the buttom class below adds the bg gradient, corners, etc. */
+.custom-select {
+  position: relative;
+  display: block;
+  margin: 0.5em;
+  padding: 0;
+  border: .25em solid;
+  color: #b37399;
+  border-radius: 0.3em; }
+
+/* This is the native select, we're making everything but the text invisible so we can see the button styles in the wrapper */
+.custom-select select {
+  width: 100%;
+  margin: 0;
+  background: none;
+  border: 1px solid transparent;
+  outline: none;
+  /* Prefixed box-sizing rules necessary for older browsers */
+  box-sizing: border-box;
+  /* Remove select styling */
+  appearance: none;
+  -webkit-appearance: none;
+  /* Font size must be 16px or larger to prevent iOS page zoom on focus */
+  font-size: 1em;
+  /* General select styles: change as needed */
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+  color: #b37399;
+  padding: .6em 1.9em .5em .8em;
+  line-height: 1.3; }
+
+/* Custom arrow sits on top of the select - could be an image, SVG, icon font, etc. or the arrow could just baked into the bg image on the select. Note this si a 2x image so it will look bad in browsers that don't support background-size. In production, you'd handle this resolution switch via media query but this is a demo. */
+.custom-select::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  top: 50%;
+  right: 1em;
+  margin-top: -4px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAMAAADeWG8gAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFAAAAkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXl5AZAwAAABB0Uk5TABAgMEBQYHCAj5+vv8/f7yMagooAAABRSURBVBgZXcGJFoAQFEXRQwpN7/7/1zZYQnsT0h/e9ANJow041TMPBPUSj03NwcuZPoEiqlqpDhXmqCYVkSbrsdNxpttEb5GUGe06HSOvmeICIxYIyUzm7RkAAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 2;
+  /* This hack make the select behind the arrow clickable in some browsers */
+  pointer-events: none; }
+
+/* Hover style */
+.custom-select:hover {
+  color: #c69; }
+
+/* Focus style */
+.custom-select select:focus {
+  outline: none;
+  box-shadow: 0 0 1px 3px #b4defa;
+  background-color: transparent;
+  color: #c69;
+  border: 1px solid #aaa; }
+
+/* Set options to normal weight */
+.custom-select option {
+  font-weight: normal; }
+
+/* ------------------------------------  */
+/* START OF UGLY BROWSER-SPECIFIC HACKS */
+/* ----------------------------------  */
+/* OPERA - Pre-Blink nix the custom arrow, go with a native select button to keep it simple. Targeted via this hack http://browserhacks.com/#hack-a3f166304aafed524566bc6814e1d5c7 */
+x:-o-prefocus, .custom-select::after {
+  display: none; }
+
+/* IE 10/11+ - This hides native dropdown button arrow so it will have the custom appearance, IE 9 and earlier get a native select - targeting media query hack via http://browserhacks.com/#hack-28f493d247a12ab654f6c3637f6978d5 - looking for better ways to achieve this targeting */
+/* The second rule removes the odd blue bg color behind the text in the select button in IE 10/11 and sets the text color to match the focus style's - fix via http://stackoverflow.com/questions/17553300/change-ie-background-color-on-unopened-focused-select-box */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .custom-select select::-ms-expand {
+    display: none; }
+  .custom-select select:focus::-ms-value {
+    background: transparent;
+    color: #222; } }
+
+/* FIREFOX won't let us hide the native select arrow, so we have to make it wider than needed and clip it via overflow on the parent container. The percentage width is a fallback since FF 4+ supports calc() so we can just add a fixed amount of extra width to push the native arrow out of view. We're applying this hack across all FF versions because all the previous hacks were too fragile and complex. You might want to consider not using this hack and using the native select arrow in FF. Note this makes the menus wider than the select button because they display at the specified width and aren't clipped. Targeting hack via http://browserhacks.com/#hack-758bff81c5c32351b02e10480b5ed48e */
+/* Show only the native arrow */
+@-moz-document url-prefix() {
+  .custom-select {
+    overflow: hidden; }
+
+  .custom-select select {
+    width: 120%;
+    width: calc(100% + em); } }
+
+/* Firefox focus has odd artifacts around the text, this kills that. See https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-focusring */
+.custom-select select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000; }
+
+/* ------------------------------------  */
+/*  END OF UGLY BROWSER-SPECIFIC HACKS  */
+/* ------------------------------------  */
+/**
+ * Header
+ */
+.header {
+  background: #c69;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  padding: 1.5rem 0;
+  margin-bottom: 4.5rem;
+  border-bottom: .5em solid #aa628d; }
+
+/**
+ * Main title
+ */
+.title {
+  margin: 0;
+  max-width: none;
+  font-size: 6em;
+  text-shadow: 1px 1px #aa628d, 2px 2px #aa628d, 3px 3px #aa628d, 4px 4px #aa628d, 5px 5px #aa628d, 6px 6px #aa628d, 7px 7px #aa628d, 8px 8px #aa628d, 9px 9px #aa628d, 10px 10px #aa628d, 11px 11px #aa628d, 12px 12px #aa628d, 13px 13px #aa628d, 14px 14px #aa628d, 15px 15px #aa628d, 16px 16px #aa628d, 17px 17px #aa628d, 18px 18px #aa628d, 19px 19px #aa628d, 20px 20px #aa628d, 21px 21px #aa628d, 22px 22px #aa628d, 23px 23px #aa628d, 24px 24px #aa628d, 25px 25px #aa628d, 26px 26px #aa628d, 27px 27px #aa628d, 28px 28px #aa628d, 29px 29px #aa628d, 30px 30px #aa628d, 31px 31px #aa628d, 32px 32px #aa628d, 33px 33px #aa628d, 34px 34px #aa628d, 35px 35px #aa628d, 36px 36px #aa628d, 37px 37px #aa628d, 38px 38px #aa628d, 39px 39px #aa628d, 40px 40px #aa628d, 41px 41px #aa628d, 42px 42px #aa628d, 43px 43px #aa628d, 44px 44px #aa628d, 45px 45px #aa628d, 46px 46px #aa628d, 47px 47px #aa628d, 48px 48px #aa628d, 49px 49px #aa628d, 50px 50px #aa628d, 51px 51px #aa628d, 52px 52px #aa628d, 53px 53px #aa628d, 54px 54px #aa628d, 55px 55px #aa628d, 56px 56px #aa628d, 57px 57px #aa628d, 58px 58px #aa628d, 59px 59px #aa628d, 60px 60px #aa628d, 61px 61px #aa628d, 62px 62px #aa628d, 63px 63px #aa628d, 64px 64px #aa628d, 65px 65px #aa628d, 66px 66px #aa628d, 67px 67px #aa628d, 68px 68px #aa628d, 69px 69px #aa628d, 70px 70px #aa628d, 71px 71px #aa628d, 72px 72px #aa628d, 73px 73px #aa628d, 74px 74px #aa628d, 75px 75px #aa628d, 76px 76px #aa628d, 77px 77px #aa628d, 78px 78px #aa628d, 79px 79px #aa628d, 80px 80px #aa628d, 81px 81px #aa628d, 82px 82px #aa628d, 83px 83px #aa628d, 84px 84px #aa628d, 85px 85px #aa628d, 86px 86px #aa628d, 87px 87px #aa628d, 88px 88px #aa628d, 89px 89px #aa628d, 90px 90px #aa628d, 91px 91px #aa628d, 92px 92px #aa628d, 93px 93px #aa628d, 94px 94px #aa628d, 95px 95px #aa628d, 96px 96px #aa628d, 97px 97px #aa628d, 98px 98px #aa628d, 99px 99px #aa628d, 100px 100px #aa628d, 101px 101px #aa628d, 102px 102px #aa628d, 103px 103px #aa628d, 104px 104px #aa628d, 105px 105px #aa628d, 106px 106px #aa628d, 107px 107px #aa628d, 108px 108px #aa628d, 109px 109px #aa628d, 110px 110px #aa628d, 111px 111px #aa628d, 112px 112px #aa628d, 113px 113px #aa628d, 114px 114px #aa628d, 115px 115px #aa628d, 116px 116px #aa628d, 117px 117px #aa628d, 118px 118px #aa628d, 119px 119px #aa628d, 120px 120px #aa628d; }
+  @media (max-width: 600px) {
+    .title {
+      font-size: 3em; } }
+
+/**
+ * Baseline
+ */
+.baseline {
+  font-size: 2em;
+  text-transform: initial;
+  color: #c69;
+  margin-bottom: 5rem; }
+  @media all and (min-width: 801px) {
+    .baseline {
+      font-size: 2.5em; } }
+
+/**
+ * Footer
+ */
+.footer {
+  background: #dadbdf;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem; }
+
+.footer__metadata {
+  margin-bottom: 0; }
+
+.footer__authors {
+  font-size: .9em; }
+
+.aside {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background: white;
+  box-shadow: 0.3em 0 .25em rgba(0, 0, 0, 0.1);
+  -webkit-transition: .15s cubic-bezier(.32, 1, .53, .8);
+          transition: .15s cubic-bezier(.32, 1, .53, .8); }
+  .open .aside {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    overflow: auto; }
+  @media all and (min-width: 801px) {
+    .aside {
+      width: 250px;
+      -webkit-transform: translateX(-250px);
+      -ms-transform: translateX(-250px);
+      transform: translateX(-250px); } }
+  .aside .button {
+    display: block;
+    margin: 0.5rem;
+    padding: 0.5rem; }
+
+.aside__title {
+  background: #c69;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1.25em;
+  margin: 0;
+  text-transform: uppercase; }
+
+.aside__heading {
+  margin: 1rem 0;
+  border-bottom: .1em solid;
+  text-transform: capitalize;
+  font-size: .9em;
+  padding: 0.5rem 0.75rem;
+  color: #444;
+  text-align: right;
+  font-weight: 400; }
+  .aside__title + .aside__heading {
+    margin-top: 0; }
+
+.aside__toggle {
+  position: absolute;
+  background: white;
+  bottom: 0;
+  right: -4.5em; }
+  .open .aside__toggle {
+    right: 0; }
+  @media all and (min-width: 801px) {
+    .aside__toggle {
+      background: transparent; } }
+
+.aside__radio-list {
+  list-style: none;
+  overflow: hidden;
+  margin: -0.5rem 0;
+  padding: 0; }
+  .aside__radio-list label {
+    display: inline-block;
+    cursor: pointer; }
+  .aside__radio-list input {
+    -webkit-transform: translate(-1px, -1px);
+    -ms-transform: translate(-1px, -1px);
+        transform: translate(-1px, -1px); }
+  .aside__radio-list li {
+    margin: 0;
+    float: left;
+    width: 50%; }
+
 body {
   background: white; }

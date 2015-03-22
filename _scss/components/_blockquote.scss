@@ -1,0 +1,40 @@
+/**
+ * Quotes
+ */
+blockquote {
+  margin: 0;
+  @include vertical-rhythm;
+  background: $quote-background;
+  padding: 1rem;
+  overflow: hidden;
+  font-style: italic;
+
+  /**
+   * Make all children containers
+   */
+  > * {
+    @include container;
+  }
+
+  @include beautify-links($quote-background);
+
+  /**
+   * On large screens, add a decorative quote
+   */
+  @include respond-to("medium") {
+    > :first-child {
+      position: relative;
+
+      &::before {
+        font-style: normal;
+        content: "“";
+        font-family: "Georgia", serif;
+        position: absolute;
+        font-size: 20em;
+        right: 100%;
+        top: -.3875em;
+        color: rgba(black, .05);
+      }
+    }
+  }
+}

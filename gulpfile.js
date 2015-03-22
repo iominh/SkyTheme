@@ -4,6 +4,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var replace = require('gulp-regex-replace');
+var rename = require("gulp-rename");
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -40,11 +41,8 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', function () {
-    return gulp.src('_scss/main.scss')
-        .pipe(sass({
-            includePaths: ['scss'],
-            onError: browserSync.notify
-        }))
+    return gulp.src('./_scss/main.scss')
+        .pipe(sass())
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('_site/css'))
         .pipe(browserSync.reload({stream:true}))
@@ -63,9 +61,8 @@ gulp.task('watch', function () {
 
 gulp.task('replace', function () {
   gulp.src('_posts/**/*')
-    .pipe(replace({
-        regex:'{% include JB/setup %}', 
-        replace:''
+    .pipe(rename(function (path) {
+      path.suffix += ".min";
     }))
     .pipe(gulp.dest('_posts'));
 });

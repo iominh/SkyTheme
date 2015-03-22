@@ -1,0 +1,23 @@
+/**
+ * Donate blocks
+ */
+.donate {
+  @include vertical-rhythm;
+  background: $donate-background;
+  text-align: center;
+  padding: 1rem 0;
+
+  .button {
+    background: white;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @include respond-to('medium') {
+    padding: 1rem;
+  }
+}
+
+.donate__content {
+  @include container;
+}

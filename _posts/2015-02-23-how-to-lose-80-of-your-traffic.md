@@ -13,7 +13,10 @@ Tools after updating my permalinks when upgrading to Jekyll 3.
 
 Here's a chart showing the drop in traffic over the weekend:
 
-<a class="lightbox" href="/assets/img/metrics/2_23_15/weekly_history.png"><img class='imageSpotlight' src="/assets/img/metrics/2_23_15/weekly_history.png"/></a>
+
+{% include figure.html src="/assets/img/metrics/2_23_15/weekly_history.png"
+caption="" %}
+
 
 The issue was because in my _config.yml I had the following:
 

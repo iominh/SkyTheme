@@ -10,4 +10,4 @@
 
 #grep -rl '*.md' _posts/ | xargs sed -i 's/<div class="mSpotlight">(.*)</div>/<div class="h2">$1</h2>/g'
 
-find ./_posts/*.md -type f -exec sed -i -e 's/mSpotlight/spotlight/g' {} \;
+find ./_posts/*.md -type f -exec sed -i 's/mSpotlight/spotlight/g' {} \;

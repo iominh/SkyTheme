@@ -1733,5 +1733,8 @@ x:-o-prefocus, .custom-select::after {
     float: left;
     width: 50%; }
 
+figure {
+  background: #fff; }
+
 body {
   background: white; }

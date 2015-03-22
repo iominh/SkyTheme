@@ -14,13 +14,10 @@ a [changelog](https://github.com/minhongrails/blog/commits/master/_posts/2013-11
 
 <div class="spotlight">Photos</div>
 
-<a class="lightbox" href="/assets/img/glass/left.JPG"><img class='imageSpotlight' src="/assets/img/glass/left.JPG" alt="left.JPG" width="900px"/></a>
+{% include figure.html src="/assets/img/glass/left.JPG" caption="Cotton color Glass. There's 5 colors now: Cotton, Charcoal, Tangerine, Shale, and Sky." %}
 
-Cotton color Glass. There's 5 colors now: Cotton, Charcoal, Tangerine, Shale, and Sky.
+{% include figure.html src="/assets/img/glass/shades.JPG" caption="Shades are now available in version 2" %}
 
-<a class="lightbox" href="/assets/img/glass/shades.JPG"><img class='imageSpotlight' src="/assets/img/glass/shades.JPG" alt="shades.JPG" width="900px"/></a>
-
-Shades are now available in version 2
 
 <div class="spotlight">Initial Thoughts</div>
 

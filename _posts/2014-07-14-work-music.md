@@ -15,7 +15,7 @@ Anyway, I'm probably shooting myself in the foot but here's a Spotify playlist o
 actually less vocals because the point of this music is to be background music that amps you up to do some amazing stuff. I also don't normally listen to electronic music, preferring Rock instead, but for work background
 music it's becoming my favorite genre.
 
-<div class="spotlight">Spotify Playlist</div>
+<p class="spotlight">Spotify Playlist</p>
 
 <iframe class="spotifyPlayer" src="https://embed.spotify.com/?uri=spotify:user:mnguyen3:playlist:0T3Yv8WAjFnjDF7IoQ6qko&theme=white"
   width="800" height="725" frameborder="0" allowtransparency="true">
@@ -24,7 +24,7 @@ music it's becoming my favorite genre.
 (There should be a Spotify player above. Otherwise, something screwed up). Anyway, for anyone who wants to share their
 Spotify playlists and customize the widget for their site, here's the [documentation](https://developer.spotify.com/technologies/widgets/spotify-play-button/) I used to set it up.
 
-<div class="spotlight">Other Music</div>
+<p class="spotlight">Other Music</p>
 
 Video game music actually works out very well while working as well it's meant to be background music. When listening to some of these
 official soundtracks, doesn't it feel like you're on a grand quest to save the world?

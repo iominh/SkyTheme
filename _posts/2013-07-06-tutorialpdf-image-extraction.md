@@ -12,7 +12,7 @@ and sample code on GitHub for snippets of code that I've written or used.
 This particular tutorial will cover how to extract images from a PDF, store
 them to a folder, and execute everything from the command line.
 
-<div class="spotlight">Background</div>
+<p class="spotlight">Background</p>
 
 Initially I looked at [Apache PDFBox](http://pdfbox.apache.org/), which looked great because
 of its Apache license. Unfortunately, it didn't meet my rule of "must work in
@@ -37,7 +37,7 @@ an IDE with all dependencies downloaded.
 * I noticed that some images came out with inverted colors, so I may come back
 to fix that later.
 
-<div class="spotlight">Quickstart</div>
+<p class="spotlight">Quickstart</p>
 
 I created a [sample Github project](https://github.com/minhongrails/iTextTutorials),
 which can be executed with the following steps assuming you have Maven and git installed:
@@ -61,7 +61,7 @@ files set up with all of the dependencies so that you're ready to start coding:
 <div><pre class="prettyprint"><code class="bash">mvn eclipse:eclipse
 </code></pre></div>
 
-<div class="spotlight">Code</div>
+<p class="spotlight">Code</p>
 
 Everything is available on GitHub but this section will show
 the code if you don't like GitHub or Maven for some reason:

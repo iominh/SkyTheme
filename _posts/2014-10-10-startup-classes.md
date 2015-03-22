@@ -10,14 +10,14 @@ tags: [startup]
 Recently I've been listening to the lectures from [Sam Altman's (Y Combinator) startup classes](http://startupclass.samaltman.com/).
 Here are some of my favorite parts from each of the lectures:
 
-<div class="spotlight">Lecture 1 </div>
+<p class="spotlight">Lecture 1 </p>
 
 [Link](http://startupclass.samaltman.com/courses/lec01/)
 
 - Ben Silbermann, the founder of Pinterest, recruited the initial Pinterest users by chatting up strangers in coffee
 shops [and] he also used to run around the Apple Store in Palo Alto and set all of the browsers to the Pinterest homepage.
 
-<div class="spotlight">Lecture 4 </div>
+<p class="spotlight">Lecture 4 </p>
 
 [Link](http://startupclass.samaltman.com/courses/lec04/)
 

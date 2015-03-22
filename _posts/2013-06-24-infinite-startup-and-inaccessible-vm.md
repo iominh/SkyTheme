@@ -9,7 +9,7 @@ tags: [VMWare, Linux]
 
 In this post I wanted to document some issues I recently encountered. 
 
-<div class="spotlight">VMware Fusion guest inaccessible from host</div>
+<p class="spotlight">VMware Fusion guest inaccessible from host</p>
 
 Sometimes when I get a VM I need to change its network settings so that
 it's visible to the internet as well as other machines on the network. 
@@ -42,7 +42,7 @@ ONBOOT=yes
 * Additionally, <b>/etc/hosts</b> may need to be updated with the new IP address,
 or else you may encounter the next issue...
 
-<div class="spotlight">Linux Startup Script Loops Forever</div>
+<p class="spotlight">Linux Startup Script Loops Forever</p>
 
 If you ever boot up a VM and encounter a messed up startup script (e.g.
 one that loops infinitely attempting to connect to an unknown host/IP) then

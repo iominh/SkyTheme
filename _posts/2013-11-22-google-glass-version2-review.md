@@ -12,14 +12,14 @@ Version2 edition. Please note that I am not a professional reviewer and this pos
 will continuously change as I spend more time with it. I'll be keeping
 a [changelog](https://github.com/minhongrails/blog/commits/master/_posts/2013-11-22-google-glass-version2-review.md) though.
 
-<div class="spotlight">Photos</div>
+<p class="spotlight">Photos</p>
 
 {% include figure.html src="/assets/img/glass/left.JPG" caption="Cotton color Glass. There's 5 colors now: Cotton, Charcoal, Tangerine, Shale, and Sky." %}
 
 {% include figure.html src="/assets/img/glass/shades.JPG" caption="Shades are now available in version 2" %}
 
 
-<div class="spotlight">Initial Thoughts</div>
+<p class="spotlight">Initial Thoughts</p>
 
 I've only been using Glass for less than a day but it seems promising so far.
 Initially it was annoying to set up because the mobile site of www.google.com/myglass

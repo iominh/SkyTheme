@@ -9,6 +9,7 @@
   padding: 1.5rem 0;
   margin-bottom: 4.5rem;
   border-bottom: .5em solid darken($secondary-color, 5%);
+  min-height: 10rem;
 
   a {
     @include on-event {

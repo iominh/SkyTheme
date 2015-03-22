@@ -1613,7 +1613,8 @@ x:-o-prefocus, .custom-select::after {
   overflow: hidden;
   padding: 1.5rem 0;
   margin-bottom: 4.5rem;
-  border-bottom: .5em solid #1f526d; }
+  border-bottom: .5em solid #1f526d;
+  min-height: 10rem; }
   .header a:hover, .header a:active, .header a:focus {
     color: #222; }
 

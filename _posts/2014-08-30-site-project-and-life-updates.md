@@ -9,7 +9,7 @@ tags: [javafx, cocoa, objective c]
 
 It's been a while since I last posted so here's some minor updates on what I've been up to:
 
-<div class="spotlight">Site Updates</div>
+<p class="spotlight">Site Updates</p>
 
 I updated the site slightly to improve readability. I've been reading that [50-75 characters per line](http://baymard.com/blog/line-length-readability)
  is optimal for readability and I calculated ~92 characters per line with my current site at 1200px. So, I bumped up the
@@ -24,7 +24,7 @@ which is an excellent dark-themed blog on Cocoa development and has a cool hacke
 
 Please check out my [previous post](/tech/2014/07/20/design-104/) to see older versions.
 
-<div class="spotlight">Life Updates</div>
+<p class="spotlight">Life Updates</p>
 
 I've been trying to enjoy the summer and recently went to Chicago to attend Wizard World's Comic Con while also
 exploring Chicago for the first time. I didn't take too many good photos but I'll try to add some later. My hope is
@@ -40,7 +40,7 @@ and interesting characters. I think I primarily like it because of its character
 
 In other news, I got a new chair for my home office that I think is great :). More on that later...
 
-<div class="spotlight">Project Updates</div>
+<p class="spotlight">Project Updates</p>
 
 Timely mostly became a flop after my last post because I got busy with work and all of the above. I still believe in
 the idea and will see if I can work on it some more.

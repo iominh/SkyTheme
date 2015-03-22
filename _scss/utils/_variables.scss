@@ -22,6 +22,12 @@ $dark-grey: #444;
 /// @type Color
 $light-pink: #c69;
 
+/// Light blue
+// @type Color
+$light-blue: #307EA9;
+
+$dark-blue: darken($light-blue, 10%);
+
 /// Dark pink
 /// @type Color
 $dark-pink: #b37399;
@@ -34,15 +40,24 @@ $light-yellow: #f2ece4;
 /// @type Color
 $light-green: #d2e1dd;
 
+/// Light black
+/// @type Color
+$light-black: #222;
+
 /// Main color
 /// @type Color
 /// @require $light-pink
-$main-color: $light-pink;
+$main-color: $light-blue;
+
+/// Title color
+/// @type Color
+/// @require light-black
+$title-color: $light-black;
 
 /// Secondary color
 /// @type Color
 /// @require $dark-pink
-$secondary-color: $dark-pink;
+$secondary-color: $dark-blue;
 
 /// Note background
 /// @type Color

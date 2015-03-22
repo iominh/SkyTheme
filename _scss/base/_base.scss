@@ -36,17 +36,7 @@ a,
   }
 }
 
-/**
- * Custom underlines for links that are neither buttons nor anchor links
- */
-a:not([class*='button']):not(.anchor-link),
-.link-like {
-  background: -webkit-linear-gradient(currentcolor, currentcolor) no-repeat bottom 2px center;
-  background: linear-gradient(currentcolor, currentcolor) no-repeat bottom 2px center;
-  background-size: 100% 1px;
-}
-
-@include beautify-links(white);
+//@include beautify-links(white);
 
 /**
  * Inline code

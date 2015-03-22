@@ -3,9 +3,10 @@
 @import "utils/mixins";
 @import "utils/variables";
 
-@import "vendors/reset";
+//@import "vendors/reset";
 @import "vendors/syntax";
 @import "vendors/normalize";
+@import "../bower_components/typeplate-starter-kit/scss/typeplate";
 
 @import "base/base";
 @import "base/typography";

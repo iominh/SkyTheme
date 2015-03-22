@@ -1,4 +1,7 @@
-name: Your New Jekyll Site
+name: Minh Nguyen
+email: minhongrails@gmail.com
+github: https://github.com/minhongrails
+twitter: https://twitter.com/iominh
 markdown: redcarpet
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]

@@ -1,0 +1,22 @@
+{
+  "name": "Minh.io",
+  "version": "0.0.1",
+  "homepage": "www.minh.io",
+  "authors": [
+    "minhongrails@gmail.com"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typeplate-starter-kit": "~2.1.0"
+  }
+}

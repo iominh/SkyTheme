@@ -1,147 +1,4 @@
 @charset "UTF-8";
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0; }
-
-html, body {
-  height: 100%; }
-
-body {
-  background-color: black;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 {
-  margin-bottom: 1em; }
-
-p {
-  margin: 1em 0; }
-
-a {
-  color: #00a; }
-
-a:hover {
-  color: #000; }
-
-a:visited {
-  color: #a0a; }
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em; }
-
-.posts li {
-  line-height: 1.75em; }
-
-.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%; }
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em; }
-
-.header a {
-  font-weight: bold;
-  text-decoration: none; }
-
-.title {
-  display: inline-block;
-  margin-bottom: 2em; }
-
-.title a {
-  color: #a00; }
-
-.title a:hover {
-  color: #000; }
-
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em; }
-
-.header a.extra:hover {
-  color: #000; }
-
-.meta {
-  color: #aaa; }
-
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden; }
-
-.footer .contact {
-  float: left;
-  margin-right: 3em; }
-
-.footer .contact a {
-  color: #8085C1; }
-
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right; }
-
-.footer .rss img {
-  border: 0; }
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em; }
-
-.post ul, .post ol {
-  margin-left: 1.35em; }
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em; }
-
-.post pre code {
-  border: none; }
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF; }
-
-.post pre.terminal code {
-  background-color: #333; }
-
 .highlight {
   background: #ffffff; }
 
@@ -715,6 +572,277 @@ table {
 td, th {
   padding: 0; }
 
+/*!
+Typeplate : Starter Kit
+URL ........... http://typeplate.com
+Version ....... 2.1.0
+Github ........ https://github.com/typeplate/starter-kit
+Authors ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+License ....... Creative Commmons Attribution 3.0
+License URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
+*/
+@font-face {
+  font-family: 'Ampersand';
+  src: local('Georgia'), local('Garamond'), local('Palatino'), local('Book Antiqua');
+  unicode-range: U26; }
+
+@font-face {
+  font-family: 'Ampersand';
+  src: local('Georgia');
+  unicode-range: U270C; }
+
+.typl8-tera, .typl8-giga, .typl8-mega, h1, .typl8-alpha, h2, .typl8-beta, h3, .typl8-gamma, h4, .typl8-delta, h5, .typl8-epsilon, .typl8-zeta, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+  color: #222; }
+
+blockquote + figcaption cite {
+  display: block;
+  font-size: inherit;
+  text-align: right; }
+
+body {
+  word-wrap: break-word; }
+
+pre code {
+  word-wrap: normal; }
+
+html {
+  font: normal 112.5%/1.65 serif; }
+
+body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  color: #444; }
+
+.typl8-tera {
+  font-size: 117px;
+  font-size: 6.5rem;
+  margin-bottom: 70.90909px;
+  margin-bottom: 3.93939rem; }
+
+.typl8-giga {
+  font-size: 90px;
+  font-size: 5rem;
+  margin-bottom: 54.54545px;
+  margin-bottom: 3.0303rem; }
+
+.typl8-mega, h1 {
+  font-size: 72px;
+  font-size: 4rem;
+  margin-bottom: 43.63636px;
+  margin-bottom: 2.42424rem; }
+
+.typl8-alpha, h2 {
+  font-size: 60px;
+  font-size: 3.33333rem;
+  margin-bottom: 36.36364px;
+  margin-bottom: 2.0202rem; }
+
+.typl8-beta, h3 {
+  font-size: 48px;
+  font-size: 2.66667rem;
+  margin-bottom: 29.09091px;
+  margin-bottom: 1.61616rem; }
+
+.typl8-gamma, h4 {
+  font-size: 36px;
+  font-size: 2rem;
+  margin-bottom: 21.81818px;
+  margin-bottom: 1.21212rem; }
+
+.typl8-delta, h5 {
+  font-size: 24px;
+  font-size: 1.33333rem;
+  margin-bottom: 14.54545px;
+  margin-bottom: 0.80808rem; }
+
+.typl8-epsilon {
+  font-size: 21px;
+  font-size: 1.16667rem;
+  margin-bottom: 12.72727px;
+  margin-bottom: 0.70707rem; }
+
+.typl8-zeta, h6 {
+  font-size: 18px;
+  font-size: 1rem;
+  margin-bottom: 10.90909px;
+  margin-bottom: 0.60606rem; }
+
+p {
+  margin: auto auto 1.5em; }
+  p + p {
+    text-indent: 1.5em;
+    margin-top: -1.5em; }
+
+small {
+  font-size: 65%; }
+
+input, abbr, acronym, blockquote, code, kbd, q, samp, var {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+pre {
+  white-space: pre; }
+  pre code {
+    white-space: -moz- pre-wrap;
+    white-space: pre-wrap; }
+
+code {
+  white-space: pre;
+  font-family: monospace; }
+
+abbr {
+  -webkit-font-variant: small-caps;
+  -moz-font-variant: small-caps;
+  -ms-font-variant: small-caps;
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: gray; }
+  abbr[title]:hover {
+    cursor: help; }
+
+.typl8-drop-cap:first-letter {
+  float: left;
+  margin: 10px 10px 0 0;
+  padding: 0 20px;
+  font-size: 4em;
+  font-family: inherit;
+  line-height: 1;
+  text-indent: 0;
+  background: transparent;
+  color: inherit; }
+
+p + .typl8-drop-cap {
+  text-indent: 0;
+  margin-top: 0; }
+
+/**
+ * Lining Definition Style Markup
+ *
+  <dl class="typl8-lining">
+    <dt><b></b></dt>
+    <dd></dd>
+  </dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+.typl8-lining dt, .typl8-lining dd {
+  display: inline;
+  margin: 0; }
+.typl8-lining dt + dt:before, .typl8-lining dd + dt:before {
+  content: "\A";
+  white-space: pre; }
+.typl8-lining dd + dd:before {
+  content: ", "; }
+.typl8-lining dd:before {
+  content: ": ";
+  margin-left: -0.2rem; }
+
+/**
+ * Dictionary Definition Style Markup
+ *
+  <dl class="typl8-dictionary-style">
+    <dt><b></b></dt>
+    <dd></dd>
+  </dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+.typl8-dictionary-style dt {
+  display: inline;
+  counter-reset: definitions; }
+  .typl8-dictionary-style dt + dt:before {
+    content: ", ";
+    margin-left: -0.2rem; }
+.typl8-dictionary-style dd {
+  display: block;
+  counter-increment: definitions; }
+  .typl8-dictionary-style dd:before {
+    content: counter(definitions, decimal) ". "; }
+
+/**
+ * Blockquote Markup
+ *
+    <figure>
+      <blockquote cite="">
+        <p></p>
+      </blockquote>
+      <figcaption>
+        <cite>
+          <small><a href=""></a></small>
+        </cite>
+      </figcaption>
+    </figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Pull Quotes Markup
+ *
+  <aside class="typl8-pull-quote">
+    <blockquote>
+      <p></p>
+    </blockquote>
+  </aside>
+ *
+ * Extend this object into your custom stylesheet.
+ *
+ */
+.typl8-pull-quote {
+  position: relative;
+  padding: 1em; }
+  .typl8-pull-quote:before, .typl8-pull-quote:after {
+    height: 1em;
+    opacity: 0.5;
+    position: absolute;
+    font-size: 4em;
+    color: #dc976e; }
+  .typl8-pull-quote:before {
+    content: '“';
+    top: 0;
+    left: 0; }
+  .typl8-pull-quote:after {
+    content: '”';
+    bottom: 0;
+    right: 0; }
+
+/**
+ * Figures Markup
+ *
+  <figure>
+    <figcaption>
+      <strong>Fig. X.X | </strong><cite title=""></cite>
+    </figcaption>
+  </figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Footnote Markup : Replace 'X' with your unique number for each footnote
+ *
+  <article>
+    <p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+    <footer>
+      <ol class="foot-notes">
+        <li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+      </ol>
+    </footer>
+  </article>
+ *
+ * Extend this object into your markup.
+ *
+ */
 /**
  * Make all elements inherit from `html` box-sizing
  */
@@ -744,18 +872,7 @@ a, .link-like {
   -webkit-transition: .15s;
           transition: .15s; }
   a:hover, a:active, a:focus, .link-like:hover, .link-like:active, .link-like:focus {
-    color: #c69; }
-
-/**
- * Custom underlines for links that are neither buttons nor anchor links
- */
-a:not([class*='button']):not(.anchor-link), .link-like {
-  background: -webkit-linear-gradient(currentcolor, currentcolor) no-repeat bottom 2px center;
-  background: linear-gradient(currentcolor, currentcolor) no-repeat bottom 2px center;
-  background-size: 100% 1px; }
-
-a, .link-like {
-  text-shadow: -1px -1px white, -1px 1px white, 1px -1px white, 1px 1px white; }
+    color: #307EA9; }
 
 /**
  * Inline code
@@ -813,7 +930,7 @@ h1 {
 
 h2 {
   margin-top: 3rem;
-  color: #b37399; }
+  color: #256081; }
 
 h3 {
   margin-top: 1.5rem;
@@ -1139,7 +1256,7 @@ blockquote {
   margin-bottom: 1.5rem;
   padding: 1rem;
   border: .25em solid;
-  color: #b37399;
+  color: #256081;
   display: block;
   border-radius: .3em;
   text-align: center;
@@ -1151,7 +1268,7 @@ blockquote {
    * 2. Adjust vertical align
    */ }
   .button:hover, .button:active, .button:focus {
-    color: #c69; }
+    color: #307EA9; }
   @media all and (min-width: 801px) {
     .button {
       display: inline-block; } }
@@ -1184,7 +1301,7 @@ blockquote {
     display: block;
     margin: 0 auto; }
   .button-ui:hover, .button-ui:active, .button-ui:focus {
-    color: #b37399; }
+    color: #256081; }
 
 /**
  * Button to get back to top of the page
@@ -1303,7 +1420,7 @@ figcaption {
   margin-bottom: 1.5rem;
   padding: 1rem;
   border: .25em solid;
-  color: #b37399;
+  color: #256081;
   display: block;
   border-radius: .3em;
   text-align: center;
@@ -1315,7 +1432,7 @@ figcaption {
    * 2. Adjust vertical align
    */ }
   .button:hover, .button:active, .button:focus {
-    color: #c69; }
+    color: #307EA9; }
   @media all and (min-width: 801px) {
     .button {
       display: inline-block; } }
@@ -1348,7 +1465,7 @@ figcaption {
     display: block;
     margin: 0 auto; }
   .button-ui:hover, .button-ui:active, .button-ui:focus {
-    color: #b37399; }
+    color: #256081; }
 
 /**
  * Button to get back to top of the page
@@ -1375,7 +1492,7 @@ figcaption {
   margin: 0.5em;
   padding: 0;
   border: .25em solid;
-  color: #b37399;
+  color: #256081;
   border-radius: 0.3em; }
 
 /* This is the native select, we're making everything but the text invisible so we can see the button styles in the wrapper */
@@ -1395,7 +1512,7 @@ figcaption {
   /* General select styles: change as needed */
   font-family: helvetica, sans-serif;
   font-weight: bold;
-  color: #b37399;
+  color: #256081;
   padding: .6em 1.9em .5em .8em;
   line-height: 1.3; }
 
@@ -1417,14 +1534,14 @@ figcaption {
 
 /* Hover style */
 .custom-select:hover {
-  color: #c69; }
+  color: #307EA9; }
 
 /* Focus style */
 .custom-select select:focus {
   outline: none;
   box-shadow: 0 0 1px 3px #b4defa;
   background-color: transparent;
-  color: #c69;
+  color: #307EA9;
   border: 1px solid #aaa; }
 
 /* Set options to normal weight */
@@ -1469,13 +1586,15 @@ x:-o-prefocus, .custom-select::after {
  * Header
  */
 .header {
-  background: #c69;
+  background: #307EA9;
   text-align: center;
   color: white;
   overflow: hidden;
   padding: 1.5rem 0;
   margin-bottom: 4.5rem;
-  border-bottom: .5em solid #aa628d; }
+  border-bottom: .5em solid #1f526d; }
+  .header a:hover, .header a:active, .header a:focus {
+    color: #222; }
 
 /**
  * Main title
@@ -1483,8 +1602,7 @@ x:-o-prefocus, .custom-select::after {
 .title {
   margin: 0;
   max-width: none;
-  font-size: 6em;
-  text-shadow: 1px 1px #aa628d, 2px 2px #aa628d, 3px 3px #aa628d, 4px 4px #aa628d, 5px 5px #aa628d, 6px 6px #aa628d, 7px 7px #aa628d, 8px 8px #aa628d, 9px 9px #aa628d, 10px 10px #aa628d, 11px 11px #aa628d, 12px 12px #aa628d, 13px 13px #aa628d, 14px 14px #aa628d, 15px 15px #aa628d, 16px 16px #aa628d, 17px 17px #aa628d, 18px 18px #aa628d, 19px 19px #aa628d, 20px 20px #aa628d, 21px 21px #aa628d, 22px 22px #aa628d, 23px 23px #aa628d, 24px 24px #aa628d, 25px 25px #aa628d, 26px 26px #aa628d, 27px 27px #aa628d, 28px 28px #aa628d, 29px 29px #aa628d, 30px 30px #aa628d, 31px 31px #aa628d, 32px 32px #aa628d, 33px 33px #aa628d, 34px 34px #aa628d, 35px 35px #aa628d, 36px 36px #aa628d, 37px 37px #aa628d, 38px 38px #aa628d, 39px 39px #aa628d, 40px 40px #aa628d, 41px 41px #aa628d, 42px 42px #aa628d, 43px 43px #aa628d, 44px 44px #aa628d, 45px 45px #aa628d, 46px 46px #aa628d, 47px 47px #aa628d, 48px 48px #aa628d, 49px 49px #aa628d, 50px 50px #aa628d, 51px 51px #aa628d, 52px 52px #aa628d, 53px 53px #aa628d, 54px 54px #aa628d, 55px 55px #aa628d, 56px 56px #aa628d, 57px 57px #aa628d, 58px 58px #aa628d, 59px 59px #aa628d, 60px 60px #aa628d, 61px 61px #aa628d, 62px 62px #aa628d, 63px 63px #aa628d, 64px 64px #aa628d, 65px 65px #aa628d, 66px 66px #aa628d, 67px 67px #aa628d, 68px 68px #aa628d, 69px 69px #aa628d, 70px 70px #aa628d, 71px 71px #aa628d, 72px 72px #aa628d, 73px 73px #aa628d, 74px 74px #aa628d, 75px 75px #aa628d, 76px 76px #aa628d, 77px 77px #aa628d, 78px 78px #aa628d, 79px 79px #aa628d, 80px 80px #aa628d, 81px 81px #aa628d, 82px 82px #aa628d, 83px 83px #aa628d, 84px 84px #aa628d, 85px 85px #aa628d, 86px 86px #aa628d, 87px 87px #aa628d, 88px 88px #aa628d, 89px 89px #aa628d, 90px 90px #aa628d, 91px 91px #aa628d, 92px 92px #aa628d, 93px 93px #aa628d, 94px 94px #aa628d, 95px 95px #aa628d, 96px 96px #aa628d, 97px 97px #aa628d, 98px 98px #aa628d, 99px 99px #aa628d, 100px 100px #aa628d, 101px 101px #aa628d, 102px 102px #aa628d, 103px 103px #aa628d, 104px 104px #aa628d, 105px 105px #aa628d, 106px 106px #aa628d, 107px 107px #aa628d, 108px 108px #aa628d, 109px 109px #aa628d, 110px 110px #aa628d, 111px 111px #aa628d, 112px 112px #aa628d, 113px 113px #aa628d, 114px 114px #aa628d, 115px 115px #aa628d, 116px 116px #aa628d, 117px 117px #aa628d, 118px 118px #aa628d, 119px 119px #aa628d, 120px 120px #aa628d; }
+  font-size: 6em; }
   @media (max-width: 600px) {
     .title {
       font-size: 3em; } }
@@ -1495,7 +1613,7 @@ x:-o-prefocus, .custom-select::after {
 .baseline {
   font-size: 2em;
   text-transform: initial;
-  color: #c69;
+  color: #307EA9;
   margin-bottom: 5rem; }
   @media all and (min-width: 801px) {
     .baseline {

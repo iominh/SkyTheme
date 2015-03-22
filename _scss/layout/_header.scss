@@ -9,6 +9,12 @@
   padding: 1.5rem 0;
   margin-bottom: 4.5rem;
   border-bottom: .5em solid darken($secondary-color, 5%);
+
+  a {
+    @include on-event {
+      color: $title-color;
+    }
+  }
 }
 
 /**
@@ -20,11 +26,11 @@
   font-size: 6em;
 
   // Long shadow
-  $shadows: ();
-  @for $i from 1 through 120 {
-    $shadows: append($shadows, ($i * 1px) ($i * 1px) darken($secondary-color, 5%), comma);
-  }
-  text-shadow: $shadows;
+//  $shadows: ();
+//  @for $i from 1 through 120 {
+//    $shadows: append($shadows, ($i * 1px) ($i * 1px) darken($secondary-color, 5%), comma);
+//  }
+//  text-shadow: $shadows;
 
   @media (max-width: 600px) {
     font-size: 3em;

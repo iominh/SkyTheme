@@ -16,7 +16,7 @@ With Jekyll 3, updates are faster because of its new incremental build feature. 
 secs to generate the site because it only updates the newest posts. Also after a "jekyll clean" it's still
 fast to build the initial site (maybe because Jekyll upgraded to Liquid 3?).
 
-<div class="mSpotlight">Upgrade Issues</div>
+<div class="spotlight">Upgrade Issues</div>
 
 Upgrading from Jekyll 2 to Jekyll 3 required some changes to my Jekyll _config.yml configuration and overall
 code structure, which wasn't too bad but wasn't as smooth as I hoped.
@@ -42,7 +42,7 @@ example I had an "assets" directory that wasn't being copied. I was able to fix 
 prior to "jekyll serve" because apparently my .jekyll-metadata file was showing lots of my files as being unchanged,
 so deleting it forced jekyll to regenerate everything.
 
-<div class="mSpotlight">Future Thoughts</div>
+<div class="spotlight">Future Thoughts</div>
 
 My site's infrastructure has been starting to show its age, ever since I forked jekyll-bootstrap and customized
 everything. However, Jekyll-bootstrap is now deprecated and lots the libraries I'm using are somewhat dated (like

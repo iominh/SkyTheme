@@ -12,7 +12,7 @@ Version2 edition. Please note that I am not a professional reviewer and this pos
 will continuously change as I spend more time with it. I'll be keeping
 a [changelog](https://github.com/minhongrails/blog/commits/master/_posts/2013-11-22-google-glass-version2-review.md) though.
 
-<div class="mSpotlight">Photos</div>
+<div class="spotlight">Photos</div>
 
 <a class="lightbox" href="/assets/img/glass/left.JPG"><img class='imageSpotlight' src="/assets/img/glass/left.JPG" alt="left.JPG" width="900px"/></a>
 
@@ -22,7 +22,7 @@ Cotton color Glass. There's 5 colors now: Cotton, Charcoal, Tangerine, Shale, an
 
 Shades are now available in version 2
 
-<div class="mSpotlight">Initial Thoughts</div>
+<div class="spotlight">Initial Thoughts</div>
 
 I've only been using Glass for less than a day but it seems promising so far.
 Initially it was annoying to set up because the mobile site of www.google.com/myglass

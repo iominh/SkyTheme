@@ -11,7 +11,7 @@ In this post I wanted to provide a quick guide to using Icomoon icons (which I'm
 be terribly lacking in terms of showing code so I can be up and running in less than 5 minutes. That's my goal
 for this guide.
 
-<div class="mSpotlight">Quick Install</div>
+<div class="spotlight">Quick Install</div>
 
 The easiest way to get started to use [Bower](http://www.bower.io) (which requires NPM). If you don't have both of these tools
 it might be a minor inconvenience to install them but you'll save yourself tons of work down the road.
@@ -31,7 +31,7 @@ bower install icomoon -S
 
 Alternatively, you can download a [zip file](https://github.com/Keyamoon/IcoMoon--limited-/archive/master.zip) into your app from the [official page](http://icomoon.io/#icons-icomoon).
 
-<div class="mSpotlight">Quickstart</div>
+<div class="spotlight">Quickstart</div>
 
 Import the CSS file into your webpage:
 
@@ -51,7 +51,7 @@ Now, you can just add it to your code like so:
 
 Now you'll see something like this: <span data-icon="&#xe0aa;"></span>
 
-<div class="mSpotlight">Final Thoughts</div>
+<div class="spotlight">Final Thoughts</div>
 
 Halfway through writing this guide I realized it isn't actually that difficult to get up and running with Icomoon
 but my particular problem was that I am using both an older version of Font Awesome and Icomoon simultaneously,

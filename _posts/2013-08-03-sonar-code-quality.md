@@ -24,7 +24,7 @@ for future projects, so I created this mini guide and a
 <a href="https://github.com/minhongrails/multimoduleSonar" target="_blank">Github project</a>
 so that others could also get this working:
 
-<div class="mSpotlight">Install SonarQube</div>
+<div class="spotlight">Install SonarQube</div>
 These are the instructions from the <a href="http://docs.codehaus.org/display/SONAR/Get+Started+in+Two+Minutes" target="_blank">2-minute quickstart guide</a>.
 
 <ol>
@@ -67,7 +67,7 @@ a project called "parent." Clicking that should show the following:
 
 </ol>
 
-<div class="mSpotlight">Deep Dive</div>
+<div class="spotlight">Deep Dive</div>
 
 The sample Maven structure was designed to be simple. There is a single
 parent project which contains two submodules module1 and module2. 

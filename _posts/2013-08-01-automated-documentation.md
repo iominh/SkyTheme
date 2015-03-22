@@ -20,7 +20,7 @@ I created an example project on <a href="https://github.com/minhongrails/multimo
 to be down sometimes) to show how to generate UML and nice looking documentation
 automatically.
 
-<div class="mSpotlight">Install Guide</div>
+<div class="spotlight">Install Guide</div>
 <ol>
 <li>Download <a href="http://www.yworks.com/en/products_ydoc.html#download" target="_blank">yWorks UML Doclet</a> and extract
 it to a directory.</li>
@@ -36,7 +36,7 @@ it to a directory.</li>
 </li>
 </ol>
 
-<div class="mSpotlight">Results</div>
+<div class="spotlight">Results</div>
 
 If everything worked out well, you should be able to navigate to <a href="http://doc1.minh.io" target="_blank">target/site/apidocs/index.html</a>
 and you'll see UML automagically generated like this:

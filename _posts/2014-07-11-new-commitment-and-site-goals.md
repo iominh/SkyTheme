@@ -13,7 +13,7 @@ As it turns out, I've been slacking on my side projects because I've been very f
 [Ringtail Design](www.ringtaildesign.com) (we're hiring by the way) where I do all sorts of interesting (mostly webapp) development
 while learning UX and new skills.
 
-<div class="mSpotlight">Metrics</div>
+<div class="spotlight">Metrics</div>
 
 So, what's my baseline and where can I improve from here? For starters, I rarely post more than once a month, which should be fairly
 easy to beat. For a good stretch last year I posted lots of posts about technical problems and solutions I encountered. This was mostly to
@@ -33,7 +33,7 @@ Apparently most of my traffic (424 sessions out of 517) comes from organic googl
 <a class="lightbox" href="/assets/img/metrics/seo_june10_july10_2014.png"><img class='imageSpotlight' src="/assets/img/metrics/seo_june10_july10_2014.png" alt="left.JPG" width="900px"/></a>
 
 
-<div class="mSpotlight">Strategy</div>
+<div class="spotlight">Strategy</div>
 
 I'm not entirely sure how many of those 730 page views and 443 reported users are actually people and not bots but
 from analyzing their incoming landing pages for users that actually spend time on more than one page, I've identified

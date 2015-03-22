@@ -12,7 +12,7 @@ from Jekyll bootstrap (with Bootstrap 2), so it's starting to show its age. Sinc
  (although I still have more to learn), so I have lots of ideas for improving the site. This post will
 serve as a repository of my ideas, goals, inspirations, and anything else that's related to the rebuilding process.
 
-<div class="mSpotlight">Goals</div>
+<div class="spotlight">Goals</div>
 * Make a greater impact on the world through more connections and page views. It's really exciting when I see page
 views from around the world or people using my open source. It's even more exciting when people engage with the site
 through comments or new connections.
@@ -20,7 +20,7 @@ through comments or new connections.
 on visuals rather than seas of text (especially since I'm trying to get better at photography as well as D3)
 * Create an extendable and scalable site that allows me to write thousands of posts.
 
-<div class="mSpotlight">Inspirations</div>
+<div class="spotlight">Inspirations</div>
 
 For inspiration, I've been using the [Panda chrome extension](https://chrome.google.com/webstore/detail/panda-hacker-news-dribbbl/jhiocdmmaannaccoofjfmjpbfkogmnap?hl=en),
 which lets me easily see content from Hacker News, Designer News, Dribbble, Behance, Awwards, etc.
@@ -60,7 +60,7 @@ but in this case I didn't notice any scrolling issues and the blur is nice
 their usage of giant starting letters, which helps break up long stretches of text into separate sections.
 <a class="lightbox" href="/assets/img/vanity_fair.png"><img class='imageSpotlight' src="/assets/img/vanity_fair.png"/></a>
 
-<div class="mSpotlight">Research</div>
+<div class="spotlight">Research</div>
 
 * [Canva design tutorials](https://designschool.canva.com/tutorials/): I still feel like I need to review
 fundamental design principles (like what typography goes with what), so when I get a chance I'm going to
@@ -71,7 +71,7 @@ try all of these tutorials (it looks like they're free)
 * [Shadertoy](https://www.shadertoy.com/)
 * [UX Checklist](http://uxchecklist.github.io/)
 
-<div class="mSpotlight">Resources</div>
+<div class="spotlight">Resources</div>
 
 * [Bootstrap 3.3.2](http://getbootstrap.com/): I'm probably going to stick with Bootstrap because it's
 the most popular framework and while I do have to override many of its styles, I've found it generally
@@ -92,7 +92,7 @@ for faster page rendering
 * [Fluidbox](http://terrymun.github.io/Fluidbox/). This is the library I currently use for lightboxes and it's very
 similar to Medium's usage. I like it because of its animations and how it's unobtrusive.
 
-<div class="mSpotlight">Libraries</div>
+<div class="spotlight">Libraries</div>
 
 I'm still deciding which frameworks to go with, but here are my research notes so far:
 
@@ -109,7 +109,7 @@ this can be beneficial because it means I can also write posts dynamically throu
 slightly concerned because a live editor also poses a security risk (with Jekyll, it's all static so there's less
 vulnerabilities). Ghost also doesn't seem to work well with Angular either because it uses Handlebars.
 
-<div class="mSpotlight">Platforms</div>
+<div class="spotlight">Platforms</div>
 
 * [Tumblr](https://www.tumblr.com). Tumblr makes [beautiful themes](https://www.tumblr.com/themes/) so I may try to
 use it in addition to my main site just so I have experience with the platform. However, I'm not sure I want to
@@ -123,6 +123,6 @@ build an entire site on it but I may use it to help direct traffic to my site.
 my favorite CMS but while using it a long time ago I found maintenance to be burdensome having to deal with spam,
 database issues, or performance problems.
 
-<div class="mSpotlight">Mockups</div>
+<div class="spotlight">Mockups</div>
 
 TODO

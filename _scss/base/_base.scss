@@ -48,3 +48,8 @@ a,
 .unstyled {
   list-style: none;
 }
+
+::selection {
+  background-color: $black;
+  color: #bbb;
+}

@@ -20,7 +20,7 @@ slide into the slot of a deleted item. However, I encountered issues with overri
 specify the transform for list items but if I perform an animation with a transform then it appears that there's
 duplicate animations. Whenever I figure out a solution, I'll update this post.
 
-<div class="mSpotlight">Credit</div>
+<div class="spotlight">Credit</div>
 
 Please note the above code is not mine. I only modified it and stuck it on a codepen. Please see the original author
 Steven Sanderson's ["Animating Lists with CSS3 transitions post"](http://blog.stevensanderson.com/2013/03/15/animating-lists-with-css-3-transitions/).

@@ -10,13 +10,13 @@ tags: []
 This post is just a collection of various articles and interesting sites I've bookmarked over some time. I'll keep
 updating as I find more stuff.
 
-<div class="mSpotlight">APIs to explore</div>
+<div class="spotlight">APIs to explore</div>
 
 [Wit Speech API](https://wit.ai/blog/2014/02/12/speech-api) is essentially a Siri-like API that's free to use
 for non-commercial products. Their [demo](http://labs.wit.ai/demo/) is pretty neat.
 
 
-<div class="mSpotlight">Git Articles</div>
+<div class="spotlight">Git Articles</div>
 
 I've really loved using Git having come from other version control systems like SVN or ClearCase. It's not easy to
 love a version control system but it's really improved my productivity and allowed me to experiment because I know

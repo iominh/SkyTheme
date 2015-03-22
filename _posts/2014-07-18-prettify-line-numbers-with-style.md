@@ -48,7 +48,7 @@ function fibonacci(n) {
 }</code>
 </pre>
 
-<div class="mSpotlight">Usage</div>
+<div class="spotlight">Usage</div>
 
 If you want this for your site, you have to make some modifications to your prettyify.css code. I created a Github
 repo [here](https://github.com/minhongrails/google-code-prettify) if you want to check it out.
@@ -60,7 +60,7 @@ In order to highlight a pre section, just add a 'linenums' class. So for example
 &lt;/pre&gt;</code>
 </pre>
 
-<div class="mSpotlight">Recommendation and TODOs</div>
+<div class="spotlight">Recommendation and TODOs</div>
 
 Following the advice of [Ivan Sagalaev](http://highlightjs.readthedocs.org/en/latest/line-numbers.html) (creator of Highlight.JS), I personally prefer not using line numbers and instead like to
 do inline comments whenever I share code. However, my posts on line numbers appear to be some of my most popular posts,

@@ -14,14 +14,14 @@ because they're fun. You learn valuable skills, work in great coworking
 spaces (Microsoft's office in Bethesda), meet cool people, and see awesome
 projects.
 
-<div class="mSpotlight">Prehack</div>
+<div class="spotlight">Prehack</div>
 
 Typically the best teams organize prior to a hack and brainstorm ideas. They also
 review the APIs and rules. I didn't actually do any of this: I went
 solo and mostly spent the night before reading a little bit. However, I write code all
 the time, so in actuality, I'm always preparing for hackathons.
 
-<div class="mSpotlight">Hack</div>
+<div class="spotlight">Hack</div>
 
 Overall the hack was pretty fun. I partnered with another developer and
 we formed a team on the spot. Initially we had no idea what to do and spent
@@ -30,7 +30,7 @@ we decided to create <a href="http://fraudwatch.minh.io" target="_blank">http://
 
 <img class="imageSpotlight" src="/assets/img/fraudwatch_ipad.jpg" alt="fraudwatch.jpg"/>
 
-<div class="mSpotlight">Results</div>
+<div class="spotlight">Results</div>
 
 Finally, after many hours and very little sleep, I presented and demoed our app
 to a crowd of ~100 people and 12 judges? I think we got extra points because of
@@ -47,7 +47,7 @@ it might not have addressed the goals of the judges. Other than that I also
 really liked the <a href="http://ec2-54-237-120-185.compute-1.amazonaws.com/" target="_blank">B.Verify</a>
 app, which had a clean interface, great presentation, and user story.
 
-<div class="mSpotlight">Lessons Learned</div>
+<div class="spotlight">Lessons Learned</div>
 
 I'll definitely be attending future hackathons and hope to win 1st place
 someday but here are the lessons I learned:

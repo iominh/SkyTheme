@@ -889,6 +889,14 @@ a, .link-like {
 .unstyled {
   list-style: none; }
 
+::-moz-selection {
+  background-color: #2B2B2B;
+  color: #bbb; }
+
+::selection {
+  background-color: #2B2B2B;
+  color: #bbb; }
+
 /**
  * Vertical rhythm
  */

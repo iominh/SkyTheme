@@ -61,8 +61,9 @@ gulp.task('watch', function () {
 
 gulp.task('replace', function () {
   gulp.src('_posts/**/*')
-    .pipe(rename(function (path) {
-      path.suffix += ".min";
+    .pipe(replace({
+      regex: '<div class="mSpotlight">(.*)</div>',
+      replace: '<h1>$1</h1>'
     }))
     .pipe(gulp.dest('_posts'));
 });

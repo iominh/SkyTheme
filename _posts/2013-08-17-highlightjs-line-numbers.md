@@ -7,11 +7,11 @@ tags: []
 ---
 
 
-<div class="mSpotlight">Update 2/1/14</div>
+<div class="spotlight">Update 2/1/14</div>
 
 I've [changed syntax highlighters](/tech/2014/01/30/prettyprint-syntax-highlighting/), so see [this version](http://design7.minh.io/tech/2013/08/17/highlightjs-line-numbers/), which uses Highlight.js
 
-<div class="mSpotlight">Summary</div>
+<div class="spotlight">Summary</div>
 
 In this post I will show how to add line numbers with syntax highlighting
 provided through <a href="http://softwaremaniacs.org/soft/highlight/en/" target="_blank">Highlight.js</a>. 
@@ -21,7 +21,7 @@ how Highlight.js supports line numbers on an [experimental code branch](https://
 (line numbers are actually [not included as a feature](http://highlightjs.readthedocs.org/en/latest/line-numbers.html)).
 Hmm, I thought nobody read my random posts but I guess not :).
 
-<div class="mSpotlight">Examples</div>
+<div class="spotlight">Examples</div>
 
 So, without further ado, here's code with line numbers:
 
@@ -59,7 +59,7 @@ This is just an initial attempt but I'm actually quite happy with
 how it turned out, especially since I can copy the text and not have
 it also copy the numbers.
 
-<div class="mSpotlight">Details</div>
+<div class="spotlight">Details</div>
 
 So how does this work? Well, from looking at Ivan's branch, it appeared that 
 the line numbers were set through a global variable. Instead, I figured that
@@ -85,7 +85,7 @@ System.out.println("hello");
 &lt;/code&gt;
 &lt;/pre&gt;</code></pre>
 
-<div class="mSpotlight">Github Fork</div>
+<div class="spotlight">Github Fork</div>
 
 If you're interested in having this for your site, I forked the Highlight.js 7.3
 code and added the changes at [https://github.com/minhongrails/highlight.js](https://github.com/minhongrails/highlight.js).

@@ -946,6 +946,10 @@ h3 {
 img {
   max-width: 100%; }
 
+p + p {
+  text-indent: 0em;
+  margin-top: 0em; }
+
 /**
  * Centered container
  */

@@ -880,6 +880,9 @@ a, .link-like {
 :not(pre) > code {
   color: #6b717f; }
 
+.unstyled {
+  list-style: none; }
+
 /**
  * Vertical rhythm
  */

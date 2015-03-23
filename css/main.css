@@ -1057,8 +1057,9 @@ blockquote {
 
 .huge {
   margin: 1.7em 0; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 1000px) {
     .huge {
+      font-size: 1.5rem;
       margin: 1.7em -15%; } }
 
 /**
@@ -1551,20 +1552,6 @@ figcaption {
   width: 16px;
   height: 16px; }
 
-.side-note {
-  line-height: 1.5;
-  padding: 0;
-  border: none;
-  color: #678;
-  font-size: 1.4rem;
-  float: none;
-  margin: 1em 0;
-  width: 100%; }
-  @media all and (min-width: 730px) {
-    .side-note {
-      width: 40%;
-      float: right; } }
-
 /* Container used for styling the custom select, the buttom class below adds the bg gradient, corners, etc. */
 .custom-select {
   position: relative;
@@ -1672,8 +1659,10 @@ x:-o-prefocus, .custom-select::after {
   overflow: hidden;
   padding: 1.5rem 0;
   margin-bottom: 4.5rem;
-  border-bottom: .5em solid #151515;
-  min-height: 10rem; }
+  border-bottom: .1em solid #151515;
+  min-height: 35rem;
+  background-size: cover;
+  background-image: url(/assets/img/wallpaper/autochrome-v3.jpg); }
   .header a {
     color: #222; }
     .header a:hover, .header a:active, .header a:focus {
@@ -1707,10 +1696,13 @@ x:-o-prefocus, .custom-select::after {
  * Footer
  */
 .footer {
-  background: #dadbdf;
+  background: #307EA9;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  border-top: .1em solid #151515;
+  min-height: 5rem; }
+  .footer a {
+    color: #151515; }
 
 .footer__metadata {
   margin-bottom: 0; }

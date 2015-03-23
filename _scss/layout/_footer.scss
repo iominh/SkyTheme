@@ -2,10 +2,15 @@
  * Footer
  */
 .footer {
-  background: $note-background;
+  background: $main-color;
   text-align: center;
-  padding: 1rem;
   margin-top: 2rem;
+  border-top: .1em solid darken($secondary-color, 5%);
+  min-height: 5rem;
+
+  a {
+    color: darken($secondary-color, 5%);
+  }
 }
 
 .footer__metadata {

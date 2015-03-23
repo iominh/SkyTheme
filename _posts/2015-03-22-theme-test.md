@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Theme style test"
+title: "Robo Theme"
 description: ""
 category: tech
 tags: []
@@ -30,8 +30,13 @@ tags: []
 
 <h6 id="heading6">Heading 6</h6>
 
-
 <h2 id="media">Media</h2>
+
+<h3 id="smallimage">Small Image</h3>
+
+<p>Bears are very majestic, wouldn't you agree? Here's an example of a majestic bear, although the image is small.</p>
+
+<p><img src="/assets/img/wallpaper/MIbCzcvxQdahamZSNQ26_12082014-IMG_3526.jpg" alt="Small Test Image" /></p>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 
@@ -40,12 +45,6 @@ tags: []
 <div class="full-container"><img src="/assets/img/wallpaper/photo-1419064642531-e575728395f2.jpeg" alt="Test Image" /></div>
 
 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<h3 id="smallimage">Small Image</h3>
-
-<p>Bears are very majestic, wouldn't you agree? Here's an example of a majestic bear, although the image is small.</p>
-
-<p><img src="/assets/img/wallpaper/MIbCzcvxQdahamZSNQ26_12082014-IMG_3526.jpg" alt="Small Test Image" /></p>
 
 <hr />
 

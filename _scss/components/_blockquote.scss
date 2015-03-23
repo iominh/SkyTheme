@@ -56,7 +56,8 @@ blockquote {
 .huge {
   margin: 1.7em 0;
 
-  @include respond-to('medium') {
+  @include respond-to('large') {
+    font-size: 1.5rem;
     margin: 1.7em -15%;
   }
 }

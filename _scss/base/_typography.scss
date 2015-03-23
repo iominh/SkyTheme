@@ -57,8 +57,8 @@ h2 {
 
 h3 {
   margin-top: 1.5rem;
-//  color: #808c99;
-//  text-transform: uppercase;
+  //  color: #808c99;
+  //  text-transform: uppercase;
 }
 
 /**
@@ -68,7 +68,7 @@ img {
   max-width: 100%;
 }
 
-p+p {
+p + p {
   text-indent: 0em;
   margin-top: 0em;
 }

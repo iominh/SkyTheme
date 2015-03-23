@@ -1,6 +1,8 @@
 article {
   iframe {
     max-height: 500px;
+    max-width: 100%;
+    
     div {
       @include full-container();
     }

@@ -881,7 +881,7 @@ a, .link-like {
   -webkit-transition: .15s;
           transition: .15s; }
   a:hover, a:active, a:focus, .link-like:hover, .link-like:active, .link-like:focus {
-    color: #19435a; }
+    color: #6aafd5; }
 
 /**
  * Inline code
@@ -904,6 +904,8 @@ a, .link-like {
   max-width: 100%;
   margin: 0;
   padding: 0; }
+  .full-container * {
+    padding: 0; }
 
 /**
  * Vertical rhythm
@@ -915,7 +917,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 1.5rem; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div {
       padding-left: 0;
       padding-right: 0; } }
@@ -979,13 +981,14 @@ p + p {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     .container {
       padding-left: 0;
       padding-right: 0; } }
 
 article iframe {
-  max-height: 500px; }
+  max-height: 500px;
+  max-width: 100%; }
   article iframe div {
     max-width: 100%;
     margin: 0;
@@ -1013,13 +1016,13 @@ blockquote {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem; }
-    @media all and (min-width: 801px) {
+    @media all and (min-width: (min-width: 800px)) {
       blockquote > * {
         padding-left: 0;
         padding-right: 0; } }
   blockquote a, blockquote .link-like {
     text-shadow: -1px -1px #d2e1dd, -1px 1px #d2e1dd, 1px -1px #d2e1dd, 1px 1px #d2e1dd; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     blockquote > :first-child {
       position: relative; }
       blockquote > :first-child::before {
@@ -1062,7 +1065,7 @@ blockquote {
     margin-bottom: 0;
     padding: 2rem 1rem;
     font-family: "Source Code Pro", "Courier New", monospace; }
-    @media all and (min-width: 801px) {
+    @media all and (min-width: (min-width: 800px)) {
       .highlight > pre {
         padding-left: 0;
         padding-right: 0; } }
@@ -1306,7 +1309,7 @@ blockquote {
    */ }
   .button:hover, .button:active, .button:focus {
     color: #307EA9; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     .button {
       display: inline-block; } }
   .button svg {
@@ -1346,7 +1349,7 @@ blockquote {
 .button-ui--back {
   right: 0;
   bottom: 0; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     .button-ui--back {
       position: fixed; } }
 
@@ -1397,7 +1400,7 @@ figcaption {
     background: white;
     margin-left: 0;
     margin-right: 0; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     .donate {
       padding: 1rem; } }
 
@@ -1407,7 +1410,7 @@ figcaption {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     .donate__content {
       padding-left: 0;
       padding-right: 0; } }
@@ -1443,7 +1446,7 @@ figcaption {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     .translation-warning > p {
       padding-left: 0;
       padding-right: 0; } }
@@ -1470,7 +1473,7 @@ figcaption {
    */ }
   .button:hover, .button:active, .button:focus {
     color: #307EA9; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     .button {
       display: inline-block; } }
   .button svg {
@@ -1510,7 +1513,7 @@ figcaption {
 .button-ui--back {
   right: 0;
   bottom: 0; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     .button-ui--back {
       position: fixed; } }
 
@@ -1656,7 +1659,7 @@ x:-o-prefocus, .custom-select::after {
   text-transform: initial;
   color: #307EA9;
   margin-bottom: 5rem; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     .baseline {
       font-size: 2.5em; } }
 
@@ -1694,7 +1697,7 @@ x:-o-prefocus, .custom-select::after {
     -ms-transform: translateX(0);
     transform: translateX(0);
     overflow: auto; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     .aside {
       width: 250px;
       -webkit-transform: translateX(-250px);
@@ -1732,7 +1735,7 @@ x:-o-prefocus, .custom-select::after {
   right: -4.5em; }
   .open .aside__toggle {
     right: 0; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     .aside__toggle {
       background: transparent; } }
 
@@ -1772,7 +1775,7 @@ x:-o-prefocus, .custom-select::after {
     -ms-transform: translateX(0);
     transform: translateX(0);
     overflow: auto; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     .aside {
       width: 250px;
       -webkit-transform: translateX(-250px);
@@ -1810,7 +1813,7 @@ x:-o-prefocus, .custom-select::after {
   right: -4.5em; }
   .open .aside__toggle {
     right: 0; }
-  @media all and (min-width: 801px) {
+  @media all and (min-width: (min-width: 800px)) {
     .aside__toggle {
       background: transparent; } }
 

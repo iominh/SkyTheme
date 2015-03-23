@@ -1,12 +1,20 @@
 ---
 layout: post
-title: "Theme test"
+title: "Theme style test"
 description: ""
 category: tech
 tags: []
 ---
 
-This is a post that tests every UI component in this theme.
+<p class="typl8-drop-cap">Below is everything you'll need to style in this theme. Here's a random <a title="link" href="#">link</a>. <strong>This is strong.</strong> Nullam dignissim convallis est. Quisque aliquam. <em>This is emphasized.</em> Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a citation). <span style="text-decoration:underline;">Underline.</span> Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+<p><abbr title="Hyper Text Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type <code>COPY <var>filename</var></code>. <del>Dinner’s at 5:00.</del> <ins>Let’s make that 7.</ins> This <span style="text-decoration:line-through;">text</span> has been struck.</p>
+
+<section>
+  <aside>What is it about?</aside>
+  <article>Neat is an open source semantic grid framework built on top of Sass and Bourbon…</article>
+</section>
+
 
 <hr />
 <h1 id="heading1">Heading 1</h1>
@@ -20,17 +28,6 @@ This is a post that tests every UI component in this theme.
 <h5 id="heading5">Heading 5</h5>
 
 <h6 id="heading6">Heading 6</h6>
-
-<hr />
-
-<p>Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a> adipiscing elit. <strong>This is strong.</strong> Nullam dignissim convallis est. Quisque aliquam. <em>This is emphasized.</em> Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a citation). <span style="text-decoration:underline;">Underline.</span> Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
-
-<p><abbr title="Hyper Text Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type <code>COPY <var>filename</var></code>. <del>Dinner’s at 5:00.</del> <ins>Let’s make that 7.</ins> This <span style="text-decoration:line-through;">text</span> has been struck.</p>
-
-<section>
-  <aside>What is it about?</aside>
-  <article>Neat is an open source semantic grid framework built on top of Sass and Bourbon…</article>
-</section>
 
 <hr />
 

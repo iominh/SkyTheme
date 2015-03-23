@@ -52,7 +52,7 @@ $black: #2B2B2B;
 /// @require $light-pink
 $main-color: $light-blue;
 
-$hover-color: darken($light-blue, 20%);
+$hover-color: lighten($light-blue, 20%);
 
 /// Title color
 /// @type Color
@@ -93,5 +93,7 @@ $figure-background: $light-grey;
 /// Breakpoints
 /// @type Map
 $breakpoints: (
-  'medium': 801px
+  'medium': (min-width: 800px),
+  'large': (min-width: 1000px),
+  'huge': (min-width: 1200px)
 );

@@ -90,11 +90,17 @@ $donate-background: $light-yellow;
 /// @require $light-yellow
 $figure-background: $light-grey;
 
+$small-width: 400px;
+$medium-width: 730px;
+$large-width: 1000px;
+$huge-width: 1200px;
+
 /// Breakpoints
 /// @type Map
 $breakpoints: (
-  'small': (min-width: 400px),
-  'medium': (min-width: 800px),
-  'large': (min-width: 1000px),
-  'huge': (min-width: 1200px)
+  'small': $small-width,
+  'medium': $medium-width,
+  'large': $large-width,
+  'huge': $huge-width
 );
+

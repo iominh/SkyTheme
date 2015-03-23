@@ -1,4 +1,6 @@
 section {
+  @include container();
+  @include vertical-rhythm();
 
 }
 

@@ -900,6 +900,18 @@ a, .link-like {
   background-color: #2B2B2B;
   color: #bbb; }
 
+.container {
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1.5rem; }
+  @media all and (min-width: 730px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+
 .full-container {
   max-width: 100%;
   margin: 0;
@@ -917,7 +929,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 1.5rem; }
-  @media all and (min-width: (min-width: 800px)) {
+  @media all and (min-width: 730px) {
     h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
       padding-left: 0;
       padding-right: 0; } }
@@ -981,7 +993,7 @@ p + p {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem; }
-  @media all and (min-width: (min-width: 800px)) {
+  @media all and (min-width: 730px) {
     .container {
       padding-left: 0;
       padding-right: 0; } }
@@ -1002,14 +1014,35 @@ blockquote {
   margin-bottom: 1.5rem;
   padding: 1rem;
   overflow: hidden;
-  font-style: italic;
+  line-height: 1.5;
+  color: #678;
+  font-size: 1.4rem;
   /**
    * Make all children containers
    */
   /**
    * On large screens, add a decorative quote
    */ }
-  @media all and (min-width: (min-width: 800px)) {
+  blockquote.pull-right {
+    padding: 0;
+    border: none;
+    margin: 0.5em 0; }
+    @media all and (min-width: 730px) {
+      blockquote.pull-right {
+        float: right;
+        width: 40%;
+        margin: .5em .5em .5em 1.5em; } }
+  blockquote > * {
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    @media all and (min-width: 730px) {
+      blockquote > * {
+        padding-left: 0;
+        padding-right: 0; } }
+  @media all and (min-width: 730px) {
     blockquote > :first-child {
       position: relative; }
       blockquote > :first-child::before {
@@ -1023,9 +1056,10 @@ blockquote {
         color: rgba(0, 0, 0, 0.05); } }
 
 .huge {
-  max-width: 130%;
-  font-size: 1.5rem;
-  margin: 1.7em -15%; }
+  margin: 1.7em 0; }
+  @media all and (min-width: 730px) {
+    .huge {
+      margin: 1.7em -15%; } }
 
 /**
  * Dual code blocks
@@ -1057,7 +1091,7 @@ blockquote {
     margin-bottom: 0;
     padding: 2rem 1rem;
     font-family: "Source Code Pro", "Courier New", monospace; }
-    @media all and (min-width: (min-width: 800px)) {
+    @media all and (min-width: 730px) {
       .highlight > pre {
         padding-left: 0;
         padding-right: 0; } }
@@ -1301,7 +1335,7 @@ blockquote {
    */ }
   .button:hover, .button:active, .button:focus {
     color: #307EA9; }
-  @media all and (min-width: (min-width: 800px)) {
+  @media all and (min-width: 730px) {
     .button {
       display: inline-block; } }
   .button svg {
@@ -1341,7 +1375,7 @@ blockquote {
 .button-ui--back {
   right: 0;
   bottom: 0; }
-  @media all and (min-width: (min-width: 800px)) {
+  @media all and (min-width: 730px) {
     .button-ui--back {
       position: fixed; } }
 
@@ -1392,7 +1426,7 @@ figcaption {
     background: white;
     margin-left: 0;
     margin-right: 0; }
-  @media all and (min-width: (min-width: 800px)) {
+  @media all and (min-width: 730px) {
     .donate {
       padding: 1rem; } }
 
@@ -1402,7 +1436,7 @@ figcaption {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem; }
-  @media all and (min-width: (min-width: 800px)) {
+  @media all and (min-width: 730px) {
     .donate__content {
       padding-left: 0;
       padding-right: 0; } }
@@ -1438,7 +1472,7 @@ figcaption {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem; }
-  @media all and (min-width: (min-width: 800px)) {
+  @media all and (min-width: 730px) {
     .translation-warning > p {
       padding-left: 0;
       padding-right: 0; } }
@@ -1465,7 +1499,7 @@ figcaption {
    */ }
   .button:hover, .button:active, .button:focus {
     color: #307EA9; }
-  @media all and (min-width: (min-width: 800px)) {
+  @media all and (min-width: 730px) {
     .button {
       display: inline-block; } }
   .button svg {
@@ -1505,7 +1539,7 @@ figcaption {
 .button-ui--back {
   right: 0;
   bottom: 0; }
-  @media all and (min-width: (min-width: 800px)) {
+  @media all and (min-width: 730px) {
     .button-ui--back {
       position: fixed; } }
 
@@ -1518,18 +1552,18 @@ figcaption {
   height: 16px; }
 
 .side-note {
-  float: right;
   line-height: 1.5;
   padding: 0;
-  width: 40%;
   border: none;
   color: #678;
-  font-size: 1.4rem; }
-  @media all and (min-width: (min-width: 400px)) {
+  font-size: 1.4rem;
+  float: none;
+  margin: 1em 0;
+  width: 100%; }
+  @media all and (min-width: 730px) {
     .side-note {
-      float: none;
-      margin: 1em 0;
-      width: 100%; } }
+      width: 40%;
+      float: right; } }
 
 /* Container used for styling the custom select, the buttom class below adds the bg gradient, corners, etc. */
 .custom-select {
@@ -1665,7 +1699,7 @@ x:-o-prefocus, .custom-select::after {
   text-transform: initial;
   color: #307EA9;
   margin-bottom: 5rem; }
-  @media all and (min-width: (min-width: 800px)) {
+  @media all and (min-width: 730px) {
     .baseline {
       font-size: 2.5em; } }
 
@@ -1703,7 +1737,7 @@ x:-o-prefocus, .custom-select::after {
     -ms-transform: translateX(0);
     transform: translateX(0);
     overflow: auto; }
-  @media all and (min-width: (min-width: 800px)) {
+  @media all and (min-width: 730px) {
     .aside {
       width: 250px;
       -webkit-transform: translateX(-250px);
@@ -1741,7 +1775,7 @@ x:-o-prefocus, .custom-select::after {
   right: -4.5em; }
   .open .aside__toggle {
     right: 0; }
-  @media all and (min-width: (min-width: 800px)) {
+  @media all and (min-width: 730px) {
     .aside__toggle {
       background: transparent; } }
 
@@ -1762,6 +1796,18 @@ x:-o-prefocus, .custom-select::after {
     float: left;
     width: 50%; }
 
+section {
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1.5rem; }
+  @media all and (min-width: 730px) {
+    section {
+      padding-left: 0;
+      padding-right: 0; } }
+
 .large-section {
   max-width: 1000px;
   margin-left: auto;
@@ -1769,7 +1815,7 @@ x:-o-prefocus, .custom-select::after {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 1.5rem; }
-  @media all and (min-width: (min-width: 800px)) {
+  @media all and (min-width: 730px) {
     .large-section {
       padding-left: 0;
       padding-right: 0; } }
@@ -1811,9 +1857,6 @@ x:-o-prefocus, .custom-select::after {
   width: 100%; }
   .col12:last-child {
     margin-right: 0; }
-
-.pull-right {
-  margin: .5em .5em .5em 1.5em; }
 
 body {
   background: white; }

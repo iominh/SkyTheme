@@ -13,7 +13,7 @@
 /// Define the element as a container
 /// @author Hugo Giraudel
 @mixin container {
-  max-width: 730px;
+  max-width: $medium-width;
   @include center-container();
 }
 

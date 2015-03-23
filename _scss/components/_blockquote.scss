@@ -4,19 +4,32 @@
 blockquote {
   margin: 0;
   @include vertical-rhythm;
-//  background: $quote-background;
   padding: 1rem;
   overflow: hidden;
-  font-style: italic;
+  line-height: 1.5;
+  color: #678;
+  font-size: 1.4rem;
+
+  &.pull-right {
+    padding: 0;
+    border: none;
+    margin: 0.5em 0;
+
+    @include respond-to('medium') {
+      float: right;
+      width: 40%;
+      margin: .5em .5em .5em 1.5em;
+    }
+  }
 
   /**
    * Make all children containers
    */
-//  > * {
-//    @include container;
-//  }
+  > * {
+    @include container;
+  }
 
-//  @include beautify-links($quote-background);
+  //  @include beautify-links($quote-background);
 
   /**
    * On large screens, add a decorative quote
@@ -39,8 +52,11 @@ blockquote {
   }
 }
 
+
 .huge {
-  max-width: 130%;
-  font-size: 1.5rem;
-  margin: 1.7em -15%;
+  margin: 1.7em 0;
+
+  @include respond-to('medium') {
+    margin: 1.7em -15%;
+  }
 }

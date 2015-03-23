@@ -985,6 +985,22 @@ p + p {
   margin-top: 0em; }
 
 /**
+ * Meta information should have less emphasis
+ */
+.meta {
+  opacity: 0.8; }
+
+.section-title {
+  display: inline-block;
+  position: relative; }
+  .section-title:before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #dedede;
+    top: 55%;
+    width: 400%; }
+
+/**
  * Centered container
  */
 .container {

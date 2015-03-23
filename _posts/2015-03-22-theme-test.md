@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Robo Theme"
+title: "Sky Theme"
 description: ""
 category: tech
 tags: []
 ---
 
-<p class="typl8-drop-cap">Below is everything you'll need to style in this theme. Here's a random <a title="link" href="#">link</a>. <strong>This is strong.</strong> Nullam dignissim convallis est. Quisque aliquam. <em>This is emphasized.</em> Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a citation). <span style="text-decoration:underline;">Underline.</span> Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+<p class="typl8-drop-cap">This is a free and responsive <a title="link" href="#">Jekyll</a> theme with a focus on <strong>imagery and typography</strong>.
+It is built on top of many great modern open source frameworks and tools to make it easier to write many posts that load quickly.
+The rest of this page will mostly be gibberish but will include all of the available UI components. Quisque aliquam. <em>This is emphasized.</em> Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a citation). <span style="text-decoration:underline;">Underline.</span> Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
 
 <section>
     <blockquote class="pull-right">
@@ -29,6 +31,8 @@ tags: []
 <h5 id="heading5">Heading 5</h5>
 
 <h6 id="heading6">Heading 6</h6>
+
+<hr />
 
 <h2 id="media">Media</h2>
 

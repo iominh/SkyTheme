@@ -1,17 +1,29 @@
-/// Define the element as a container
-/// @author Hugo Giraudel
-@mixin container {
-  max-width: 730px;
+// Centers a container
+@mixin center-container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-
   @include respond-to("medium") {
     padding-left: 0;
     padding-right: 0;
   }
 }
+
+/// Define the element as a container
+/// @author Hugo Giraudel
+@mixin container {
+  max-width: 730px;
+  @include center-container();
+}
+
+// define the element as a larger container
+@mixin large-container {
+  max-width: 1000px;
+  @include center-container();
+}
+
+
 
 @mixin full-container {
   max-width: 100%;

@@ -910,7 +910,7 @@ a, .link-like {
 /**
  * Vertical rhythm
  */
-h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div {
+h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
   max-width: 730px;
   margin-left: auto;
   margin-right: auto;
@@ -918,7 +918,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div {
   padding-right: 1rem;
   margin-bottom: 1.5rem; }
   @media all and (min-width: (min-width: 800px)) {
-    h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div {
+    h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
       padding-left: 0;
       padding-right: 0; } }
 
@@ -1000,7 +1000,6 @@ article iframe {
 blockquote {
   margin: 0;
   margin-bottom: 1.5rem;
-  background: #d2e1dd;
   padding: 1rem;
   overflow: hidden;
   font-style: italic;
@@ -1010,18 +1009,6 @@ blockquote {
   /**
    * On large screens, add a decorative quote
    */ }
-  blockquote > * {
-    max-width: 730px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem; }
-    @media all and (min-width: (min-width: 800px)) {
-      blockquote > * {
-        padding-left: 0;
-        padding-right: 0; } }
-  blockquote a, blockquote .link-like {
-    text-shadow: -1px -1px #d2e1dd, -1px 1px #d2e1dd, 1px -1px #d2e1dd, 1px 1px #d2e1dd; }
   @media all and (min-width: (min-width: 800px)) {
     blockquote > :first-child {
       position: relative; }
@@ -1034,6 +1021,11 @@ blockquote {
         right: 100%;
         top: -.3875em;
         color: rgba(0, 0, 0, 0.05); } }
+
+.huge {
+  max-width: 130%;
+  font-size: 1.5rem;
+  margin: 1.7em -15%; }
 
 /**
  * Dual code blocks
@@ -1059,7 +1051,7 @@ blockquote {
   padding: 0;
   background: #444;
   color: white;
-  font-size: .9em; }
+  font-size: 1em; }
   .highlight > pre {
     margin-top: 0;
     margin-bottom: 0;
@@ -1525,6 +1517,20 @@ figcaption {
   width: 16px;
   height: 16px; }
 
+.side-note {
+  float: right;
+  line-height: 1.5;
+  padding: 0;
+  width: 40%;
+  border: none;
+  color: #678;
+  font-size: 1.4rem; }
+  @media all and (min-width: (min-width: 400px)) {
+    .side-note {
+      float: none;
+      margin: 1em 0;
+      width: 100%; } }
+
 /* Container used for styling the custom select, the buttom class below adds the bg gradient, corners, etc. */
 .custom-select {
   position: relative;
@@ -1756,83 +1762,58 @@ x:-o-prefocus, .custom-select::after {
     float: left;
     width: 50%; }
 
-.aside {
-  z-index: 2;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-  background: white;
-  box-shadow: 0.3em 0 .25em rgba(0, 0, 0, 0.1);
-  -webkit-transition: .15s cubic-bezier(.32, 1, .53, .8);
-          transition: .15s cubic-bezier(.32, 1, .53, .8); }
-  .open .aside {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    overflow: auto; }
+.large-section {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1.5rem; }
   @media all and (min-width: (min-width: 800px)) {
-    .aside {
-      width: 250px;
-      -webkit-transform: translateX(-250px);
-      -ms-transform: translateX(-250px);
-      transform: translateX(-250px); } }
-  .aside .button {
-    display: block;
-    margin: 0.5rem;
-    padding: 0.5rem; }
-
-.aside__title {
-  background: #c69;
-  padding: 0.5rem;
-  color: white;
-  font-size: 1.25em;
-  margin: 0;
-  text-transform: uppercase; }
-
-.aside__heading {
-  margin: 1rem 0;
-  border-bottom: .1em solid;
-  text-transform: capitalize;
-  font-size: .9em;
-  padding: 0.5rem 0.75rem;
-  color: #444;
-  text-align: right;
-  font-weight: 400; }
-  .aside__title + .aside__heading {
-    margin-top: 0; }
-
-.aside__toggle {
-  position: absolute;
-  background: white;
-  bottom: 0;
-  right: -4.5em; }
-  .open .aside__toggle {
-    right: 0; }
-  @media all and (min-width: (min-width: 800px)) {
-    .aside__toggle {
-      background: transparent; } }
-
-.aside__radio-list {
-  list-style: none;
-  overflow: hidden;
-  margin: -0.5rem 0;
-  padding: 0; }
-  .aside__radio-list label {
-    display: inline-block;
-    cursor: pointer; }
-  .aside__radio-list input {
-    -webkit-transform: translate(-1px, -1px);
-    -ms-transform: translate(-1px, -1px);
-        transform: translate(-1px, -1px); }
-  .aside__radio-list li {
-    margin: 0;
+    .large-section {
+      padding-left: 0;
+      padding-right: 0; } }
+  .large-section aside {
     float: left;
-    width: 50%; }
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .large-section aside:last-child {
+      margin-right: 0; }
+  .large-section article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    .large-section article:last-child {
+      margin-right: 0; }
+
+.col3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .col3:last-child {
+    margin-right: 0; }
+
+.col6 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .col6:last-child {
+    margin-right: 0; }
+
+.col12 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .col12:last-child {
+    margin-right: 0; }
+
+.pull-right {
+  margin: .5em .5em .5em 1.5em; }
 
 body {
   background: white; }

@@ -1,0 +1,15 @@
+.col3 {
+  @include span-columns(3);
+}
+
+.col6 {
+  @include span-columns(6);
+}
+
+.col12 {
+  @include span-columns(12);
+}
+
+.pull-right {
+  margin: .5em .5em .5em 1.5em;
+}

@@ -1,0 +1,16 @@
+section {
+
+}
+
+.large-section {
+  @include large-container();
+  @include vertical-rhythm();
+
+  aside {
+    @include span-columns(3);
+  }
+
+  article {
+    @include span-columns(9);
+  }
+}

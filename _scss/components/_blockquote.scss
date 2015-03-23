@@ -4,7 +4,7 @@
 blockquote {
   margin: 0;
   @include vertical-rhythm;
-  background: $quote-background;
+//  background: $quote-background;
   padding: 1rem;
   overflow: hidden;
   font-style: italic;
@@ -12,11 +12,11 @@ blockquote {
   /**
    * Make all children containers
    */
-  > * {
-    @include container;
-  }
+//  > * {
+//    @include container;
+//  }
 
-  @include beautify-links($quote-background);
+//  @include beautify-links($quote-background);
 
   /**
    * On large screens, add a decorative quote
@@ -37,4 +37,10 @@ blockquote {
       }
     }
   }
+}
+
+.huge {
+  max-width: 130%;
+  font-size: 1.5rem;
+  margin: 1.7em -15%;
 }

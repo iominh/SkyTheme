@@ -1,0 +1,15 @@
+.side-note {
+  float: right;
+  line-height: 1.5;
+  padding: 0;
+  width: 40%;
+  border: none;
+  color: #678;
+  font-size: 1.4rem;
+
+  @include respond-to("small") {
+    float: none;
+    margin: 1em 0;
+    width: 100%;
+  }
+}

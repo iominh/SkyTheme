@@ -8,15 +8,14 @@ tags: []
 
 <p class="typl8-drop-cap">Below is everything you'll need to style in this theme. Here's a random <a title="link" href="#">link</a>. <strong>This is strong.</strong> Nullam dignissim convallis est. Quisque aliquam. <em>This is emphasized.</em> Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a citation). <span style="text-decoration:underline;">Underline.</span> Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
 
+<p class="side-note pull-right">
+On two occasions I have been asked, "Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?" ... I am not able rightly to apprehend the kind of confusion of ideas that could provoke such a question.
+</p>
+
 <p><abbr title="Hyper Text Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type <code>COPY <var>filename</var></code>. <del>Dinner’s at 5:00.</del> <ins>Let’s make that 7.</ins> This <span style="text-decoration:line-through;">text</span> has been struck.</p>
 
-<section>
-  <aside>What is it about?</aside>
-  <article>Neat is an open source semantic grid framework built on top of Sass and Bourbon…</article>
-</section>
-
-
 <hr />
+
 <h1 id="heading1">Heading 1</h1>
 
 <h2 id="heading2">Heading 2</h2>
@@ -29,7 +28,6 @@ tags: []
 
 <h6 id="heading6">Heading 6</h6>
 
-<hr />
 
 <h2 id="media">Media</h2>
 
@@ -43,7 +41,7 @@ tags: []
 
 <h3 id="smallimage">Small Image</h3>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+<p>Bears are very majestic, wouldn't you agree? Here's an example of a majestic bear, although the image is small.</p>
 
 <p><img src="/assets/img/wallpaper/MIbCzcvxQdahamZSNQ26_12082014-IMG_3526.jpg" alt="Small Test Image" /></p>
 
@@ -134,9 +132,12 @@ tags: []
 
 <p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
 
-<blockquote>
-  <p>Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to hear it I can sing it for you. <cite>— <a href="http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a></cite></p>
-</blockquote>
+<section>
+    <blockquote class="huge">
+      <p>Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to hear it I can sing it for you. <cite>— <a href="http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a></cite></p>
+    </blockquote>
+</section>
+
 
 <p>And here’s a bit of trailing text.</p>
 

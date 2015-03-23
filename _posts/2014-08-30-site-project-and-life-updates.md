@@ -35,7 +35,9 @@ background as I do other stuff); despite being quite dark and disturbing at time
 and interesting characters. I think I primarily like it because of its characters, visuals, and its setting in a medieval world
  where humans are not at the top of the food chain. I also really like its soundtrack:
 
+<div>
 <iframe class="youtubePlayer" src="//www.youtube.com/embed/XMXgHfHxKVM?list=PLYX-9Ms9JaMUYOSmIhjfveXrZjZioJUCs" frameborder="0" allowfullscreen></iframe>
+</div>
 
 
 In other news, I got a new chair for my home office that I think is great :). More on that later...

@@ -13,6 +13,12 @@
   }
 }
 
+@mixin full-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /// Apply vertical rhythm
 /// @author Hugo Giraudel
 @mixin vertical-rhythm {

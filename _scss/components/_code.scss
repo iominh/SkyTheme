@@ -23,6 +23,7 @@
  */
 .highlight {
   @include vertical-rhythm;
+  @include full-container();
   background: $code-background;
   color: white;
   font-size: .9em;

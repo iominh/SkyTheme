@@ -1,7 +1,7 @@
 /**
  * Vertical rhythm
  */
-h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, iframe, hr, dl, table {
+h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div {
   @include container;
   @include vertical-rhythm;
 }

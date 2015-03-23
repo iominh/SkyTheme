@@ -40,7 +40,7 @@ This is a post that tests every UI component in this theme.
 
 <h3 id="bigimage">Big Image</h3>
 
-<div><img src="/assets/img/wallpaper/photo-1419064642531-e575728395f2.jpeg" alt="Test Image" /></div>
+<div class="full-container"><img src="/assets/img/wallpaper/photo-1419064642531-e575728395f2.jpeg" alt="Test Image" /></div>
 
 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -180,7 +180,9 @@ The <u>u element</u> example</p>
 
 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
+<div>
 <iframe src="//player.vimeo.com/video/103224792?title=0&amp;byline=0&amp;portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
 
 <p>Culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -196,7 +198,9 @@ The <u>u element</u> example</p>
 
 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
+<div>
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169381837&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+</div>
 
 <p>Culpa qui officia deserunt mollit anim id est laborum.</p>
 

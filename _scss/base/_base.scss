@@ -55,3 +55,8 @@ a,
   background-color: $black;
   color: #bbb;
 }
+
+.full-container {
+  @include full-container();
+}
+

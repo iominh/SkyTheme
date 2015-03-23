@@ -900,10 +900,15 @@ a, .link-like {
   background-color: #2B2B2B;
   color: #bbb; }
 
+.full-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0; }
+
 /**
  * Vertical rhythm
  */
-h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, iframe, hr, dl, table {
+h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div {
   max-width: 730px;
   margin-left: auto;
   margin-right: auto;
@@ -911,7 +916,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, iframe, hr, dl, table {
   padding-right: 1rem;
   margin-bottom: 1.5rem; }
   @media all and (min-width: 801px) {
-    h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, iframe, hr, dl, table {
+    h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div {
       padding-left: 0;
       padding-right: 0; } }
 
@@ -981,29 +986,10 @@ p + p {
 
 article iframe {
   max-height: 500px; }
-
-section {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  section::after {
-    clear: both;
-    content: "";
-    display: table; }
-  section aside {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    section aside:last-child {
-      margin-right: 0; }
-  section article {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 74.41059%; }
-    section article:last-child {
-      margin-right: 0; }
+  article iframe div {
+    max-width: 100%;
+    margin: 0;
+    padding: 0; }
 
 /**
  * Quotes
@@ -1065,6 +1051,9 @@ blockquote {
  */
 .highlight {
   margin-bottom: 1.5rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
   background: #444;
   color: white;
   font-size: .9em; }

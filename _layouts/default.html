@@ -12,16 +12,14 @@
 
     </head>
     <body>
-
-        <div class="site">
-          <div class="header">
+          <section class="header full-container">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
             <!--<a class="extra" href="/">home</a>-->
-          </div>
+          </section>
 
           {{ content }}
 
-          <div class="footer">
+          <div class="footer full-container">
             <div class="contact">
               <p>
                 <a href="mailto:{{site.email}}">{{ site.email }}</a>
@@ -34,7 +32,6 @@
               </p>
             </div>
           </div>
-        </div>
 
     </body>
 </html>

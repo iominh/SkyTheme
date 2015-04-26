@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Minh Nguyen
+title: Bright Skies
 ---
 
 <div id="home">
-  <h2>Posts</h2>
   <ul class="posts unstyled">
     {% for post in site.posts %}
       <a href="{{ post.url }}"> <li><span>{{ post.date | date: "%b %d %Y" }}</span> &raquo; {{ post.title }}</li></a>

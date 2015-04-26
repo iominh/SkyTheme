@@ -1,258 +1,220 @@
 @charset "UTF-8";
-.highlight {
-  background: #ffffff; }
+/*
+ * GitHub style for Pygments syntax highlighter, for use with Jekyll
+ * Courtesy of GitHub.com
+ */
+.highlight pre, pre, .highlight .hll {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 3px;
+  overflow: auto;
+  line-height: 1;
+  word-break: normal; }
 
 .highlight .c {
   color: #999988;
   font-style: italic; }
 
-/* Comment */
 .highlight .err {
   color: #a61717;
   background-color: #e3d2d2; }
 
-/* Error */
 .highlight .k {
   font-weight: bold; }
 
-/* Keyword */
 .highlight .o {
   font-weight: bold; }
 
-/* Operator */
 .highlight .cm {
   color: #999988;
   font-style: italic; }
 
-/* Comment.Multiline */
 .highlight .cp {
   color: #999999;
   font-weight: bold; }
 
-/* Comment.Preproc */
 .highlight .c1 {
   color: #999988;
   font-style: italic; }
 
-/* Comment.Single */
 .highlight .cs {
   color: #999999;
   font-weight: bold;
   font-style: italic; }
 
-/* Comment.Special */
 .highlight .gd {
   color: #000000;
   background-color: #ffdddd; }
 
-/* Generic.Deleted */
 .highlight .gd .x {
   color: #000000;
   background-color: #ffaaaa; }
 
-/* Generic.Deleted.Specific */
 .highlight .ge {
   font-style: italic; }
 
-/* Generic.Emph */
 .highlight .gr {
   color: #aa0000; }
 
-/* Generic.Error */
 .highlight .gh {
   color: #999999; }
 
-/* Generic.Heading */
 .highlight .gi {
   color: #000000;
   background-color: #ddffdd; }
 
-/* Generic.Inserted */
 .highlight .gi .x {
   color: #000000;
   background-color: #aaffaa; }
 
-/* Generic.Inserted.Specific */
 .highlight .go {
   color: #888888; }
 
-/* Generic.Output */
 .highlight .gp {
   color: #555555; }
 
-/* Generic.Prompt */
 .highlight .gs {
   font-weight: bold; }
 
-/* Generic.Strong */
 .highlight .gu {
-  color: #aaaaaa; }
+  color: #800080;
+  font-weight: bold; }
 
-/* Generic.Subheading */
 .highlight .gt {
   color: #aa0000; }
 
-/* Generic.Traceback */
 .highlight .kc {
   font-weight: bold; }
 
-/* Keyword.Constant */
 .highlight .kd {
   font-weight: bold; }
 
-/* Keyword.Declaration */
+.highlight .kn {
+  font-weight: bold; }
+
 .highlight .kp {
   font-weight: bold; }
 
-/* Keyword.Pseudo */
 .highlight .kr {
   font-weight: bold; }
 
-/* Keyword.Reserved */
 .highlight .kt {
   color: #445588;
   font-weight: bold; }
 
-/* Keyword.Type */
 .highlight .m {
   color: #009999; }
 
-/* Literal.Number */
 .highlight .s {
-  color: #d14; }
+  color: #dd1144; }
 
-/* Literal.String */
+.highlight .n {
+  color: #333333; }
+
 .highlight .na {
-  color: #008080; }
+  color: teal; }
 
-/* Name.Attribute */
 .highlight .nb {
-  color: #0086B3; }
+  color: #0086b3; }
 
-/* Name.Builtin */
 .highlight .nc {
   color: #445588;
   font-weight: bold; }
 
-/* Name.Class */
 .highlight .no {
-  color: #008080; }
+  color: teal; }
 
-/* Name.Constant */
 .highlight .ni {
-  color: #800080; }
+  color: purple; }
 
-/* Name.Entity */
 .highlight .ne {
   color: #990000;
   font-weight: bold; }
 
-/* Name.Exception */
 .highlight .nf {
   color: #990000;
   font-weight: bold; }
 
-/* Name.Function */
 .highlight .nn {
   color: #555555; }
 
-/* Name.Namespace */
 .highlight .nt {
-  color: #000080; }
+  color: navy; }
 
-/* Name.Tag */
 .highlight .nv {
-  color: #008080; }
+  color: teal; }
 
-/* Name.Variable */
 .highlight .ow {
   font-weight: bold; }
 
-/* Operator.Word */
 .highlight .w {
   color: #bbbbbb; }
 
-/* Text.Whitespace */
 .highlight .mf {
   color: #009999; }
 
-/* Literal.Number.Float */
 .highlight .mh {
   color: #009999; }
 
-/* Literal.Number.Hex */
 .highlight .mi {
   color: #009999; }
 
-/* Literal.Number.Integer */
 .highlight .mo {
   color: #009999; }
 
-/* Literal.Number.Oct */
 .highlight .sb {
-  color: #d14; }
+  color: #dd1144; }
 
-/* Literal.String.Backtick */
 .highlight .sc {
-  color: #d14; }
+  color: #dd1144; }
 
-/* Literal.String.Char */
 .highlight .sd {
-  color: #d14; }
+  color: #dd1144; }
 
-/* Literal.String.Doc */
 .highlight .s2 {
-  color: #d14; }
+  color: #dd1144; }
 
-/* Literal.String.Double */
 .highlight .se {
-  color: #d14; }
+  color: #dd1144; }
 
-/* Literal.String.Escape */
 .highlight .sh {
-  color: #d14; }
+  color: #dd1144; }
 
-/* Literal.String.Heredoc */
 .highlight .si {
-  color: #d14; }
+  color: #dd1144; }
 
-/* Literal.String.Interpol */
 .highlight .sx {
-  color: #d14; }
+  color: #dd1144; }
 
-/* Literal.String.Other */
 .highlight .sr {
   color: #009926; }
 
-/* Literal.String.Regex */
 .highlight .s1 {
-  color: #d14; }
+  color: #dd1144; }
 
-/* Literal.String.Single */
 .highlight .ss {
   color: #990073; }
 
-/* Literal.String.Symbol */
 .highlight .bp {
   color: #999999; }
 
-/* Name.Builtin.Pseudo */
 .highlight .vc {
-  color: #008080; }
+  color: teal; }
 
-/* Name.Variable.Class */
 .highlight .vg {
-  color: #008080; }
+  color: teal; }
 
-/* Name.Variable.Global */
 .highlight .vi {
-  color: #008080; }
+  color: teal; }
 
-/* Name.Variable.Instance */
 .highlight .il {
   color: #009999; }
 
-/* Literal.Number.Integer.Long */
+.highlight .gc {
+  color: #999;
+  background-color: #EAF2F5; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -860,22 +822,22 @@ html {
  */
 html {
   box-sizing: border-box;
-  font: 62.5%/1.65 "Droid Sans", "Helvetica", "Arial", sans-serif; }
+  font: 62.5%/1.5 "Droid Sans", "Helvetica", "Arial", sans-serif; }
 
 /**
  * Basic typography styles
  */
 body {
-  color: #333;
+  color: #444;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   font-size: 1.6rem; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     body {
-      font-size: 16px;
-      font-size: 1.6rem; } }
+      font-size: 18px;
+      font-size: 1.8rem; } }
   @media all and (min-width: 992px) {
     body {
       font-size: 22px;
@@ -918,18 +880,18 @@ a, .link-like {
   color: #bbb; }
 
 .container {
-  max-width: 400px;
+  max-width: 550px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 1.5rem; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     .container {
-      max-width: 500px; } }
+      max-width: 600px; } }
   @media all and (min-width: 992px) {
     .container {
-      max-width: 768px; } }
+      max-width: 760px; } }
 
 .full-container {
   max-width: 100%;
@@ -942,18 +904,18 @@ a, .link-like {
  * Vertical rhythm
  */
 h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
-  max-width: 400px;
+  max-width: 550px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 1.5rem; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
-      max-width: 500px; } }
+      max-width: 600px; } }
   @media all and (min-width: 992px) {
     h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
-      max-width: 768px; } }
+      max-width: 760px; } }
 
 /**
  * Lists
@@ -991,8 +953,7 @@ h1 {
 
 h2 {
   margin-top: 3rem;
-  margin-bottom: 3rem;
-  color: #222; }
+  margin-bottom: 3rem; }
 
 h3 {
   margin-top: 1.5rem;
@@ -1034,17 +995,17 @@ p + p {
  * Centered container
  */
 .container {
-  max-width: 400px;
+  max-width: 550px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     .container {
-      max-width: 500px; } }
+      max-width: 600px; } }
   @media all and (min-width: 992px) {
     .container {
-      max-width: 768px; } }
+      max-width: 760px; } }
 
 article iframe {
   max-height: 500px;
@@ -1080,24 +1041,24 @@ blockquote {
     padding: 0;
     border: none;
     margin: 0.5em 0; }
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 760px) {
       blockquote.pull-right {
         float: right;
         width: 30%;
         margin: .5em .5em .5em 1.5em; } }
   blockquote > * {
-    max-width: 400px;
+    max-width: 550px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem; }
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 760px) {
       blockquote > * {
-        max-width: 500px; } }
+        max-width: 600px; } }
     @media all and (min-width: 992px) {
       blockquote > * {
-        max-width: 768px; } }
-  @media all and (min-width: 768px) {
+        max-width: 760px; } }
+  @media all and (min-width: 760px) {
     blockquote > :first-child {
       position: relative; }
       blockquote > :first-child::before {
@@ -1112,7 +1073,7 @@ blockquote {
 
 .huge {
   margin: 1.7em 0; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     .huge {
       font-size: 25px;
       font-size: 2.5rem; } }
@@ -1121,267 +1082,13 @@ blockquote {
       margin: 1.7em -15%; } }
 
 /**
- * Dual code blocks
- * SCSS is default, Sass is hidden
- */
-[data-syntax="sass"] {
-  display: none; }
-  .sass [data-syntax="sass"] {
-    display: block; }
-
-[data-syntax="scss"] {
-  display: block; }
-  .sass [data-syntax="scss"] {
-    display: none; }
-
-/**
- * Code blocks
- */
-.highlight {
-  margin-bottom: 1.5rem;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  background: #444;
-  color: white;
-  font-size: 1em; }
-  .highlight > pre {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 2rem 1rem;
-    font-family: "Source Code Pro", "Courier New", monospace; }
-    @media all and (min-width: 768px) {
-      .highlight > pre {
-        padding-left: 0;
-        padding-right: 0; } }
-
-.highlight code, .highlight pre {
-  color: #fdce93; }
-
-.highlight .hll {
-  background-color: #222; }
-
-.highlight .c {
-  color: #7f9f7f; }
-
-.highlight .err {
-  color: #e37170;
-  background-color: #3d3535; }
-
-.highlight .g {
-  color: #7f9f7f; }
-
-.highlight .k {
-  color: #f0dfaf; }
-
-.highlight .l {
-  color: #ccc; }
-
-.highlight .n {
-  color: #dcdccc; }
-
-.highlight .o {
-  color: #f0efd0; }
-
-.highlight .x {
-  color: #ccc; }
-
-.highlight .p {
-  color: #5da09f; }
-
-.highlight .cm {
-  color: #7f9f7f; }
-
-.highlight .cp {
-  color: #7f9f7f; }
-
-.highlight .c1 {
-  color: #7f9f7f; }
-
-.highlight .cs {
-  color: #cd0000;
-  font-weight: bold; }
-
-.highlight .gd {
-  color: #cd0000; }
-
-.highlight .ge {
-  color: #ccc;
-  font-style: italic; }
-
-.highlight .gr {
-  color: red; }
-
-.highlight .gh {
-  color: #dcdccc;
-  font-weight: bold; }
-
-.highlight .gi {
-  color: #00cd00; }
-
-.highlight .go {
-  color: gray; }
-
-.highlight .gp {
-  color: #dcdccc;
-  font-weight: bold; }
-
-.highlight .gs {
-  color: #ccc;
-  font-weight: bold; }
-
-.highlight .gu {
-  color: purple;
-  font-weight: bold; }
-
-.highlight .gt {
-  color: #0040D0; }
-
-.highlight .kc {
-  color: #dca3a3; }
-
-.highlight .kd {
-  color: #ffff86; }
-
-.highlight .kn {
-  color: #dfaf8f;
-  font-weight: bold; }
-
-.highlight .kp {
-  color: #cdcf99; }
-
-.highlight .kr {
-  color: #cdcd00; }
-
-.highlight .kt {
-  color: #00cd00; }
-
-.highlight .ld {
-  color: #cc9393; }
-
-.highlight .m {
-  color: #8cd0d3; }
-
-.highlight .s {
-  color: #cc9393; }
-
-.highlight .na {
-  color: #9ac39f; }
-
-.highlight .nb {
-  color: #efef8f; }
-
-.highlight .nc {
-  color: #efef8f; }
-
-.highlight .no {
-  color: #ccc; }
-
-.highlight .nd {
-  color: #ccc; }
-
-.highlight .ni {
-  color: #c28182; }
-
-.highlight .ne {
-  color: #c3bf9f;
-  font-weight: bold; }
-
-.highlight .nf {
-  color: #efef8f; }
-
-.highlight .nl {
-  color: #ccc; }
-
-.highlight .nn {
-  color: #8fbede; }
-
-.highlight .nx {
-  color: #ccc; }
-
-.highlight .py {
-  color: #ccc; }
-
-.highlight .nt {
-  color: #9ac39f; }
-
-.highlight .nv {
-  color: #dcdccc; }
-
-.highlight .ow {
-  color: #f0efd0; }
-
-.highlight .w {
-  color: #ccc; }
-
-.highlight .mf {
-  color: #8cd0d3; }
-
-.highlight .mh {
-  color: #8cd0d3; }
-
-.highlight .mi {
-  color: #8cd0d3; }
-
-.highlight .mo {
-  color: #8cd0d3; }
-
-.highlight .sb {
-  color: #cc9393; }
-
-.highlight .sc {
-  color: #cc9393; }
-
-.highlight .sd {
-  color: #cc9393; }
-
-.highlight .s2 {
-  color: #cc9393; }
-
-.highlight .se {
-  color: #cc9393; }
-
-.highlight .sh {
-  color: #cc9393; }
-
-.highlight .si {
-  color: #cc9393; }
-
-.highlight .sx {
-  color: #cc9393; }
-
-.highlight .sr {
-  color: #cc9393; }
-
-.highlight .s1 {
-  color: #cc9393; }
-
-.highlight .ss {
-  color: #cc9393; }
-
-.highlight .bp {
-  color: #efef8f; }
-
-.highlight .vc {
-  color: #efef8f; }
-
-.highlight .vg {
-  color: #dcdccc; }
-
-.highlight .vi {
-  color: #ffffc7; }
-
-.highlight .il {
-  color: #8cd0d3; }
-
-/**
  * Buttons
  */
 .button {
   margin-bottom: 1.5rem;
   padding: 1rem;
   border: .25em solid;
-  color: #222;
+  color: #444;
   display: block;
   border-radius: .3em;
   text-align: center;
@@ -1394,7 +1101,7 @@ blockquote {
    */ }
   .button:hover, .button:active, .button:focus {
     color: #307EA9; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     .button {
       display: inline-block; } }
   .button svg {
@@ -1426,7 +1133,7 @@ blockquote {
     display: block;
     margin: 0 auto; }
   .button-ui:hover, .button-ui:active, .button-ui:focus {
-    color: #222; }
+    color: #444; }
 
 /**
  * Button to get back to top of the page
@@ -1434,7 +1141,7 @@ blockquote {
 .button-ui--back {
   right: 0;
   bottom: 0; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     .button-ui--back {
       position: fixed; } }
 
@@ -1497,22 +1204,22 @@ figcaption {
     background: white;
     margin-left: 0;
     margin-right: 0; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     .donate {
       padding: 1rem; } }
 
 .donate__content {
-  max-width: 400px;
+  max-width: 550px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     .donate__content {
-      max-width: 500px; } }
+      max-width: 600px; } }
   @media all and (min-width: 992px) {
     .donate__content {
-      max-width: 768px; } }
+      max-width: 760px; } }
 
 /**
  * Anchor links
@@ -1540,17 +1247,17 @@ figcaption {
   font-size: 1.2em; }
 
 .translation-warning > p {
-  max-width: 400px;
+  max-width: 550px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     .translation-warning > p {
-      max-width: 500px; } }
+      max-width: 600px; } }
   @media all and (min-width: 992px) {
     .translation-warning > p {
-      max-width: 768px; } }
+      max-width: 760px; } }
   .translation-warning > p a, .translation-warning > p .link-like {
     text-shadow: -1px -1px #d2e1dd, -1px 1px #d2e1dd, 1px -1px #d2e1dd, 1px 1px #d2e1dd; }
 
@@ -1561,7 +1268,7 @@ figcaption {
   margin-bottom: 1.5rem;
   padding: 1rem;
   border: .25em solid;
-  color: #222;
+  color: #444;
   display: block;
   border-radius: .3em;
   text-align: center;
@@ -1574,7 +1281,7 @@ figcaption {
    */ }
   .button:hover, .button:active, .button:focus {
     color: #307EA9; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     .button {
       display: inline-block; } }
   .button svg {
@@ -1606,7 +1313,7 @@ figcaption {
     display: block;
     margin: 0 auto; }
   .button-ui:hover, .button-ui:active, .button-ui:focus {
-    color: #222; }
+    color: #444; }
 
 /**
  * Button to get back to top of the page
@@ -1614,7 +1321,7 @@ figcaption {
 .button-ui--back {
   right: 0;
   bottom: 0; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     .button-ui--back {
       position: fixed; } }
 
@@ -1720,7 +1427,7 @@ figcaption {
   margin: 0.5em;
   padding: 0;
   border: .25em solid;
-  color: #222;
+  color: #444;
   border-radius: 0.3em; }
 
 /* This is the native select, we're making everything but the text invisible so we can see the button styles in the wrapper */
@@ -1740,7 +1447,7 @@ figcaption {
   /* General select styles: change as needed */
   font-family: helvetica, sans-serif;
   font-weight: bold;
-  color: #222;
+  color: #444;
   padding: .6em 1.9em .5em .8em;
   line-height: 1.3; }
 
@@ -1825,13 +1532,12 @@ x:-o-prefocus, .custom-select::after {
   overflow: hidden;
   padding: 1.5rem 0;
   margin-bottom: 3rem;
-  border-bottom: .1em solid #151515;
   background-size: cover;
   background-image: url(/assets/img/wallpaper/autochrome-v3.jpg); }
   .header a {
-    color: #222; }
+    color: #444; }
     .header a:hover, .header a:active, .header a:focus {
-      color: #222; }
+      color: #444; }
   .header .full-height {
     height: 100vh; }
 
@@ -1842,7 +1548,7 @@ x:-o-prefocus, .custom-select::after {
   margin: 0;
   max-width: none;
   font-size: 6em;
-  color: #222; }
+  color: #444; }
   @media (max-width: 600px) {
     .title {
       font-size: 3em; } }
@@ -1855,7 +1561,7 @@ x:-o-prefocus, .custom-select::after {
   text-transform: initial;
   color: #307EA9;
   margin-bottom: 5rem; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     .baseline {
       font-size: 2.5em; } }
 
@@ -1868,7 +1574,7 @@ x:-o-prefocus, .custom-select::after {
   border-top: 1px solid #dadbdf;
   height: 15vh; }
   .footer a {
-    color: #151515; }
+    color: #373737; }
 
 .footer__metadata {
   margin-bottom: 0; }
@@ -1895,7 +1601,7 @@ x:-o-prefocus, .custom-select::after {
     -ms-transform: translateX(0);
     transform: translateX(0);
     overflow: auto; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     .aside {
       width: 250px;
       -webkit-transform: translateX(-250px);
@@ -1933,7 +1639,7 @@ x:-o-prefocus, .custom-select::after {
   right: -4.5em; }
   .open .aside__toggle {
     right: 0; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     .aside__toggle {
       background: transparent; } }
 
@@ -1955,18 +1661,18 @@ x:-o-prefocus, .custom-select::after {
     width: 50%; }
 
 section {
-  max-width: 400px;
+  max-width: 550px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 1.5rem; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 760px) {
     section {
-      max-width: 500px; } }
+      max-width: 600px; } }
   @media all and (min-width: 992px) {
     section {
-      max-width: 768px; } }
+      max-width: 760px; } }
 
 .large-section {
   max-width: 1000px;
@@ -2018,7 +1724,7 @@ section {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 768px; }
+  max-width: 760px; }
   .outer-container::after {
     clear: both;
     content: "";

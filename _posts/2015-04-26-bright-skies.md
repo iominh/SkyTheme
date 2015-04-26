@@ -2,7 +2,7 @@
 layout: post
 title: "Bright Skies"
 description: ""
-category: tech
+category: blog
 tags: []
 ---
 
@@ -45,7 +45,7 @@ The rest of this page will mostly be gibberish but will include all of the avail
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 
-<h3 id="bigimage">Big Image</h3>
+<h3 id="bigimage">Full Width Image</h3>
 
 <div class="full-container"><img src="/assets/img/wallpaper/photo-1419064642531-e575728395f2.jpeg" alt="Test Image" /></div>
 

@@ -10,20 +10,20 @@
  */
 html {
   @include prefix(box-sizing, border-box, webkit moz);
-  font: 62.5%/1.65 $text-font-stack;
+  font: 62.5%/1.5 $text-font-stack;
 }
 
 /**
  * Basic typography styles
  */
 body {
-  color: #333;
+  color: $secondary-color;
   @include prefix(box-sizing, border-box, webkit moz);
   @include antialiasing();
   @include font-size(1.6);
 
   @include bp("medium") {
-    @include font-size(1.6);
+    @include font-size(1.8);
   }
   @include bp("large") {
     @include font-size(2.2);

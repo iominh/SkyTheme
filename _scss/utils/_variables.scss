@@ -5,10 +5,12 @@ $vertical-rhythm-baseline: 1.5rem;
 /// Regular font stack
 /// @type List
 $text-font-stack: "Droid Sans", "Helvetica", "Arial", sans-serif;
+//$text-font-stack: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
 
 /// Code font stack
 /// @type List
 $code-font-stack: "Source Code Pro", "Courier New", monospace;
+//$code-font-stack: Monaco,Menlo,Consolas,"Courier New",monospace;
 
 /// Light grey
 /// @type Color
@@ -43,7 +45,7 @@ $light-green: #d2e1dd;
 
 /// Light black
 /// @type Color
-$light-black: #222;
+$light-black: #444;
 
 $black: #2B2B2B;
 
@@ -90,9 +92,9 @@ $donate-background: $light-yellow;
 /// @require $light-yellow
 $figure-background: $light-grey;
 
-$small-width: 400px;
-$reading-width: 500px;
-$medium-width: 768px;
+$small-width: 550px;
+$reading-width: 600px;
+$medium-width: 760px;
 $large-width: 992px;
 $huge-width: 1200px;
 

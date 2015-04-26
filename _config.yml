@@ -1,7 +1,8 @@
-name: Minh Nguyen
-email: minhongrails@gmail.com
+name: Bright Skies
+email: minh.90.nguyen@gmail.com
 github: https://github.com/minhongrails
 twitter: https://twitter.com/iominh
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+permalinks: /:categories/:year/:month/:day/:title/

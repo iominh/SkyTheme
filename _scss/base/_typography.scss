@@ -46,8 +46,9 @@ h1, h2, h3 {
 }
 
 h1 {
-  margin-top: 6rem;
+  margin-top: 5rem;
   font-weight: 700;
+//  @include font-size(4);
 }
 
 h2 {
@@ -59,6 +60,14 @@ h3 {
   margin-top: 1.5rem;
   //  color: #808c99;
   //  text-transform: uppercase;
+}
+
+h4 {
+
+}
+
+h5 {
+
 }
 
 /**

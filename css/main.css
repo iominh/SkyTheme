@@ -859,17 +859,34 @@ html {
  * Redefine box-sizing on the root element
  */
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font: 62.5%/1.65 "Droid Sans", "Helvetica", "Arial", sans-serif; }
 
 /**
  * Basic typography styles
  */
 body {
-  font: 1.125em/1.4 "Droid Sans", "Helvetica", "Arial", sans-serif;
   color: #333;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  @media all and (min-width: 768px) {
+    body {
+      font-size: 16px;
+      font-size: 1.6rem; } }
+  @media all and (min-width: 992px) {
+    body {
+      font-size: 22px;
+      font-size: 2.2rem; } }
+
+hr {
+  border: none;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  background-color: #dadbdf; }
 
 /**
  * Links
@@ -901,16 +918,18 @@ a, .link-like {
   color: #bbb; }
 
 .container {
-  max-width: 730px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 1.5rem; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     .container {
-      padding-left: 0;
-      padding-right: 0; } }
+      max-width: 500px; } }
+  @media all and (min-width: 992px) {
+    .container {
+      max-width: 768px; } }
 
 .full-container {
   max-width: 100%;
@@ -923,16 +942,18 @@ a, .link-like {
  * Vertical rhythm
  */
 h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
-  max-width: 730px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 1.5rem; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
-      padding-left: 0;
-      padding-right: 0; } }
+      max-width: 500px; } }
+  @media all and (min-width: 992px) {
+    h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
+      max-width: 768px; } }
 
 /**
  * Lists
@@ -964,7 +985,7 @@ h1, h2, h3 {
     text-transform: initial; }
 
 h1 {
-  margin-top: 6rem;
+  margin-top: 5rem;
   font-weight: 700; }
 
 h2 {
@@ -1004,15 +1025,17 @@ p + p {
  * Centered container
  */
 .container {
-  max-width: 730px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     .container {
-      padding-left: 0;
-      padding-right: 0; } }
+      max-width: 500px; } }
+  @media all and (min-width: 992px) {
+    .container {
+      max-width: 768px; } }
 
 article iframe {
   max-height: 500px;
@@ -1032,33 +1055,40 @@ blockquote {
   overflow: hidden;
   line-height: 1.5;
   color: #678;
-  font-size: 1.4rem;
+  font-size: 20px;
+  font-size: 2rem;
   /**
    * Make all children containers
    */
   /**
    * On large screens, add a decorative quote
    */ }
+  @media all and (min-width: 992px) {
+    blockquote {
+      font-size: 25px;
+      font-size: 2.5rem; } }
   blockquote.pull-right {
     padding: 0;
     border: none;
     margin: 0.5em 0; }
-    @media all and (min-width: 730px) {
+    @media all and (min-width: 768px) {
       blockquote.pull-right {
         float: right;
-        width: 40%;
+        width: 30%;
         margin: .5em .5em .5em 1.5em; } }
   blockquote > * {
-    max-width: 730px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem; }
-    @media all and (min-width: 730px) {
+    @media all and (min-width: 768px) {
       blockquote > * {
-        padding-left: 0;
-        padding-right: 0; } }
-  @media all and (min-width: 730px) {
+        max-width: 500px; } }
+    @media all and (min-width: 992px) {
+      blockquote > * {
+        max-width: 768px; } }
+  @media all and (min-width: 768px) {
     blockquote > :first-child {
       position: relative; }
       blockquote > :first-child::before {
@@ -1073,9 +1103,12 @@ blockquote {
 
 .huge {
   margin: 1.7em 0; }
-  @media all and (min-width: 1000px) {
+  @media all and (min-width: 768px) {
     .huge {
-      font-size: 1.5rem;
+      font-size: 25px;
+      font-size: 2.5rem; } }
+  @media all and (min-width: 992px) {
+    .huge {
       margin: 1.7em -15%; } }
 
 /**
@@ -1108,7 +1141,7 @@ blockquote {
     margin-bottom: 0;
     padding: 2rem 1rem;
     font-family: "Source Code Pro", "Courier New", monospace; }
-    @media all and (min-width: 730px) {
+    @media all and (min-width: 768px) {
       .highlight > pre {
         padding-left: 0;
         padding-right: 0; } }
@@ -1352,7 +1385,7 @@ blockquote {
    */ }
   .button:hover, .button:active, .button:focus {
     color: #307EA9; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     .button {
       display: inline-block; } }
   .button svg {
@@ -1392,7 +1425,7 @@ blockquote {
 .button-ui--back {
   right: 0;
   bottom: 0; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     .button-ui--back {
       position: fixed; } }
 
@@ -1443,20 +1476,22 @@ figcaption {
     background: white;
     margin-left: 0;
     margin-right: 0; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     .donate {
       padding: 1rem; } }
 
 .donate__content {
-  max-width: 730px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     .donate__content {
-      padding-left: 0;
-      padding-right: 0; } }
+      max-width: 500px; } }
+  @media all and (min-width: 992px) {
+    .donate__content {
+      max-width: 768px; } }
 
 /**
  * Anchor links
@@ -1484,15 +1519,17 @@ figcaption {
   font-size: 1.2em; }
 
 .translation-warning > p {
-  max-width: 730px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     .translation-warning > p {
-      padding-left: 0;
-      padding-right: 0; } }
+      max-width: 500px; } }
+  @media all and (min-width: 992px) {
+    .translation-warning > p {
+      max-width: 768px; } }
   .translation-warning > p a, .translation-warning > p .link-like {
     text-shadow: -1px -1px #d2e1dd, -1px 1px #d2e1dd, 1px -1px #d2e1dd, 1px 1px #d2e1dd; }
 
@@ -1516,7 +1553,7 @@ figcaption {
    */ }
   .button:hover, .button:active, .button:focus {
     color: #307EA9; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     .button {
       display: inline-block; } }
   .button svg {
@@ -1556,7 +1593,7 @@ figcaption {
 .button-ui--back {
   right: 0;
   bottom: 0; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     .button-ui--back {
       position: fixed; } }
 
@@ -1679,7 +1716,7 @@ x:-o-prefocus, .custom-select::after {
   color: white;
   overflow: hidden;
   padding: 1.5rem 0;
-  margin-bottom: 4.5rem;
+  margin-bottom: 1rem;
   border-bottom: .1em solid #151515;
   background-size: cover;
   background-image: url(/assets/img/wallpaper/autochrome-v3.jpg); }
@@ -1710,7 +1747,7 @@ x:-o-prefocus, .custom-select::after {
   text-transform: initial;
   color: #307EA9;
   margin-bottom: 5rem; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     .baseline {
       font-size: 2.5em; } }
 
@@ -1751,7 +1788,7 @@ x:-o-prefocus, .custom-select::after {
     -ms-transform: translateX(0);
     transform: translateX(0);
     overflow: auto; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     .aside {
       width: 250px;
       -webkit-transform: translateX(-250px);
@@ -1789,7 +1826,7 @@ x:-o-prefocus, .custom-select::after {
   right: -4.5em; }
   .open .aside__toggle {
     right: 0; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     .aside__toggle {
       background: transparent; } }
 
@@ -1811,16 +1848,18 @@ x:-o-prefocus, .custom-select::after {
     width: 50%; }
 
 section {
-  max-width: 730px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 1.5rem; }
-  @media all and (min-width: 730px) {
+  @media all and (min-width: 768px) {
     section {
-      padding-left: 0;
-      padding-right: 0; } }
+      max-width: 500px; } }
+  @media all and (min-width: 992px) {
+    section {
+      max-width: 768px; } }
 
 .large-section {
   max-width: 1000px;
@@ -1829,10 +1868,6 @@ section {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 1.5rem; }
-  @media all and (min-width: 730px) {
-    .large-section {
-      padding-left: 0;
-      padding-right: 0; } }
   .large-section aside {
     float: left;
     display: block;

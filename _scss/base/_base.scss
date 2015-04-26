@@ -10,18 +10,33 @@
  */
 html {
   @include prefix(box-sizing, border-box, webkit moz);
+  font: 62.5%/1.65 $text-font-stack;
 }
 
 /**
  * Basic typography styles
  */
 body {
-  font: 1.125em/1.4 $text-font-stack;
   color: #333;
   @include prefix(box-sizing, border-box, webkit moz);
   @include antialiasing();
+  @include font-size(1.6);
+
+  @include bp("medium") {
+    @include font-size(1.6);
+  }
+  @include bp("large") {
+    @include font-size(2.2);
+  }
 }
 
+hr {
+  border: none;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  background-color: $light-grey;
+}
 
 /**
  * Links
@@ -33,9 +48,9 @@ a,
   color: $main-color;
   transition: .15s;
 
-   @include on-event {
+  @include on-event {
     color: $hover-color;
-   }
+  }
 }
 
 //@include beautify-links(white);

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Sky Theme"
+title: "Bright Skies"
 description: ""
 category: tech
 tags: []
 ---
+
 
 <p class="typl8-drop-cap">This is a free and responsive <a title="link" href="#">Jekyll</a> theme with a focus on <strong>imagery and typography</strong>.
 It is built on top of many great modern open source frameworks and tools to make it easier to write many posts that load quickly.
@@ -123,13 +124,13 @@ The rest of this page will mostly be gibberish but will include all of the avail
 <p>Code can be presented inline, like <code>&lt;?php bloginfo('stylesheet_url'); ?&gt;</code>, or within a <code>&lt;pre&gt;</code> block. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.</p>
 
 
-```css
+{% highlight css %}
 #container {
     float: left;
     margin: 0 -240px 0 0;
     width: 100%;
 }
-```
+{% endhighlight %}
 
 <hr />
 

@@ -4,17 +4,20 @@
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  @include respond-to("medium") {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 /// Define the element as a container
 /// @author Hugo Giraudel
 @mixin container {
-  max-width: $medium-width;
+  max-width: $small-width;
   @include center-container();
+
+  @include bp("medium") {
+    max-width: $reading-width;
+  }
+  @include bp("large") {
+    max-width: $medium-width;
+  }
 }
 
 // define the element as a larger container
@@ -23,7 +26,11 @@
   @include center-container();
 }
 
-
+// rem with px fallback
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
 
 @mixin full-container {
   max-width: 100%;
@@ -71,6 +78,16 @@
 /// @author Hugo Giraudel
 /// @param {String} $breakpoint - Breakpoint name
 @mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) == false {
+    @error "Invalid breakpoint #{$breakpoint}.";
+  }
+
+  @media all and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+@mixin bp($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) == false {
     @error "Invalid breakpoint #{$breakpoint}.";
   }

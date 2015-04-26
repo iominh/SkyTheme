@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "typeplate-starter-kit": "~2.1.0"
+    "typeplate-starter-kit": "~2.1.0",
+    "icomoon": "~0.0.3"
   }
 }

@@ -71,3 +71,19 @@
     position: fixed;
   }
 }
+
+.button-round {
+  padding: 8px;
+  border: 1px solid #ededee;
+  border-radius: 20px;
+  color: lighten($dark-grey, 20%);
+}
+
+.button-round:hover {
+  color: $black;
+//  background-color: lighten($dark-grey, 5%);
+}
+
+.home-button {
+  margin-right: 10px;
+}

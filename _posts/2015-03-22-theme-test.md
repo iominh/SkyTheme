@@ -8,7 +8,7 @@ tags: []
 
 
 <p class="typl8-drop-cap">This is a free and responsive <a title="link" href="#">Jekyll</a> theme with a focus on <strong>imagery and typography</strong>.
-It is built on top of many great modern open source frameworks and tools to make it easier to write many posts that load quickly.
+It's built on top of many great modern open source frameworks and tools to make it easier to write many posts that load quickly.
 The rest of this page will mostly be gibberish but will include all of the available UI components. Quisque aliquam. <em>This is emphasized.</em> Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a citation). <span style="text-decoration:underline;">Underline.</span> Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
 
 <section>
@@ -88,29 +88,36 @@ The rest of this page will mostly be gibberish but will include all of the avail
 
 <h2 id="table">Table</h2>
 
-<table>
-<tbody>
-<tr>
-<th>Table Header 1</th>
-<th>Table Header 2</th>
-<th>Table Header 3</th>
-</tr>
-<tr>
-<td>Division 1</td>
-<td>Division 2</td>
-<td>Division 3</td>
-</tr>
-<tr class="even">
-<td>Division 1</td>
-<td>Division 2</td>
-<td>Division 3</td>
-</tr>
-<tr>
-<td>Division 1</td>
-<td>Division 2</td>
-<td>Division 3</td>
-</tr>
-</tbody>
+<table class="tables">
+  <thead>
+    <tr>
+      <th>Header Cell 1</th>
+      <th>Header Cell 2</th>
+      <th>Header Cell 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row 1 Cell 1</td>
+      <td>Row 1 Cell 2</td>
+      <td><button>Confirm</button><button>Reject</button></td>
+    </tr>
+    <tr>
+      <td>Row 2 Cell 1</td>
+      <td>Row 2 Cell 2</td>
+      <td><button>Confirm</button><button>Reject</button></td>
+    </tr>
+    <tr>
+      <td>Row 3 Cell 1</td>
+      <td>Row 3 Cell 2</td>
+      <td><button>Confirm</button><button>Reject</button></td>
+    </tr>
+    <tr>
+      <td>Row 4 Cell 1</td>
+      <td>Row 4 Cell 2</td>
+      <td><button>Confirm</button><button>Reject</button></td>
+    </tr>
+  </tbody>
 </table>
 
 <hr />
@@ -173,6 +180,24 @@ The <sub>sub element</sub> example <br />
 The <sup>sup element</sup> example <br />
 The <var>var element</var> example <br />
 The <u>u element</u> example</p>
+
+<hr />
+
+<h2 id="Grids">Grids</h2>
+
+<p>Here are some responsive grids:</p>
+
+<div class="outer-container">
+
+<div class="col6">
+    Col6
+</div>
+
+<div class="col6">
+    Col6
+</div>
+
+</div>
 
 <hr />
 

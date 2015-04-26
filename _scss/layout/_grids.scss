@@ -9,3 +9,8 @@
 .col12 {
   @include span-columns(12);
 }
+
+.outer-container {
+  @include outer-container;
+  max-width: $medium-width;
+}

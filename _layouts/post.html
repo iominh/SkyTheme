@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
+<p class="meta"><a href="/"><i class="icon-home button-round home-button"></i></a>
+    {{ page.date | date_to_string }}</p>
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
 <article class="post">
 {{ content }}

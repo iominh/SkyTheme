@@ -9,6 +9,17 @@ article {
   }
 }
 
+.article-preview {
+  border-bottom: 2px solid $light-grey2;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.article-preview-title {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 //section {
 //  @include outer-container;
 //  aside { @include span-columns(3); }

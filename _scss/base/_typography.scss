@@ -90,7 +90,7 @@ p + p {
 .meta {
 //  opacity: 0.6;
   @include font-size(1.6);
-  color: lighten($dark-grey, 20%);
+  color: lighten($dark-grey, 40%);
 
   @include bp("large") {
     @include font-size(1.8);

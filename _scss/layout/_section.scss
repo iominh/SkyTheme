@@ -1,6 +1,7 @@
 section {
   @include container();
   @include vertical-rhythm();
+  clear: both;
 }
 
 .large-section {

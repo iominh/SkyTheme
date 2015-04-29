@@ -26,6 +26,24 @@ blockquote {
     }
   }
 
+  &.pull-right:after, &.pull-left:after {
+    content:'';
+    display:block;
+    clear: both;
+  }
+
+  &.pull-left {
+    padding: 0;
+    border: none;
+    margin: 0.5em 0;
+
+    @include bp('medium') {
+      float: left;
+      width: 30%;
+      margin: .5em .5em .5em 1.5em;
+    }
+  }
+
   /**
    * Make all children containers
    */

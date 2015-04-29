@@ -9,7 +9,7 @@
   padding: 6px 10px;
   border-radius: 3px;
   overflow: auto;
-  line-height: 1;
+  line-height: 1.2;
   word-break: normal; }
 
 .highlight .c {
@@ -380,7 +380,7 @@ pre {
  * Address odd `em`-unit font size rendering in all browsers.
  */
 code, kbd, pre, samp {
-  font-family: monospace, monospace;
+  font-family: monospace;
   font-size: 1em; }
 
 /* Forms
@@ -534,6 +534,915 @@ table {
 td, th {
   padding: 0; }
 
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/**
+ * Make all elements inherit from `html` box-sizing
+ */
+* {
+  box-sizing: inherit; }
+
+/**
+ * Redefine box-sizing on the root element
+ */
+html {
+  box-sizing: border-box;
+  font: 62.5%/1.5 "SourceSansPro", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif; }
+
+/**
+ * Basic typography styles
+ */
+body {
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  @media all and (min-width: 750px) {
+    body {
+      font-size: 18px;
+      font-size: 1.8rem; } }
+  @media all and (min-width: 992px) {
+    body {
+      font-size: 22px;
+      font-size: 2.2rem; } }
+
+hr {
+  border: none;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  background-color: #dadbdf; }
+
+/**
+ * Links
+ */
+a, .link-like {
+  text-decoration: none;
+  cursor: pointer;
+  color: #307EA9;
+  -webkit-transition: .15s;
+          transition: .15s; }
+  a:hover, a:active, a:focus, .link-like:hover, .link-like:active, .link-like:focus {
+    color: #6aafd5; }
+
+/**
+ * Inline code
+ */
+:not(pre) > code {
+  color: #6b717f; }
+
+.unstyled {
+  list-style: none; }
+
+::-moz-selection {
+  background-color: #2B2B2B;
+  color: #bbb; }
+
+::selection {
+  background-color: #2B2B2B;
+  color: #bbb; }
+
+.container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem; }
+  @media all and (min-width: 750px) {
+    .container {
+      max-width: 600px; } }
+  @media all and (min-width: 992px) {
+    .container {
+      max-width: 750px; } }
+
+.full-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0; }
+  .full-container * {
+    padding: 0; }
+
+/**
+ * Vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  text-rendering: optimizeLegibility; }
+  @media all and (min-width: 750px) {
+    h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
+      max-width: 600px; } }
+  @media all and (min-width: 992px) {
+    h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
+      max-width: 750px; } }
+
+/**
+ * Lists
+ */
+ul, ol {
+  list-style-position: inside; }
+
+ul ul, ul ol, ol ul, ol ol {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding-left: 3rem; }
+
+li {
+  margin-bottom: .5rem; }
+
+/**
+ * Quotes
+ */
+blockquote {
+  margin-bottom: 1rem; }
+
+blockquote:after {
+  clear: both; }
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  color: #333;
+  line-height: 1.6; }
+  h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+    text-transform: initial; }
+
+h1 {
+  font-weight: 700; }
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%; }
+
+p + p {
+  text-indent: 0em;
+  margin-top: 0em; }
+
+/**
+ * Meta information should have less emphasis
+ */
+.meta {
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #aaaaaa; }
+  @media all and (min-width: 992px) {
+    .meta {
+      font-size: 18px;
+      font-size: 1.8rem; } }
+
+.section-title {
+  display: inline-block;
+  position: relative; }
+  .section-title:before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #dedede;
+    top: 55%;
+    width: 400%; }
+
+/**
+ * Centered container
+ */
+.container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media all and (min-width: 750px) {
+    .container {
+      max-width: 600px; } }
+  @media all and (min-width: 992px) {
+    .container {
+      max-width: 750px; } }
+
+article iframe {
+  max-height: 500px;
+  max-width: 100%; }
+  article iframe div {
+    max-width: 100%;
+    margin: 0;
+    padding: 0; }
+
+.article-preview {
+  border-bottom: 2px solid #f7f7f7; }
+
+.article-meta {
+  margin-top: 0px; }
+
+.article-preview-title {
+  margin-top: 10px;
+  margin-top: 1rem;
+  margin-bottom: 0px; }
+  @media all and (min-width: 750px) {
+    .article-preview-title {
+      margin-top: 15px;
+      margin-top: 1.5rem; } }
+  @media all and (min-width: 992px) {
+    .article-preview-title {
+      margin-top: 18px;
+      margin-top: 1.8rem; } }
+
+/**
+ * Quotes
+ */
+blockquote {
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+  line-height: 1.5;
+  color: #678;
+  font-size: 20px;
+  font-size: 2rem;
+  /**
+   * Make all children containers
+   */
+  /**
+   * On large screens, add a decorative quote
+   */ }
+  @media all and (min-width: 992px) {
+    blockquote {
+      font-size: 25px;
+      font-size: 2.5rem; } }
+  blockquote.pull-right {
+    padding: 0;
+    border: none;
+    margin: 0.5em 0; }
+    @media all and (min-width: 750px) {
+      blockquote.pull-right {
+        float: right;
+        width: 30%;
+        margin: .5em .5em .5em 1.5em; } }
+  blockquote.pull-right:after, blockquote.pull-left:after {
+    content: '';
+    display: block;
+    clear: both; }
+  blockquote.pull-left {
+    padding: 0;
+    border: none;
+    margin: 0.5em 0; }
+    @media all and (min-width: 750px) {
+      blockquote.pull-left {
+        float: left;
+        width: 30%;
+        margin: .5em .5em .5em 1.5em; } }
+  blockquote > * {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    @media all and (min-width: 750px) {
+      blockquote > * {
+        max-width: 600px; } }
+    @media all and (min-width: 992px) {
+      blockquote > * {
+        max-width: 750px; } }
+  @media all and (min-width: 750px) {
+    blockquote > :first-child {
+      position: relative; }
+      blockquote > :first-child::before {
+        font-style: normal;
+        content: "“";
+        font-family: "Georgia", serif;
+        position: absolute;
+        font-size: 20em;
+        right: 100%;
+        top: -.3875em;
+        color: rgba(0, 0, 0, 0.05); } }
+
+.huge {
+  margin: 1.7em 0; }
+  @media all and (min-width: 750px) {
+    .huge {
+      font-size: 25px;
+      font-size: 2.5rem; } }
+  @media all and (min-width: 992px) {
+    .huge {
+      margin: 1.7em -15%; } }
+
+/**
+ * Buttons
+ */
+.button {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: .25em solid;
+  color: #333;
+  display: block;
+  border-radius: .3em;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /**
+   * Icons within buttons
+   * 1. Make them same color as text
+   * 2. Adjust vertical align
+   */ }
+  .button:hover, .button:active, .button:focus {
+    color: #307EA9; }
+  @media all and (min-width: 750px) {
+    .button {
+      display: inline-block; } }
+  .button svg {
+    fill: currentcolor;
+    /* 1 */
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px);
+    /* 2 */ }
+
+.button-wrapper {
+  text-align: center;
+  padding: 1rem 0; }
+
+.button-ui {
+  display: block;
+  cursor: pointer;
+  margin: 1rem;
+  padding: .5rem;
+  font-size: .8em;
+  border-radius: .35em;
+  color: #999;
+  border: .25em solid;
+  background: transparent;
+  text-align: center;
+  font-weight: 400; }
+  .button-ui svg {
+    fill: currentcolor;
+    display: block;
+    margin: 0 auto; }
+  .button-ui:hover, .button-ui:active, .button-ui:focus {
+    color: #333; }
+
+/**
+ * Button to get back to top of the page
+ */
+.button-ui--back {
+  right: 0;
+  bottom: 0; }
+  @media all and (min-width: 750px) {
+    .button-ui--back {
+      position: fixed; } }
+
+.button-round {
+  padding: 8px;
+  border: 1px solid #ededee;
+  border-radius: 20px;
+  color: #aaaaaa; }
+
+.button-round:hover {
+  color: #2B2B2B; }
+
+.home-button {
+  margin-right: 10px; }
+
+/**
+ * Donate blocks
+ */
+.donate {
+  margin-bottom: 1rem;
+  background: #f2ece4;
+  text-align: center;
+  padding: 1rem 0; }
+  .donate .button {
+    background: white;
+    margin-left: 0;
+    margin-right: 0; }
+  @media all and (min-width: 750px) {
+    .donate {
+      padding: 1rem; } }
+
+.donate__content {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media all and (min-width: 750px) {
+    .donate__content {
+      max-width: 600px; } }
+  @media all and (min-width: 992px) {
+    .donate__content {
+      max-width: 750px; } }
+
+/**
+ * Anchor links
+ */
+.anchor-link {
+  position: absolute;
+  left: -1.5rem;
+  font-size: .8em;
+  top: .2em;
+  color: #dadbdf; }
+
+/**
+ * Icons
+ */
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px; }
+
+/**
+ * Images
+ */
+figure {
+  background: #dadbdf;
+  margin: 0;
+  padding: 2rem; }
+
+figure img {
+  display: block;
+  height: auto; }
+
+figcaption {
+  text-align: center;
+  font-size: .8em;
+  font-style: italic; }
+  figcaption a, figcaption .link-like {
+    text-shadow: -1px -1px #dadbdf, -1px 1px #dadbdf, 1px -1px #dadbdf, 1px 1px #dadbdf; }
+
+/**
+ * Notes
+ */
+.note {
+  margin-bottom: 1rem;
+  background: #dadbdf;
+  padding: 2rem; }
+  .note > :first-child {
+    margin-top: 0; }
+  .note > :last-child {
+    margin-bottom: 0; }
+  .note > p:first-child::before {
+    font-weight: 700; }
+  .note a, .note .link-like {
+    text-shadow: -1px -1px #dadbdf, -1px 1px #dadbdf, 1px -1px #dadbdf, 1px 1px #dadbdf; }
+
+.pagination {
+  margin-top: 40px;
+  text-align: center; }
+  .pagination ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    .pagination ul li {
+      display: inline;
+      list-style: none; }
+    .pagination ul ul li {
+      display: none; }
+      .pagination ul ul li:nth-child(1), .pagination ul ul li:nth-child(2), .pagination ul ul li:nth-child(3) {
+        display: inline; }
+      @media screen and (min-width: 53.75em) {
+        .pagination ul ul li {
+          display: inline; } }
+    .pagination ul li a {
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      background: #f6f6f6;
+      border-radius: 3px;
+      border: 1px solid gainsboro;
+      color: #333;
+      outline: none;
+      padding: 0.375em 0.809em;
+      text-decoration: none; }
+      .pagination ul li a:hover, .pagination ul li a:focus {
+        background: white;
+        color: #477DCA; }
+      .pagination ul li a:active {
+        background: #f6f6f6; }
+
+.tables {
+  border-collapse: separate;
+  border-left: 0px;
+  border-radius: 3px;
+  border-spacing: 0;
+  border: 1px solid gainsboro;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px; }
+  .tables tbody {
+    background-color: #fbfbfb; }
+    .tables tbody tr:hover > td, .tables tbody tr:hover > th {
+      background-color: #eeeeee; }
+    .tables tbody tr:nth-child(even) {
+      background-color: #f6f6f6; }
+      .tables tbody tr:nth-child(even):hover > td {
+        background-color: #e9e9e9; }
+  .tables thead:first-of-type tr:first-child > th:first-child {
+    border-top-left-radius: 3px; }
+  .tables thead:first-of-type tr:first-child > th:last-child {
+    border-top-right-radius: 3px; }
+  .tables tbody:last-child tr:last-child > td:first-child {
+    border-bottom-left-radius: 3px; }
+  .tables tbody:last-child tr:last-child > td:last-child {
+    border-bottom-right-radius: 3px; }
+  .tables thead th {
+    background-color: white;
+    border-bottom: 0px;
+    border-left: 1px solid gainsboro;
+    padding: 0.75em 1em;
+    text-align: left; }
+    .tables thead th:first-child {
+      border-left: none; }
+  .tables tbody {
+    background-color: #fbfbfb; }
+    .tables tbody td {
+      border-bottom: 0px;
+      border-left: 1px solid gainsboro;
+      border-top: 1px solid gainsboro;
+      padding: 0.75em 1em; }
+      .tables tbody td:first-child {
+        border-left: none; }
+      .tables tbody td button {
+        background-color: #477DCA;
+        border-radius: 3px;
+        border: 0;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box;
+        display: inline-block;
+        font-size: 0.7em;
+        line-height: 1.5em;
+        margin-bottom: 0.3em;
+        margin-right: 0.5em;
+        outline: none;
+        padding: 0.3em 1em;
+        width: 100%; }
+        .tables tbody td button:hover:not(:disabled) {
+          background-color: #578ad4;
+          cursor: pointer; }
+        .tables tbody td button:active:not(:disabled), .tables tbody td button:focus:not(:disabled) {
+          background-color: #3c71bb;
+          cursor: pointer; }
+        .tables tbody td button:disabled {
+          cursor: not-allowed;
+          opacity: 0.5; }
+        @media screen and (min-width: 40em) {
+          .tables tbody td button {
+            margin-bottom: 0;
+            width: auto; } }
+
+.translation-warning {
+  margin: 0;
+  margin-bottom: 1rem;
+  background: #d2e1dd;
+  padding: 1rem;
+  font-size: 1.2em; }
+
+.translation-warning > p {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media all and (min-width: 750px) {
+    .translation-warning > p {
+      max-width: 600px; } }
+  @media all and (min-width: 992px) {
+    .translation-warning > p {
+      max-width: 750px; } }
+  .translation-warning > p a, .translation-warning > p .link-like {
+    text-shadow: -1px -1px #d2e1dd, -1px 1px #d2e1dd, 1px -1px #d2e1dd, 1px 1px #d2e1dd; }
+
+/* Container used for styling the custom select, the buttom class below adds the bg gradient, corners, etc. */
+.custom-select {
+  position: relative;
+  display: block;
+  margin: 0.5em;
+  padding: 0;
+  border: .25em solid;
+  color: #333;
+  border-radius: 0.3em; }
+
+/* This is the native select, we're making everything but the text invisible so we can see the button styles in the wrapper */
+.custom-select select {
+  width: 100%;
+  margin: 0;
+  background: none;
+  border: 1px solid transparent;
+  outline: none;
+  /* Prefixed box-sizing rules necessary for older browsers */
+  box-sizing: border-box;
+  /* Remove select styling */
+  appearance: none;
+  -webkit-appearance: none;
+  /* Font size must be 16px or larger to prevent iOS page zoom on focus */
+  font-size: 1em;
+  /* General select styles: change as needed */
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+  color: #333;
+  padding: .6em 1.9em .5em .8em;
+  line-height: 1.3; }
+
+/* Custom arrow sits on top of the select - could be an image, SVG, icon font, etc. or the arrow could just baked into the bg image on the select. Note this si a 2x image so it will look bad in browsers that don't support background-size. In production, you'd handle this resolution switch via media query but this is a demo. */
+.custom-select::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  top: 50%;
+  right: 1em;
+  margin-top: -4px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAMAAADeWG8gAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFAAAAkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXl5AZAwAAABB0Uk5TABAgMEBQYHCAj5+vv8/f7yMagooAAABRSURBVBgZXcGJFoAQFEXRQwpN7/7/1zZYQnsT0h/e9ANJow041TMPBPUSj03NwcuZPoEiqlqpDhXmqCYVkSbrsdNxpttEb5GUGe06HSOvmeICIxYIyUzm7RkAAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 2;
+  /* This hack make the select behind the arrow clickable in some browsers */
+  pointer-events: none; }
+
+/* Hover style */
+.custom-select:hover {
+  color: #307EA9; }
+
+/* Focus style */
+.custom-select select:focus {
+  outline: none;
+  box-shadow: 0 0 1px 3px #b4defa;
+  background-color: transparent;
+  color: #307EA9;
+  border: 1px solid #aaa; }
+
+/* Set options to normal weight */
+.custom-select option {
+  font-weight: normal; }
+
+/* ------------------------------------  */
+/* START OF UGLY BROWSER-SPECIFIC HACKS */
+/* ----------------------------------  */
+/* OPERA - Pre-Blink nix the custom arrow, go with a native select button to keep it simple. Targeted via this hack http://browserhacks.com/#hack-a3f166304aafed524566bc6814e1d5c7 */
+x:-o-prefocus, .custom-select::after {
+  display: none; }
+
+/* IE 10/11+ - This hides native dropdown button arrow so it will have the custom appearance, IE 9 and earlier get a native select - targeting media query hack via http://browserhacks.com/#hack-28f493d247a12ab654f6c3637f6978d5 - looking for better ways to achieve this targeting */
+/* The second rule removes the odd blue bg color behind the text in the select button in IE 10/11 and sets the text color to match the focus style's - fix via http://stackoverflow.com/questions/17553300/change-ie-background-color-on-unopened-focused-select-box */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .custom-select select::-ms-expand {
+    display: none; }
+  .custom-select select:focus::-ms-value {
+    background: transparent;
+    color: #222; } }
+
+/* FIREFOX won't let us hide the native select arrow, so we have to make it wider than needed and clip it via overflow on the parent container. The percentage width is a fallback since FF 4+ supports calc() so we can just add a fixed amount of extra width to push the native arrow out of view. We're applying this hack across all FF versions because all the previous hacks were too fragile and complex. You might want to consider not using this hack and using the native select arrow in FF. Note this makes the menus wider than the select button because they display at the specified width and aren't clipped. Targeting hack via http://browserhacks.com/#hack-758bff81c5c32351b02e10480b5ed48e */
+/* Show only the native arrow */
+@-moz-document url-prefix() {
+  .custom-select {
+    overflow: hidden; }
+
+  .custom-select select {
+    width: 120%;
+    width: calc(100% + em); } }
+
+/* Firefox focus has odd artifacts around the text, this kills that. See https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-focusring */
+.custom-select select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000; }
+
+/* ------------------------------------  */
+/*  END OF UGLY BROWSER-SPECIFIC HACKS  */
+/* ------------------------------------  */
+/**
+ * Header
+ */
+.header {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  background: no-repeat center center;
+  background-size: cover;
+  color: white;
+  overflow: hidden;
+  padding: 1.5rem 0;
+  margin-bottom: 3rem;
+  background-size: cover;
+  background-image: url(/assets/img/wallpaper/autochrome-v3.jpg); }
+  .header a {
+    color: #333; }
+    .header a:hover, .header a:active, .header a:focus {
+      color: #333; }
+  .header .full-height {
+    height: 100vh; }
+
+/**
+ * Main title
+ */
+.title {
+  margin: 0;
+  max-width: none;
+  font-size: 6em;
+  color: #333; }
+  @media (max-width: 600px) {
+    .title {
+      font-size: 3em; } }
+
+/**
+ * Baseline
+ */
+.baseline {
+  font-size: 2em;
+  text-transform: initial;
+  color: #307EA9;
+  margin-bottom: 5rem; }
+  @media all and (min-width: 750px) {
+    .baseline {
+      font-size: 2.5em; } }
+
+/**
+ * Footer
+ */
+.footer {
+  background: #f7f7f7;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-top: 2px solid #f7f7f7;
+  min-height: 150px;
+  position: relative; }
+  .footer li {
+    margin-bottom: 0.1rem; }
+  .footer ul {
+    list-style-type: none; }
+
+.footer__metadata {
+  margin-bottom: 0; }
+
+.footer__authors {
+  font-size: .9em; }
+
+.aside {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background: white;
+  box-shadow: 0.3em 0 .25em rgba(0, 0, 0, 0.1);
+  -webkit-transition: .15s cubic-bezier(.32, 1, .53, .8);
+          transition: .15s cubic-bezier(.32, 1, .53, .8); }
+  .open .aside {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    overflow: auto; }
+  @media all and (min-width: 750px) {
+    .aside {
+      width: 250px;
+      -webkit-transform: translateX(-250px);
+      -ms-transform: translateX(-250px);
+      transform: translateX(-250px); } }
+  .aside .button {
+    display: block;
+    margin: 0.5rem;
+    padding: 0.5rem; }
+
+.aside__title {
+  background: #c69;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1.25em;
+  margin: 0;
+  text-transform: uppercase; }
+
+.aside__heading {
+  margin: 1rem 0;
+  border-bottom: .1em solid;
+  text-transform: capitalize;
+  font-size: .9em;
+  padding: 0.5rem 0.75rem;
+  color: #444;
+  text-align: right;
+  font-weight: 400; }
+  .aside__title + .aside__heading {
+    margin-top: 0; }
+
+.aside__toggle {
+  position: absolute;
+  background: white;
+  bottom: 0;
+  right: -4.5em; }
+  .open .aside__toggle {
+    right: 0; }
+  @media all and (min-width: 750px) {
+    .aside__toggle {
+      background: transparent; } }
+
+.aside__radio-list {
+  list-style: none;
+  overflow: hidden;
+  margin: -0.5rem 0;
+  padding: 0; }
+  .aside__radio-list label {
+    display: inline-block;
+    cursor: pointer; }
+  .aside__radio-list input {
+    -webkit-transform: translate(-1px, -1px);
+    -ms-transform: translate(-1px, -1px);
+        transform: translate(-1px, -1px); }
+  .aside__radio-list li {
+    margin: 0;
+    float: left;
+    width: 50%; }
+
+section {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  clear: both; }
+  @media all and (min-width: 750px) {
+    section {
+      max-width: 600px; } }
+  @media all and (min-width: 992px) {
+    section {
+      max-width: 750px; } }
+
+.large-section {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem; }
+  .large-section aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .large-section aside:last-child {
+      margin-right: 0; }
+  .large-section article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    .large-section article:last-child {
+      margin-right: 0; }
+
+.col3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .col3:last-child {
+    margin-right: 0; }
+
+.col6 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .col6:last-child {
+    margin-right: 0; }
+
+.col12 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .col12:last-child {
+    margin-right: 0; }
+
+.outer-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 750px; }
+  .outer-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 /*!
 Typeplate : Starter Kit
 URL ........... http://typeplate.com
@@ -571,7 +1480,7 @@ pre code {
   word-wrap: normal; }
 
 html {
-  font: normal 112.5%/1.65 serif; }
+  font: normal 62.5%/1.5 "SourceSansPro", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif; }
 
 body {
   -webkit-hyphens: auto;
@@ -582,57 +1491,57 @@ body {
 
 .typl8-tera {
   font-size: 117px;
-  font-size: 6.5rem;
-  margin-bottom: 70.90909px;
-  margin-bottom: 3.93939rem; }
+  font-size: 11.7rem;
+  margin-bottom: 78px;
+  margin-bottom: 7.8rem; }
 
 .typl8-giga {
   font-size: 90px;
-  font-size: 5rem;
-  margin-bottom: 54.54545px;
-  margin-bottom: 3.0303rem; }
+  font-size: 9rem;
+  margin-bottom: 60px;
+  margin-bottom: 6rem; }
 
 .typl8-mega, h1 {
   font-size: 72px;
-  font-size: 4rem;
-  margin-bottom: 43.63636px;
-  margin-bottom: 2.42424rem; }
+  font-size: 7.2rem;
+  margin-bottom: 48px;
+  margin-bottom: 4.8rem; }
 
 .typl8-alpha, h2 {
   font-size: 60px;
-  font-size: 3.33333rem;
-  margin-bottom: 36.36364px;
-  margin-bottom: 2.0202rem; }
+  font-size: 6rem;
+  margin-bottom: 40px;
+  margin-bottom: 4rem; }
 
 .typl8-beta, h3 {
   font-size: 48px;
-  font-size: 2.66667rem;
-  margin-bottom: 29.09091px;
-  margin-bottom: 1.61616rem; }
+  font-size: 4.8rem;
+  margin-bottom: 32px;
+  margin-bottom: 3.2rem; }
 
 .typl8-gamma, h4 {
   font-size: 36px;
-  font-size: 2rem;
-  margin-bottom: 21.81818px;
-  margin-bottom: 1.21212rem; }
+  font-size: 3.6rem;
+  margin-bottom: 24px;
+  margin-bottom: 2.4rem; }
 
 .typl8-delta, h5 {
   font-size: 24px;
-  font-size: 1.33333rem;
-  margin-bottom: 14.54545px;
-  margin-bottom: 0.80808rem; }
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+  margin-bottom: 1.6rem; }
 
 .typl8-epsilon {
   font-size: 21px;
-  font-size: 1.16667rem;
-  margin-bottom: 12.72727px;
-  margin-bottom: 0.70707rem; }
+  font-size: 2.1rem;
+  margin-bottom: 14px;
+  margin-bottom: 1.4rem; }
 
 .typl8-zeta, h6 {
   font-size: 18px;
-  font-size: 1rem;
-  margin-bottom: 10.90909px;
-  margin-bottom: 0.60606rem; }
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  margin-bottom: 1.2rem; }
 
 p {
   margin: auto auto 1.5em; }
@@ -805,893 +1714,6 @@ p + .typl8-drop-cap {
  * Extend this object into your markup.
  *
  */
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
-/**
- * Make all elements inherit from `html` box-sizing
- */
-* {
-  box-sizing: inherit; }
-
-/**
- * Redefine box-sizing on the root element
- */
-html {
-  box-sizing: border-box;
-  font: 62.5%/1.5 "Droid Sans", "Helvetica", "Arial", sans-serif; }
-
-/**
- * Basic typography styles
- */
-body {
-  color: #444;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
-  font-size: 1.6rem; }
-  @media all and (min-width: 760px) {
-    body {
-      font-size: 18px;
-      font-size: 1.8rem; } }
-  @media all and (min-width: 992px) {
-    body {
-      font-size: 22px;
-      font-size: 2.2rem; } }
-
-hr {
-  border: none;
-  height: 1px;
-  margin: 0;
-  padding: 0;
-  background-color: #dadbdf; }
-
-/**
- * Links
- */
-a, .link-like {
-  text-decoration: none;
-  cursor: pointer;
-  color: #307EA9;
-  -webkit-transition: .15s;
-          transition: .15s; }
-  a:hover, a:active, a:focus, .link-like:hover, .link-like:active, .link-like:focus {
-    color: #6aafd5; }
-
-/**
- * Inline code
- */
-:not(pre) > code {
-  color: #6b717f; }
-
-.unstyled {
-  list-style: none; }
-
-::-moz-selection {
-  background-color: #2B2B2B;
-  color: #bbb; }
-
-::selection {
-  background-color: #2B2B2B;
-  color: #bbb; }
-
-.container {
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1.5rem; }
-  @media all and (min-width: 760px) {
-    .container {
-      max-width: 600px; } }
-  @media all and (min-width: 992px) {
-    .container {
-      max-width: 760px; } }
-
-.full-container {
-  max-width: 100%;
-  margin: 0;
-  padding: 0; }
-  .full-container * {
-    padding: 0; }
-
-/**
- * Vertical rhythm
- */
-h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1.5rem; }
-  @media all and (min-width: 760px) {
-    h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
-      max-width: 600px; } }
-  @media all and (min-width: 992px) {
-    h1, h2, h3, h4, h5, h6, p, ul, ol, pre, img, hr, dl, table, div, section {
-      max-width: 760px; } }
-
-/**
- * Lists
- */
-ul, ol {
-  list-style-position: inside; }
-
-ul ul, ul ol, ol ul, ol ol {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  padding-left: 3rem; }
-
-li {
-  margin-bottom: .5rem; }
-
-/**
- * Quotes
- */
-blockquote {
-  margin-bottom: 1.5rem; }
-
-/**
- * Headings
- */
-h1, h2, h3 {
-  text-transform: capitalize;
-  position: relative; }
-  h1 code, h2 code, h3 code {
-    text-transform: initial; }
-
-h1 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  font-weight: 700; }
-
-h2 {
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
-
-h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem; }
-
-/**
- * Images
- */
-img {
-  max-width: 100%; }
-
-p + p {
-  text-indent: 0em;
-  margin-top: 0em; }
-
-/**
- * Meta information should have less emphasis
- */
-.meta {
-  font-size: 16px;
-  font-size: 1.6rem;
-  color: #aaaaaa; }
-  @media all and (min-width: 992px) {
-    .meta {
-      font-size: 18px;
-      font-size: 1.8rem; } }
-
-.section-title {
-  display: inline-block;
-  position: relative; }
-  .section-title:before {
-    content: "";
-    position: absolute;
-    border-bottom: 1px solid #dedede;
-    top: 55%;
-    width: 400%; }
-
-/**
- * Centered container
- */
-.container {
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem; }
-  @media all and (min-width: 760px) {
-    .container {
-      max-width: 600px; } }
-  @media all and (min-width: 992px) {
-    .container {
-      max-width: 760px; } }
-
-article iframe {
-  max-height: 500px;
-  max-width: 100%; }
-  article iframe div {
-    max-width: 100%;
-    margin: 0;
-    padding: 0; }
-
-.article-preview {
-  border-bottom: 2px solid #f7f7f7;
-  padding-bottom: 10px;
-  padding-top: 10px; }
-
-.article-preview-title {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem; }
-
-/**
- * Quotes
- */
-blockquote {
-  margin: 0;
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  overflow: hidden;
-  line-height: 1.5;
-  color: #678;
-  font-size: 20px;
-  font-size: 2rem;
-  /**
-   * Make all children containers
-   */
-  /**
-   * On large screens, add a decorative quote
-   */ }
-  @media all and (min-width: 992px) {
-    blockquote {
-      font-size: 25px;
-      font-size: 2.5rem; } }
-  blockquote.pull-right {
-    padding: 0;
-    border: none;
-    margin: 0.5em 0; }
-    @media all and (min-width: 760px) {
-      blockquote.pull-right {
-        float: right;
-        width: 30%;
-        margin: .5em .5em .5em 1.5em; } }
-  blockquote > * {
-    max-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem; }
-    @media all and (min-width: 760px) {
-      blockquote > * {
-        max-width: 600px; } }
-    @media all and (min-width: 992px) {
-      blockquote > * {
-        max-width: 760px; } }
-  @media all and (min-width: 760px) {
-    blockquote > :first-child {
-      position: relative; }
-      blockquote > :first-child::before {
-        font-style: normal;
-        content: "“";
-        font-family: "Georgia", serif;
-        position: absolute;
-        font-size: 20em;
-        right: 100%;
-        top: -.3875em;
-        color: rgba(0, 0, 0, 0.05); } }
-
-.huge {
-  margin: 1.7em 0; }
-  @media all and (min-width: 760px) {
-    .huge {
-      font-size: 25px;
-      font-size: 2.5rem; } }
-  @media all and (min-width: 992px) {
-    .huge {
-      margin: 1.7em -15%; } }
-
-/**
- * Buttons
- */
-.button {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  border: .25em solid;
-  color: #444;
-  display: block;
-  border-radius: .3em;
-  text-align: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  /**
-   * Icons within buttons
-   * 1. Make them same color as text
-   * 2. Adjust vertical align
-   */ }
-  .button:hover, .button:active, .button:focus {
-    color: #307EA9; }
-  @media all and (min-width: 760px) {
-    .button {
-      display: inline-block; } }
-  .button svg {
-    fill: currentcolor;
-    /* 1 */
-    -webkit-transform: translateY(1px);
-    -ms-transform: translateY(1px);
-    transform: translateY(1px);
-    /* 2 */ }
-
-.button-wrapper {
-  text-align: center;
-  padding: 1rem 0; }
-
-.button-ui {
-  display: block;
-  cursor: pointer;
-  margin: 1rem;
-  padding: .5rem;
-  font-size: .8em;
-  border-radius: .35em;
-  color: #999;
-  border: .25em solid;
-  background: transparent;
-  text-align: center;
-  font-weight: 400; }
-  .button-ui svg {
-    fill: currentcolor;
-    display: block;
-    margin: 0 auto; }
-  .button-ui:hover, .button-ui:active, .button-ui:focus {
-    color: #444; }
-
-/**
- * Button to get back to top of the page
- */
-.button-ui--back {
-  right: 0;
-  bottom: 0; }
-  @media all and (min-width: 760px) {
-    .button-ui--back {
-      position: fixed; } }
-
-.button-round {
-  padding: 8px;
-  border: 1px solid #ededee;
-  border-radius: 20px;
-  color: #aaaaaa; }
-
-.button-round:hover {
-  color: #2B2B2B; }
-
-.home-button {
-  margin-right: 10px; }
-
-/**
- * Donate blocks
- */
-.donate {
-  margin-bottom: 1.5rem;
-  background: #f2ece4;
-  text-align: center;
-  padding: 1rem 0; }
-  .donate .button {
-    background: white;
-    margin-left: 0;
-    margin-right: 0; }
-  @media all and (min-width: 760px) {
-    .donate {
-      padding: 1rem; } }
-
-.donate__content {
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem; }
-  @media all and (min-width: 760px) {
-    .donate__content {
-      max-width: 600px; } }
-  @media all and (min-width: 992px) {
-    .donate__content {
-      max-width: 760px; } }
-
-/**
- * Anchor links
- */
-.anchor-link {
-  position: absolute;
-  left: -1.5rem;
-  font-size: .8em;
-  top: .2em;
-  color: #dadbdf; }
-
-/**
- * Icons
- */
-.icon {
-  display: inline-block;
-  width: 16px;
-  height: 16px; }
-
-/**
- * Images
- */
-figure {
-  background: #dadbdf;
-  margin: 0;
-  padding: 2rem; }
-
-figure img {
-  display: block;
-  height: auto; }
-
-figcaption {
-  text-align: center;
-  font-size: .8em;
-  font-style: italic; }
-  figcaption a, figcaption .link-like {
-    text-shadow: -1px -1px #dadbdf, -1px 1px #dadbdf, 1px -1px #dadbdf, 1px 1px #dadbdf; }
-
-/**
- * Notes
- */
-.note {
-  margin-bottom: 1.5rem;
-  background: #dadbdf;
-  padding: 2rem; }
-  .note > :first-child {
-    margin-top: 0; }
-  .note > :last-child {
-    margin-bottom: 0; }
-  .note > p:first-child::before {
-    font-weight: 700; }
-  .note a, .note .link-like {
-    text-shadow: -1px -1px #dadbdf, -1px 1px #dadbdf, 1px -1px #dadbdf, 1px 1px #dadbdf; }
-
-.pagination {
-  margin-top: 40px;
-  text-align: center; }
-  .pagination ul {
-    display: inline;
-    margin: 0;
-    padding: 0;
-    text-align: center; }
-    .pagination ul li {
-      display: inline;
-      list-style: none; }
-    .pagination ul ul li {
-      display: none; }
-      .pagination ul ul li:nth-child(1), .pagination ul ul li:nth-child(2), .pagination ul ul li:nth-child(3) {
-        display: inline; }
-      @media screen and (min-width: 53.75em) {
-        .pagination ul ul li {
-          display: inline; } }
-    .pagination ul li a {
-      -webkit-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out;
-      background: #f6f6f6;
-      border-radius: 3px;
-      border: 1px solid gainsboro;
-      color: #333;
-      outline: none;
-      padding: 0.375em 0.809em;
-      text-decoration: none; }
-      .pagination ul li a:hover, .pagination ul li a:focus {
-        background: white;
-        color: #477DCA; }
-      .pagination ul li a:active {
-        background: #f6f6f6; }
-
-.tables {
-  border-collapse: separate;
-  border-left: 0px;
-  border-radius: 3px;
-  border-spacing: 0;
-  border: 1px solid gainsboro;
-  width: 100%;
-  padding-left: 0px;
-  padding-right: 0px; }
-  .tables tbody {
-    background-color: #fbfbfb; }
-    .tables tbody tr:hover > td, .tables tbody tr:hover > th {
-      background-color: #eeeeee; }
-    .tables tbody tr:nth-child(even) {
-      background-color: #f6f6f6; }
-      .tables tbody tr:nth-child(even):hover > td {
-        background-color: #e9e9e9; }
-  .tables thead:first-of-type tr:first-child > th:first-child {
-    border-top-left-radius: 3px; }
-  .tables thead:first-of-type tr:first-child > th:last-child {
-    border-top-right-radius: 3px; }
-  .tables tbody:last-child tr:last-child > td:first-child {
-    border-bottom-left-radius: 3px; }
-  .tables tbody:last-child tr:last-child > td:last-child {
-    border-bottom-right-radius: 3px; }
-  .tables thead th {
-    background-color: white;
-    border-bottom: 0px;
-    border-left: 1px solid gainsboro;
-    padding: 0.75em 1em;
-    text-align: left; }
-    .tables thead th:first-child {
-      border-left: none; }
-  .tables tbody {
-    background-color: #fbfbfb; }
-    .tables tbody td {
-      border-bottom: 0px;
-      border-left: 1px solid gainsboro;
-      border-top: 1px solid gainsboro;
-      padding: 0.75em 1em; }
-      .tables tbody td:first-child {
-        border-left: none; }
-      .tables tbody td button {
-        background-color: #477DCA;
-        border-radius: 3px;
-        border: 0;
-        color: white;
-        display: inline-block;
-        font-size: inherit;
-        font-weight: bold;
-        padding: 7px 18px;
-        text-decoration: none;
-        background-clip: padding-box;
-        display: inline-block;
-        font-size: 0.7em;
-        line-height: 1.5em;
-        margin-bottom: 0.3em;
-        margin-right: 0.5em;
-        outline: none;
-        padding: 0.3em 1em;
-        width: 100%; }
-        .tables tbody td button:hover:not(:disabled) {
-          background-color: #578ad4;
-          cursor: pointer; }
-        .tables tbody td button:active:not(:disabled), .tables tbody td button:focus:not(:disabled) {
-          background-color: #3c71bb;
-          cursor: pointer; }
-        .tables tbody td button:disabled {
-          cursor: not-allowed;
-          opacity: 0.5; }
-        @media screen and (min-width: 40em) {
-          .tables tbody td button {
-            margin-bottom: 0;
-            width: auto; } }
-
-.translation-warning {
-  margin: 0;
-  margin-bottom: 1.5rem;
-  background: #d2e1dd;
-  padding: 1rem;
-  font-size: 1.2em; }
-
-.translation-warning > p {
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem; }
-  @media all and (min-width: 760px) {
-    .translation-warning > p {
-      max-width: 600px; } }
-  @media all and (min-width: 992px) {
-    .translation-warning > p {
-      max-width: 760px; } }
-  .translation-warning > p a, .translation-warning > p .link-like {
-    text-shadow: -1px -1px #d2e1dd, -1px 1px #d2e1dd, 1px -1px #d2e1dd, 1px 1px #d2e1dd; }
-
-/* Container used for styling the custom select, the buttom class below adds the bg gradient, corners, etc. */
-.custom-select {
-  position: relative;
-  display: block;
-  margin: 0.5em;
-  padding: 0;
-  border: .25em solid;
-  color: #444;
-  border-radius: 0.3em; }
-
-/* This is the native select, we're making everything but the text invisible so we can see the button styles in the wrapper */
-.custom-select select {
-  width: 100%;
-  margin: 0;
-  background: none;
-  border: 1px solid transparent;
-  outline: none;
-  /* Prefixed box-sizing rules necessary for older browsers */
-  box-sizing: border-box;
-  /* Remove select styling */
-  appearance: none;
-  -webkit-appearance: none;
-  /* Font size must be 16px or larger to prevent iOS page zoom on focus */
-  font-size: 1em;
-  /* General select styles: change as needed */
-  font-family: helvetica, sans-serif;
-  font-weight: bold;
-  color: #444;
-  padding: .6em 1.9em .5em .8em;
-  line-height: 1.3; }
-
-/* Custom arrow sits on top of the select - could be an image, SVG, icon font, etc. or the arrow could just baked into the bg image on the select. Note this si a 2x image so it will look bad in browsers that don't support background-size. In production, you'd handle this resolution switch via media query but this is a demo. */
-.custom-select::after {
-  content: "";
-  position: absolute;
-  width: 9px;
-  height: 8px;
-  top: 50%;
-  right: 1em;
-  margin-top: -4px;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAMAAADeWG8gAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFAAAAkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXkpSXl5AZAwAAABB0Uk5TABAgMEBQYHCAj5+vv8/f7yMagooAAABRSURBVBgZXcGJFoAQFEXRQwpN7/7/1zZYQnsT0h/e9ANJow041TMPBPUSj03NwcuZPoEiqlqpDhXmqCYVkSbrsdNxpttEb5GUGe06HSOvmeICIxYIyUzm7RkAAAAASUVORK5CYII=);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  z-index: 2;
-  /* This hack make the select behind the arrow clickable in some browsers */
-  pointer-events: none; }
-
-/* Hover style */
-.custom-select:hover {
-  color: #307EA9; }
-
-/* Focus style */
-.custom-select select:focus {
-  outline: none;
-  box-shadow: 0 0 1px 3px #b4defa;
-  background-color: transparent;
-  color: #307EA9;
-  border: 1px solid #aaa; }
-
-/* Set options to normal weight */
-.custom-select option {
-  font-weight: normal; }
-
-/* ------------------------------------  */
-/* START OF UGLY BROWSER-SPECIFIC HACKS */
-/* ----------------------------------  */
-/* OPERA - Pre-Blink nix the custom arrow, go with a native select button to keep it simple. Targeted via this hack http://browserhacks.com/#hack-a3f166304aafed524566bc6814e1d5c7 */
-x:-o-prefocus, .custom-select::after {
-  display: none; }
-
-/* IE 10/11+ - This hides native dropdown button arrow so it will have the custom appearance, IE 9 and earlier get a native select - targeting media query hack via http://browserhacks.com/#hack-28f493d247a12ab654f6c3637f6978d5 - looking for better ways to achieve this targeting */
-/* The second rule removes the odd blue bg color behind the text in the select button in IE 10/11 and sets the text color to match the focus style's - fix via http://stackoverflow.com/questions/17553300/change-ie-background-color-on-unopened-focused-select-box */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .custom-select select::-ms-expand {
-    display: none; }
-  .custom-select select:focus::-ms-value {
-    background: transparent;
-    color: #222; } }
-
-/* FIREFOX won't let us hide the native select arrow, so we have to make it wider than needed and clip it via overflow on the parent container. The percentage width is a fallback since FF 4+ supports calc() so we can just add a fixed amount of extra width to push the native arrow out of view. We're applying this hack across all FF versions because all the previous hacks were too fragile and complex. You might want to consider not using this hack and using the native select arrow in FF. Note this makes the menus wider than the select button because they display at the specified width and aren't clipped. Targeting hack via http://browserhacks.com/#hack-758bff81c5c32351b02e10480b5ed48e */
-/* Show only the native arrow */
-@-moz-document url-prefix() {
-  .custom-select {
-    overflow: hidden; }
-
-  .custom-select select {
-    width: 120%;
-    width: calc(100% + em); } }
-
-/* Firefox focus has odd artifacts around the text, this kills that. See https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-focusring */
-.custom-select select:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #000; }
-
-/* ------------------------------------  */
-/*  END OF UGLY BROWSER-SPECIFIC HACKS  */
-/* ------------------------------------  */
-/**
- * Header
- */
-.header {
-  position: relative;
-  display: table;
-  width: 100%;
-  height: 30vh;
-  text-align: center;
-  background: no-repeat center center;
-  background-size: cover;
-  color: white;
-  overflow: hidden;
-  padding: 1.5rem 0;
-  margin-bottom: 3rem;
-  background-size: cover;
-  background-image: url(/assets/img/wallpaper/autochrome-v3.jpg); }
-  .header a {
-    color: #444; }
-    .header a:hover, .header a:active, .header a:focus {
-      color: #444; }
-  .header .full-height {
-    height: 100vh; }
-
-/**
- * Main title
- */
-.title {
-  margin: 0;
-  max-width: none;
-  font-size: 6em;
-  color: #444; }
-  @media (max-width: 600px) {
-    .title {
-      font-size: 3em; } }
-
-/**
- * Baseline
- */
-.baseline {
-  font-size: 2em;
-  text-transform: initial;
-  color: #307EA9;
-  margin-bottom: 5rem; }
-  @media all and (min-width: 760px) {
-    .baseline {
-      font-size: 2.5em; } }
-
-/**
- * Footer
- */
-.footer {
-  background: #f7f7f7;
-  margin-top: 5rem;
-  border-top: 2px solid #f7f7f7;
-  height: 15vh;
-  position: relative; }
-  .footer li {
-    margin-bottom: 0.1rem; }
-  .footer ul {
-    list-style-type: none; }
-
-.footer__metadata {
-  margin-bottom: 0; }
-
-.footer__authors {
-  font-size: .9em; }
-
-.aside {
-  z-index: 2;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-  background: white;
-  box-shadow: 0.3em 0 .25em rgba(0, 0, 0, 0.1);
-  -webkit-transition: .15s cubic-bezier(.32, 1, .53, .8);
-          transition: .15s cubic-bezier(.32, 1, .53, .8); }
-  .open .aside {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    overflow: auto; }
-  @media all and (min-width: 760px) {
-    .aside {
-      width: 250px;
-      -webkit-transform: translateX(-250px);
-      -ms-transform: translateX(-250px);
-      transform: translateX(-250px); } }
-  .aside .button {
-    display: block;
-    margin: 0.5rem;
-    padding: 0.5rem; }
-
-.aside__title {
-  background: #c69;
-  padding: 0.5rem;
-  color: white;
-  font-size: 1.25em;
-  margin: 0;
-  text-transform: uppercase; }
-
-.aside__heading {
-  margin: 1rem 0;
-  border-bottom: .1em solid;
-  text-transform: capitalize;
-  font-size: .9em;
-  padding: 0.5rem 0.75rem;
-  color: #444;
-  text-align: right;
-  font-weight: 400; }
-  .aside__title + .aside__heading {
-    margin-top: 0; }
-
-.aside__toggle {
-  position: absolute;
-  background: white;
-  bottom: 0;
-  right: -4.5em; }
-  .open .aside__toggle {
-    right: 0; }
-  @media all and (min-width: 760px) {
-    .aside__toggle {
-      background: transparent; } }
-
-.aside__radio-list {
-  list-style: none;
-  overflow: hidden;
-  margin: -0.5rem 0;
-  padding: 0; }
-  .aside__radio-list label {
-    display: inline-block;
-    cursor: pointer; }
-  .aside__radio-list input {
-    -webkit-transform: translate(-1px, -1px);
-    -ms-transform: translate(-1px, -1px);
-        transform: translate(-1px, -1px); }
-  .aside__radio-list li {
-    margin: 0;
-    float: left;
-    width: 50%; }
-
-section {
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1.5rem; }
-  @media all and (min-width: 760px) {
-    section {
-      max-width: 600px; } }
-  @media all and (min-width: 992px) {
-    section {
-      max-width: 760px; } }
-
-.large-section {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1.5rem; }
-  .large-section aside {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    .large-section aside:last-child {
-      margin-right: 0; }
-  .large-section article {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 74.41059%; }
-    .large-section article:last-child {
-      margin-right: 0; }
-
-.col3 {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%; }
-  .col3:last-child {
-    margin-right: 0; }
-
-.col6 {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%; }
-  .col6:last-child {
-    margin-right: 0; }
-
-.col12 {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .col12:last-child {
-    margin-right: 0; }
-
-.outer-container {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 760px; }
-  .outer-container::after {
-    clear: both;
-    content: "";
-    display: table; }
-
 body {
   background: white; }
 

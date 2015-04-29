@@ -1,49 +1,73 @@
 ---
 layout: post
-title: "Bright Skies"
+title: "A Full Style Test"
 description: ""
 category: blog
 tags: []
 ---
 
+<section markdown="1">
 
-<p class="typl8-drop-cap">This is a free and responsive <a title="link" href="#">Jekyll</a> theme with a focus on <strong>imagery and typography</strong>.
-It's built on top of many great modern open source frameworks and tools to make it easier to write many posts that load quickly.
-The rest of this page will mostly be gibberish but will include all of the available UI components. Quisque aliquam. <em>This is emphasized.</em> Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a citation). <span style="text-decoration:underline;">Underline.</span> Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+{:.typl8-drop-cap}
+Bright Skies is a free and responsive [Jekyll](http://jekyllrb.com/) theme with a focus on **imagery and typography**.
+The goal of this theme is to minimize distractions and let content be the focus.
 
-<section>
-    <blockquote class="pull-right">
-    This is a right blockquote
-    </blockquote>
+{:.pull-right}
+> This is a right blockquote.
+
+Bright Skies is built on top of many great open source frameworks and tools to make it easier to create maintainable
+content that loads fast and looks great on many different devices.  The rest of this page will test the theme's UI components.
+_This is emphasized._ 5<sup>3</sup> = 125.
+Water is H<sub>2</sub>O. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+<cite>The New York Times</cite> (That’s a citation).
+<span style="text-decoration:underline;">Underline.</span>
+
+{:.pull-left}
+> This is a left blockquote.
+
+<abbr title="Hyper Text Markup Language">HTML</abbr> and
+<abbr title="Cascading Style Sheets">CSS</abbr> are our tools.
+Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
+To copy a file type <code>COPY <var>filename</var></code>. <del>Dinner’s at 5:00.</del> <ins>Let’s make that 7.</ins>
+This <span style="text-decoration:line-through;">text</span> has been struck.
+
 </section>
 
-<p><abbr title="Hyper Text Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type <code>COPY <var>filename</var></code>. <del>Dinner’s at 5:00.</del> <ins>Let’s make that 7.</ins> This <span style="text-decoration:line-through;">text</span> has been struck.</p>
+<section markdown="1">
 
 <hr />
 
-<h1 id="heading1">Heading 1</h1>
+# Heading 1
 
-<h2 id="heading2">Heading 2</h2>
+## Heading 2
 
-<h3 id="heading3">Heading 3</h3>
+### Heading 3
 
-<h4 id="heading4">Heading 4</h4>
+#### Heading 4
 
-<h5 id="heading5">Heading 5</h5>
+##### Heading 5
 
-<h6 id="heading6">Heading 6</h6>
+###### Heading 6
 
 <hr />
 
-<h2 id="media">Media</h2>
+</section>
 
-<h3 id="smallimage">Small Image</h3>
+<section markdown="1">
 
-<p>Bears are very majestic, wouldn't you agree? Here's an example of a majestic bear, although the image is small.</p>
+## Media
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+
+### Small Image
+
+Bears are very majestic, wouldn't you agree? Here's an example of a majestic bear, although the image is small.
 
 <p><img src="/assets/img/wallpaper/MIbCzcvxQdahamZSNQ26_12082014-IMG_3526.jpg" alt="Small Test Image" /></p>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+</section>
 
 <h3 id="bigimage">Full Width Image</h3>
 
@@ -51,6 +75,7 @@ The rest of this page will mostly be gibberish but will include all of the avail
 
 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
+<section markdown="1">
 <hr />
 
 <h2 id="listtypes">List Types</h2>
@@ -183,24 +208,6 @@ The <u>u element</u> example</p>
 
 <hr />
 
-<h2 id="Grids">Grids</h2>
-
-<p>Here are some responsive grids:</p>
-
-<div class="outer-container">
-
-<div class="col6">
-    Col6
-</div>
-
-<div class="col6">
-    Col6
-</div>
-
-</div>
-
-<hr />
-
 <h2 id="embeds">Embeds</h2>
 
 <p>Sometimes all you want to do is embed a little love from another location and set your post alive.</p>
@@ -285,3 +292,5 @@ c.draw = function() {
 <p>See the Pen <a href='http://codepen.io/rglazebrook/pen/bcqhe/'>Simple Rotating Spinner</a> by Rob Glazebrook (<a href='http://codepen.io/rglazebrook'>@rglazebrook</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
 <p></div><script async src="//codepen.io/assets/embed/ei.js"></script></p>
+
+</section>

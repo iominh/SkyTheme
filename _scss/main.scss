@@ -2,12 +2,13 @@
 
 @import "utils/mixins";
 @import "utils/variables";
+@import "utils/rem";
 
 //@import "vendors/reset";
 //@import "vendors/syntax";
 @import "vendors/syntax-github";
 @import "vendors/normalize";
-@import "../bower_components/typeplate-starter-kit/scss/typeplate";
+
 @import "../bourbon/bourbon";
 @import "../neat/neat";
 
@@ -34,6 +35,8 @@
 @import "layout/aside";
 @import "layout/section";
 @import "layout/grids";
+
+@import "../bower_components/typeplate-starter-kit/scss/typeplate";
 
 
 body {

@@ -11,13 +11,24 @@ article {
 
 .article-preview {
   border-bottom: 2px solid $light-grey2;
-  padding-bottom: 10px;
-  padding-top: 10px;
+//  padding-bottom: 10px;
+//  padding-top: 10px;
+}
+
+.article-meta {
+  margin-top: 0px;
 }
 
 .article-preview-title {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  @include rem(margin-top, 1rem);
+  margin-bottom: 0px;
+
+  @include bp("medium") {
+    @include rem(margin-top, 1.5rem);
+  }
+  @include bp("large") {
+    @include rem(margin-top, 1.8rem);
+  }
 }
 
 //section {

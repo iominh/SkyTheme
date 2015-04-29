@@ -1,11 +1,12 @@
 /// Vertical rhythm baseline
 /// @type Length
-$vertical-rhythm-baseline: 1.5rem;
+$vertical-rhythm-baseline: 1.0rem;
 
 /// Regular font stack
 /// @type List
-$text-font-stack: "Droid Sans", "Helvetica", "Arial", sans-serif;
+//$text-font-stack: "Droid Sans", "Helvetica", "Arial", sans-serif;
 //$text-font-stack: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+$text-font-stack: "SourceSansPro", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif;
 
 /// Code font stack
 /// @type List
@@ -46,7 +47,7 @@ $light-green: #d2e1dd;
 
 /// Light black
 /// @type Color
-$light-black: #444;
+$light-black: #333;
 
 $black: #2B2B2B;
 
@@ -61,7 +62,6 @@ $hover-color: lighten($light-blue, 20%);
 /// @type Color
 /// @require light-black
 $title-color: $light-black;
-
 
 /// Secondary color
 /// @type Color
@@ -93,9 +93,9 @@ $donate-background: $light-yellow;
 /// @require $light-yellow
 $figure-background: $light-grey;
 
-$small-width: 550px;
+$small-width: 500px;
 $reading-width: 600px;
-$medium-width: 760px;
+$medium-width: 750px;
 $large-width: 992px;
 $huge-width: 1200px;
 
@@ -108,3 +108,12 @@ $breakpoints: (
   'huge': $huge-width
 );
 
+
+$typl8-custom-font: false !default;
+$typl8-font-family: "SourceSansPro", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif !default;
+$typl8-font-weight: normal !default;
+$typl8-line-height: 1.5 !default;
+$typl8-font-size: 62.5 !default;
+$typl8-font-base: 16 * ($typl8-font-size/100) !default;
+$typl8-measure: $typl8-font-base * $typl8-line-height !default;
+$typl8-prefixes: -webkit-, -moz-, -ms-, '' !default;

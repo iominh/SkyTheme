@@ -20,13 +20,12 @@ body {
   color: $secondary-color;
   @include prefix(box-sizing, border-box, webkit moz);
   @include antialiasing();
-  @include font-size(1.6);
-
+  @include rem(font-size, 1.6rem);
   @include bp("medium") {
-    @include font-size(1.8);
+    @include rem(font-size, 1.8rem);
   }
   @include bp("large") {
-    @include font-size(2.2);
+    @include rem(font-size, 2.2rem);
   }
 }
 

@@ -5,9 +5,8 @@ title: Bright Skies
 
 {% for post in paginator.posts %}
 <article class="article-preview">
-    <h1 class="article-preview-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-
-    <p class="author">
+    <h3 class="article-preview-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p class="article-meta">
         <time class="meta">{{ post.date | date: "%B %d, %Y" }}</time>
     </p>
     <div class="content">
